@@ -5979,3 +5979,2419 @@ Cache hit on "guocci-appdb-sites"
 Completed 404 Not Found in 7ms (Views: 0.1ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/v1/sites/8253G05" for ::1 at 2016-08-16 13:54:50 +0200
+Processing by V1::SitesController#show as JSON
+  Parameters: {"id"=>"8253G05", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 404 Not Found in 7ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/" for ::1 at 2016-08-16 13:54:52 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 10ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/" for ::1 at 2016-08-16 13:55:04 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 8ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/" for ::1 at 2016-08-16 13:55:14 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/" for ::1 at 2016-08-16 13:55:19 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/" for ::1 at 2016-08-16 13:55:21 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/" for ::1 at 2016-08-16 13:55:39 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/" for ::1 at 2016-08-16 13:55:48 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/" for ::1 at 2016-08-16 13:55:54 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=6" for ::1 at 2016-08-16 13:56:05 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"6", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of String into Integer):
+  
+app/controllers/v1/sites_controller.rb:30:in `[]'
+app/controllers/v1/sites_controller.rb:30:in `index'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.9ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (13.0ms)
+Started GET "/v1/sites/?limit=6" for ::1 at 2016-08-16 13:56:38 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"6", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=6" for ::1 at 2016-08-16 14:19:27 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"6", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `limit' for #<V1::SitesController:0x007f3cd45e6ce0>):
+  
+app/controllers/v1/sites_controller.rb:27:in `index'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.9ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (34.4ms)
+Started GET "/v1/sites/" for ::1 at 2016-08-16 14:19:31 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `limit' for #<V1::SitesController:0x007f3cc48f5400>):
+  
+app/controllers/v1/sites_controller.rb:27:in `index'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.3ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.0ms)
+Started GET "/v1/sites/" for ::1 at 2016-08-16 14:19:44 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `limit' for #<V1::SitesController:0x00000002841668>):
+  
+app/controllers/v1/sites_controller.rb:27:in `index'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.9ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.4ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.1ms)
+Started GET "/v1/sites/" for ::1 at 2016-08-16 14:19:50 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `limit' for #<V1::SitesController:0x007f3cc4b40ae8>):
+  
+app/controllers/v1/sites_controller.rb:27:in `index'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.8ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.4ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.9ms)
+Started GET "/v1/sites/" for ::1 at 2016-08-16 14:20:06 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/" for ::1 at 2016-08-16 14:20:12 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/" for ::1 at 2016-08-16 14:20:15 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/" for ::1 at 2016-08-16 14:20:21 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 15ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/" for ::1 at 2016-08-16 14:20:58 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 11ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=2" for ::1 at 2016-08-16 14:21:06 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"2", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of String into Integer):
+  
+app/controllers/v1/sites_controller.rb:25:in `[]'
+app/controllers/v1/sites_controller.rb:25:in `index'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.8ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (12.8ms)
+Started GET "/v1/sites/?limit=2" for ::1 at 2016-08-16 14:21:13 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"2", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=2" for ::1 at 2016-08-16 14:24:59 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"2", "site"=>{}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `is_i?' for "2":String
+Did you mean?  is_a?):
+  
+app/controllers/application_controller.rb:11:in `check_limit_and_offset_param'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.9ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (13.4ms)
+Started GET "/v1/sites/?limit=2" for ::1 at 2016-08-16 14:26:09 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"2", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=2" for ::1 at 2016-08-16 14:26:28 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"2", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=2" for ::1 at 2016-08-16 14:26:43 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"2", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 15ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=2" for ::1 at 2016-08-16 14:26:45 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"2", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=2" for ::1 at 2016-08-16 14:26:47 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"2", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=2" for ::1 at 2016-08-16 14:26:52 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"2", "site"=>{}}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/controllers/application_controller.rb:11:in `is_a?'
+app/controllers/application_controller.rb:11:in `check_limit_and_offset_param'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.4ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.3ms)
+Started GET "/v1/sites/?limit=2" for ::1 at 2016-08-16 14:27:41 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"2", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=2" for ::1 at 2016-08-16 14:28:17 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"2", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=2" for ::1 at 2016-08-16 14:29:12 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"2", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of String into Integer):
+  
+app/controllers/v1/sites_controller.rb:25:in `[]'
+app/controllers/v1/sites_controller.rb:25:in `index'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.8ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (13.4ms)
+Started GET "/v1/sites/?limit=2" for ::1 at 2016-08-16 14:29:17 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"2", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=2" for ::1 at 2016-08-16 14:29:35 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"2", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 15ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=2" for ::1 at 2016-08-16 14:29:38 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"2", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=2" for ::1 at 2016-08-16 14:29:40 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"2", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of String into Integer):
+  
+app/controllers/v1/sites_controller.rb:25:in `[]'
+app/controllers/v1/sites_controller.rb:25:in `index'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.7ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (13.3ms)
+Started GET "/v1/sites/?limit=2" for ::1 at 2016-08-16 14:30:32 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"2", "site"=>{}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `is_i?' for "2":String
+Did you mean?  is_a?):
+  
+app/controllers/application_controller.rb:11:in `check_limit_and_offset_param'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.9ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (13.9ms)
+Started GET "/v1/sites/?limit=2" for ::1 at 2016-08-16 14:31:34 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"2", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=2" for ::1 at 2016-08-16 14:32:03 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"2", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=2" for ::1 at 2016-08-16 14:32:06 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"2", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=2" for ::1 at 2016-08-16 14:34:37 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"2", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=2" for ::1 at 2016-08-16 14:36:11 +0200
+  
+SyntaxError (/home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:14: syntax error, unexpected keyword_then, expecting keyword_end):
+  
+app/controllers/application_controller.rb:14: syntax error, unexpected keyword_then, expecting keyword_end
+app/controllers/v1/sites_controller.rb:3:in `<module:V1>'
+app/controllers/v1/sites_controller.rb:1:in `<top (required)>'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.0ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (13.4ms)
+Started GET "/v1/sites/?limit=2" for ::1 at 2016-08-16 14:36:19 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"2", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 16ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=2" for ::1 at 2016-08-16 14:36:29 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"2", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=2" for ::1 at 2016-08-16 14:40:07 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"2", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=2g" for ::1 at 2016-08-16 14:40:16 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"2g", "site"=>{}}
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=2g" for ::1 at 2016-08-16 14:43:51 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"2g", "site"=>{}}
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=2" for ::1 at 2016-08-16 14:43:54 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"2", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 12ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=2" for ::1 at 2016-08-16 14:44:33 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"2", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=2" for ::1 at 2016-08-16 14:47:57 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"2", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=2d" for ::1 at 2016-08-16 14:48:01 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"2d", "site"=>{}}
+Completed 500 Internal Server Error in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/application_controller.rb:19:in `check_limit_and_offset_param'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.0ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (12.8ms)
+Started GET "/v1/sites/?limit=2d" for ::1 at 2016-08-16 14:48:15 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"2d", "site"=>{}}
+Completed 500 Internal Server Error in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/application_controller.rb:19:in `check_limit_and_offset_param'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.8ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (12.7ms)
+Started GET "/v1/sites/?limit=2d" for ::1 at 2016-08-16 14:48:16 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"2d", "site"=>{}}
+Completed 500 Internal Server Error in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/application_controller.rb:19:in `check_limit_and_offset_param'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.1ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (13.4ms)
+Started GET "/v1/sites/?limit=2d" for ::1 at 2016-08-16 14:48:43 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"2d", "site"=>{}}
+Completed 500 Internal Server Error in 36ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `offset' for #<V1::SitesController:0x007f3cc5760120>):
+  
+app/controllers/application_controller.rb:16:in `check_limit_and_offset_param'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.1ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.1ms)
+Started GET "/v1/sites/?limit=2d" for ::1 at 2016-08-16 14:48:57 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"2d", "site"=>{}}
+Completed 500 Internal Server Error in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/application_controller.rb:19:in `check_limit_and_offset_param'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.2ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (13.7ms)
+Started GET "/v1/sites/?limit=2d" for ::1 at 2016-08-16 14:52:21 +0200
+  
+SyntaxError (/home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:19: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/application_controller.rb:19: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/v1/sites_controller.rb:3:in `<module:V1>'
+app/controllers/v1/sites_controller.rb:1:in `<top (required)>'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.9ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.1ms)
+Started GET "/v1/sites/?limit=2d" for ::1 at 2016-08-16 14:52:41 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"2d", "site"=>{}}
+Filter chain halted as :check_limit_and_offset_param rendered or redirected
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=2" for ::1 at 2016-08-16 14:53:13 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"2", "site"=>{}}
+Filter chain halted as :check_limit_and_offset_param rendered or redirected
+Completed 400 Bad Request in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/" for ::1 at 2016-08-16 14:53:19 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"site"=>{}}
+Filter chain halted as :check_limit_and_offset_param rendered or redirected
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=5&offset=4" for ::1 at 2016-08-16 14:53:32 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"5", "offset"=>"4", "site"=>{}}
+No template found for V1::SitesController#index, rendering head :no_content
+Completed 204 No Content in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=5&offset=0" for ::1 at 2016-08-16 14:54:04 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"5", "offset"=>"0", "site"=>{}}
+No template found for V1::SitesController#index, rendering head :no_content
+Completed 204 No Content in 7ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=5&offset=0" for ::1 at 2016-08-16 14:54:14 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"5", "offset"=>"0", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=5&offset=0" for ::1 at 2016-08-16 14:54:24 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"5", "offset"=>"0", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=5&offset=0g" for ::1 at 2016-08-16 14:54:31 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"5", "offset"=>"0g", "site"=>{}}
+Filter chain halted as :check_limit_and_offset_param rendered or redirected
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=5&offset=0g" for ::1 at 2016-08-16 14:55:04 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"5", "offset"=>"0g", "site"=>{}}
+Filter chain halted as :check_limit_and_offset_param rendered or redirected
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=5&offset=0g" for ::1 at 2016-08-16 14:55:15 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"5", "offset"=>"0g", "site"=>{}}
+Filter chain halted as :check_limit_and_offset_param rendered or redirected
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=5&offset=0g" for ::1 at 2016-08-16 14:55:16 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"5", "offset"=>"0g", "site"=>{}}
+Filter chain halted as :check_limit_and_offset_param rendered or redirected
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=5&offset=0g" for ::1 at 2016-08-16 14:55:21 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"5", "offset"=>"0g", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=5&offset=0g" for ::1 at 2016-08-16 14:55:27 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"5", "offset"=>"0g", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=5g&offset=0" for ::1 at 2016-08-16 14:55:38 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"5g", "offset"=>"0", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=57&offset=0" for ::1 at 2016-08-16 14:55:48 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"57", "offset"=>"0", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 9ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=57k&offset=0" for ::1 at 2016-08-16 14:55:51 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"57k", "offset"=>"0", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 11ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=k57k&offset=0" for ::1 at 2016-08-16 14:55:55 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"k57k", "offset"=>"0", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=k57k&offset=0" for ::1 at 2016-08-16 14:55:58 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"k57k", "offset"=>"0", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=k57k&offset=0" for ::1 at 2016-08-16 14:56:05 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"k57k", "offset"=>"0", "site"=>{}}
+Filter chain halted as :check_limit_and_offset_param rendered or redirected
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=k57k&offset=0" for ::1 at 2016-08-16 14:56:18 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"k57k", "offset"=>"0", "site"=>{}}
+Filter chain halted as :check_limit_and_offset_param rendered or redirected
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=k57k&offset=0" for ::1 at 2016-08-16 14:56:19 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"k57k", "offset"=>"0", "site"=>{}}
+Filter chain halted as :check_limit_and_offset_param rendered or redirected
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=k57k&offset=0" for ::1 at 2016-08-16 14:56:23 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"k57k", "offset"=>"0", "site"=>{}}
+Filter chain halted as :check_limit_and_offset_param rendered or redirected
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=k57k&offset=0" for ::1 at 2016-08-16 14:56:51 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"k57k", "offset"=>"0", "site"=>{}}
+Filter chain halted as :check_limit_and_offset_param rendered or redirected
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=k57k&offset=0" for ::1 at 2016-08-16 14:56:58 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"k57k", "offset"=>"0", "site"=>{}}
+Filter chain halted as :check_limit_and_offset_param rendered or redirected
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=k57k&offset=0" for ::1 at 2016-08-16 14:57:02 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"k57k", "offset"=>"0", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion from nil to integer):
+  
+app/controllers/v1/sites_controller.rb:26:in `[]'
+app/controllers/v1/sites_controller.rb:26:in `index'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.7ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (12.6ms)
+Started GET "/v1/sites/?limit=k57k&offset=0" for ::1 at 2016-08-16 15:02:17 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"k57k", "offset"=>"0", "site"=>{}}
+Filter chain halted as :check_limit_and_offset_param rendered or redirected
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=k57k&offset=0" for ::1 at 2016-08-16 15:03:43 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"k57k", "offset"=>"0", "site"=>{}}
+Filter chain halted as :check_limit_and_offset_param rendered or redirected
+Completed 400 Bad Request in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=k57k&offset=0" for ::1 at 2016-08-16 15:03:55 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"k57k", "offset"=>"0", "site"=>{}}
+Filter chain halted as :check_limit_and_offset_param rendered or redirected
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=k57k&offset=0" for ::1 at 2016-08-16 15:03:57 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"k57k", "offset"=>"0", "site"=>{}}
+Filter chain halted as :check_limit_and_offset_param rendered or redirected
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=k57k&offset=0" for ::1 at 2016-08-16 15:04:31 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"k57k", "offset"=>"0", "site"=>{}}
+Filter chain halted as :check_limit_and_offset_param rendered or redirected
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=k57k&offset=0" for ::1 at 2016-08-16 15:04:39 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"k57k", "offset"=>"0", "site"=>{}}
+Filter chain halted as :check_limit_and_offset_param rendered or redirected
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=k57k&offset=0" for ::1 at 2016-08-16 15:19:13 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"k57k", "offset"=>"0", "site"=>{}}
+Filter chain halted as :check_limit_and_offset_param rendered or redirected
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=57&offset=0" for ::1 at 2016-08-16 15:19:18 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"57", "offset"=>"0", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 9ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=57&offset=0" for ::1 at 2016-08-16 15:19:52 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"57", "offset"=>"0", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 8ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/appliances" for ::1 at 2016-08-16 15:20:49 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#show as JSON
+  Parameters: {"id"=>"appliances", "site"=>{}}
+Filter chain halted as :check_limit_and_offset_param rendered or redirected
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/appliances/1" for ::1 at 2016-08-16 15:20:53 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/v1/sites/appliances/1"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered collection of /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [31 times] (21.3ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (16.9ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (54.2ms)
+Started GET "/v1/sites/" for ::1 at 2016-08-16 15:20:58 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"site"=>{}}
+Filter chain halted as :check_limit_and_offset_param rendered or redirected
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/" for ::1 at 2016-08-16 15:22:04 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"site"=>{}}
+Filter chain halted as :check_limit_and_offset_param rendered or redirected
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/" for ::1 at 2016-08-16 15:23:20 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"site"=>{}}
+Filter chain halted as :check_limit_and_offset_param rendered or redirected
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/" for ::1 at 2016-08-16 15:28:29 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"site"=>{}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant ApplicationController::CACHE_DIR):
+  
+app/controllers/application_controller.rb:84:in `cache_fetch'
+app/controllers/application_controller.rb:24:in `vaproviders_from_appdb'
+app/controllers/v1/sites_controller.rb:10:in `index'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.9ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.0ms)
+Started GET "/v1/sites/" for ::1 at 2016-08-16 15:29:54 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"site"=>{}}
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `limit' for #<V1::SitesController:0x007f3ccd9d80a8>):
+  
+app/controllers/application_controller.rb:11:in `check_limit_and_offset_param'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.0ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.6ms)
+Started GET "/v1/sites/" for ::1 at 2016-08-16 15:30:10 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"site"=>{}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant ApplicationController::CACHE_DIR):
+  
+app/controllers/application_controller.rb:84:in `cache_fetch'
+app/controllers/application_controller.rb:24:in `vaproviders_from_appdb'
+app/controllers/v1/sites_controller.rb:10:in `index'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.6ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (13.8ms)
+Started GET "/v1/sites/" for ::1 at 2016-08-16 15:30:54 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/" for ::1 at 2016-08-16 15:31:12 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/" for ::1 at 2016-08-16 15:31:15 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 9ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/" for ::1 at 2016-08-16 15:31:17 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/" for ::1 at 2016-08-16 15:31:20 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/" for ::1 at 2016-08-16 15:32:09 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/" for ::1 at 2016-08-16 15:32:14 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/" for ::1 at 2016-08-16 15:32:53 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/" for ::1 at 2016-08-16 15:34:38 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"site"=>{}}
+Filter chain halted as :check_limit_and_offset_param rendered or redirected
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/" for ::1 at 2016-08-16 15:35:00 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"site"=>{}}
+Filter chain halted as :check_limit_and_offset_param rendered or redirected
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/" for ::1 at 2016-08-16 15:35:14 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"site"=>{}}
+Filter chain halted as :check_limit_and_offset_param rendered or redirected
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/" for ::1 at 2016-08-16 15:35:23 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"site"=>{}}
+Filter chain halted as :check_limit_and_offset_param rendered or redirected
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/" for ::1 at 2016-08-16 15:39:47 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=5" for ::1 at 2016-08-16 15:40:06 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"5", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=j5" for ::1 at 2016-08-16 15:40:10 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"j5", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=5g" for ::1 at 2016-08-16 15:40:19 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"5g", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=5g" for ::1 at 2016-08-16 15:41:57 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"5g", "site"=>{}}
+Filter chain halted as :check_limit_and_offset_param rendered or redirected
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=5" for ::1 at 2016-08-16 15:42:01 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"5", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/" for ::1 at 2016-08-16 15:42:04 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/" for ::1 at 2016-08-16 15:42:13 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?offset=5" for ::1 at 2016-08-16 15:42:22 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"offset"=>"5", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?offset=5r" for ::1 at 2016-08-16 15:42:24 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"offset"=>"5r", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?offset=u5r" for ::1 at 2016-08-16 15:42:39 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"offset"=>"u5r", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 18ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?offset=u5r" for ::1 at 2016-08-16 15:42:52 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"offset"=>"u5r", "site"=>{}}
+Filter chain halted as :check_limit_and_offset_param rendered or redirected
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?offset=u5r" for ::1 at 2016-08-16 15:43:35 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"offset"=>"u5r", "site"=>{}}
+Filter chain halted as :check_limit_and_offset_param rendered or redirected
+Completed 400 Bad Request in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?offset=4" for ::1 at 2016-08-16 15:43:40 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"offset"=>"4", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of String into Integer):
+  
+app/controllers/v1/sites_controller.rb:20:in `[]'
+app/controllers/v1/sites_controller.rb:20:in `index'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.9ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (13.5ms)
+Started GET "/v1/sites/?offset=4" for ::1 at 2016-08-16 15:44:34 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as JSON
+  Parameters: {"offset"=>"4", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 9ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?offset=4&limit=2" for ::1 at 2016-08-16 15:44:46 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"offset"=>"4", "limit"=>"2", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/" for ::1 at 2016-08-16 15:44:54 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/?limit=55" for ::1 at 2016-08-16 15:45:07 +0200
+Processing by V1::SitesController#index as JSON
+  Parameters: {"limit"=>"55", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 8ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/appliances" for ::1 at 2016-08-16 15:46:07 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#show as JSON
+  Parameters: {"id"=>"appliances", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 404 Not Found in 9ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/4454G0" for ::1 at 2016-08-16 15:46:32 +0200
+Processing by V1::SitesController#show as JSON
+  Parameters: {"id"=>"4454G0", "site"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/4454G0/appliances" for ::1 at 2016-08-16 15:46:36 +0200
+  
+SyntaxError (/home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/v1/appliances_controller.rb:26: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/v1/appliances_controller.rb:26: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.7ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (12.9ms)
+Started GET "/v1/sites/4454G0/appliances" for ::1 at 2016-08-16 15:46:45 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::AppliancesController#index as JSON
+  Parameters: {"site_id"=>"4454G0", "appliance"=>{}}
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 81ms (Views: 80.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/4454G0/appliances/" for ::1 at 2016-08-16 15:46:56 +0200
+Processing by V1::AppliancesController#index as JSON
+  Parameters: {"site_id"=>"4454G0", "appliance"=>{}}
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/4454G0/appliances/" for ::1 at 2016-08-16 15:48:12 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::AppliancesController#index as JSON
+  Parameters: {"site_id"=>"4454G0", "appliance"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (In order to use respond_with, first you need to declare the formats your controller responds to in the class level.):
+  
+app/controllers/v1/appliances_controller.rb:19:in `index'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.8ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (12.9ms)
+Started GET "/v1/sites/4454G0/appliances/" for ::1 at 2016-08-16 15:48:40 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::AppliancesController#index as JSON
+  Parameters: {"site_id"=>"4454G0", "appliance"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 404 Not Found in 7ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/4454G0/appliances/" for ::1 at 2016-08-16 15:49:30 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::AppliancesController#index as JSON
+  Parameters: {"site_id"=>"4454G0", "appliance"=>{}}
+Cache hit on "guocci-appdb-sites"
+Cache hit on "guocci-appdb-appliance-e166c5732e5712ec76cff8ad611ca41e5fbefa9f"
+Cache hit on "guocci-appdb-appliance-d15ed6d0c08faedf55db84dcd24495a6b57a2769"
+Cache hit on "guocci-appdb-appliance-ee6b60d119bf71d128ebfeeb265fe395b85bd762"
+Cache hit on "guocci-appdb-appliance-0cda92558fb8c007412fb9259cb565a420fff7a2"
+Cache hit on "guocci-appdb-appliance-de714e22bb2fd2b32b0679af843b478d62148680"
+Cache hit on "guocci-appdb-appliance-afc7a3f0c78651e1ed8af82aa918c27d4ba7a774"
+Cache hit on "guocci-appdb-appliance-0d64b48d0b6cd3810fa73434c9ea8c81566159fc"
+Cache hit on "guocci-appdb-appliance-b96182a13cc9658a4e70ea049c3d15893cda1e41"
+Cache hit on "guocci-appdb-appliance-d1aff60770773e903e06669f35da71459a503cb2"
+Cache hit on "guocci-appdb-appliance-efb98d831e3dfe5cb5f164de70e5a985dfa3abbf"
+Cache hit on "guocci-appdb-appliance-f5a9dc86846e613180f22a764af597359f6a07c9"
+Cache hit on "guocci-appdb-appliance-0841fe0817d16a00301e5305eb5cd19e75f56bf1"
+Cache hit on "guocci-appdb-appliance-cbaf9c0d1a63965c53b934e9fd98c50e1dbd17fd"
+Cache hit on "guocci-appdb-appliance-34b8a528a769ec428516809ed8782df9b94426d6"
+Cache hit on "guocci-appdb-appliance-11abd779f3c86f65deb14c47eefa8621149ce08a"
+Cache hit on "guocci-appdb-appliance-6f5333de12b891ec934c832eea5c8979864a7ce9"
+Cache hit on "guocci-appdb-appliance-db019c01accae6ac7e6048f4042c0c8651804973"
+Cache hit on "guocci-appdb-appliance-734c22aedbb14c62935e21ecb05468cdfa2fee48"
+Cache hit on "guocci-appdb-appliance-0c8e07904283b46ad1dfe7a49b67735537e555d5"
+Cache hit on "guocci-appdb-appliance-a149b2a32e16b8803a50984ea982f60f7b1fb98c"
+Cache hit on "guocci-appdb-appliance-3350e4b53649a362dcc44eb3ac3facd38affe428"
+Cache hit on "guocci-appdb-appliance-ee06b84aecf0083db07f0b2b9c2906d58b32aaaa"
+Cache hit on "guocci-appdb-appliance-4d2a660a61e857fd38544f069c9edbaa1af33e3f"
+Cache hit on "guocci-appdb-appliance-9772f5872d17b5064871d3e434099737b4d4c43f"
+Cache hit on "guocci-appdb-appliance-2e3ea1dc9a511c0f215caac46db675e88496b275"
+Cache hit on "guocci-appdb-appliance-6073252c68f3939bae8dc10a622cc7ef392b3c95"
+Cache hit on "guocci-appdb-appliance-2ccacf5109bcabb118fd4b4bdbf551c98ec4893c"
+Cache hit on "guocci-appdb-appliance-909491a28198fa40105a7fcbcb643f887d0f79a2"
+Cache hit on "guocci-appdb-appliance-8c85d4a699c6b99387c9ac59dfe444164b1f3ce9"
+Cache hit on "guocci-appdb-appliance-2a1294c6d78d16a152396f48837471f78a1edfd8"
+Cache hit on "guocci-appdb-appliance-86a38ce879e3ddf26ed394f8493059c9e283c8b8"
+Cache hit on "guocci-appdb-appliance-2bcd116752ca765addb20ff685258621db6a1064"
+Cache hit on "guocci-appdb-appliance-af929c45bb4fb0900692b1758546a534d07e7f83"
+Cache hit on "guocci-appdb-appliance-ba850507ef58c092b44a1008a71c40a68aba48a6"
+Cache hit on "guocci-appdb-appliance-75d092b2648845f7bf198f849478625b6b0b601f"
+Cache hit on "guocci-appdb-appliance-f08c38f360c2df1211f21cb8b3712f720928ec8b"
+Cache hit on "guocci-appdb-appliance-24cda9f3598f722a468c3ad4c9dff18aed2ac0d5"
+Cache hit on "guocci-appdb-appliance-a7db80516b9edf925cdc600aa61afbc6e7079e8a"
+Completed 200 OK in 20ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/4454G0/appliances/" for ::1 at 2016-08-16 15:50:53 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::AppliancesController#index as JSON
+  Parameters: {"site_id"=>"4454G0", "appliance"=>{}}
+Cache hit on "guocci-appdb-sites"
+Cache hit on "guocci-appdb-appliance-e166c5732e5712ec76cff8ad611ca41e5fbefa9f"
+Cache hit on "guocci-appdb-appliance-d15ed6d0c08faedf55db84dcd24495a6b57a2769"
+Cache hit on "guocci-appdb-appliance-ee6b60d119bf71d128ebfeeb265fe395b85bd762"
+Cache hit on "guocci-appdb-appliance-0cda92558fb8c007412fb9259cb565a420fff7a2"
+Cache hit on "guocci-appdb-appliance-de714e22bb2fd2b32b0679af843b478d62148680"
+Cache hit on "guocci-appdb-appliance-afc7a3f0c78651e1ed8af82aa918c27d4ba7a774"
+Cache hit on "guocci-appdb-appliance-0d64b48d0b6cd3810fa73434c9ea8c81566159fc"
+Cache hit on "guocci-appdb-appliance-b96182a13cc9658a4e70ea049c3d15893cda1e41"
+Cache hit on "guocci-appdb-appliance-d1aff60770773e903e06669f35da71459a503cb2"
+Cache hit on "guocci-appdb-appliance-efb98d831e3dfe5cb5f164de70e5a985dfa3abbf"
+Cache hit on "guocci-appdb-appliance-f5a9dc86846e613180f22a764af597359f6a07c9"
+Cache hit on "guocci-appdb-appliance-0841fe0817d16a00301e5305eb5cd19e75f56bf1"
+Cache hit on "guocci-appdb-appliance-cbaf9c0d1a63965c53b934e9fd98c50e1dbd17fd"
+Cache hit on "guocci-appdb-appliance-34b8a528a769ec428516809ed8782df9b94426d6"
+Cache hit on "guocci-appdb-appliance-11abd779f3c86f65deb14c47eefa8621149ce08a"
+Cache hit on "guocci-appdb-appliance-6f5333de12b891ec934c832eea5c8979864a7ce9"
+Cache hit on "guocci-appdb-appliance-db019c01accae6ac7e6048f4042c0c8651804973"
+Cache hit on "guocci-appdb-appliance-734c22aedbb14c62935e21ecb05468cdfa2fee48"
+Cache hit on "guocci-appdb-appliance-0c8e07904283b46ad1dfe7a49b67735537e555d5"
+Cache hit on "guocci-appdb-appliance-a149b2a32e16b8803a50984ea982f60f7b1fb98c"
+Cache hit on "guocci-appdb-appliance-3350e4b53649a362dcc44eb3ac3facd38affe428"
+Cache hit on "guocci-appdb-appliance-ee06b84aecf0083db07f0b2b9c2906d58b32aaaa"
+Cache hit on "guocci-appdb-appliance-4d2a660a61e857fd38544f069c9edbaa1af33e3f"
+Cache hit on "guocci-appdb-appliance-9772f5872d17b5064871d3e434099737b4d4c43f"
+Cache hit on "guocci-appdb-appliance-2e3ea1dc9a511c0f215caac46db675e88496b275"
+Cache hit on "guocci-appdb-appliance-6073252c68f3939bae8dc10a622cc7ef392b3c95"
+Cache hit on "guocci-appdb-appliance-2ccacf5109bcabb118fd4b4bdbf551c98ec4893c"
+Cache hit on "guocci-appdb-appliance-909491a28198fa40105a7fcbcb643f887d0f79a2"
+Cache hit on "guocci-appdb-appliance-8c85d4a699c6b99387c9ac59dfe444164b1f3ce9"
+Cache hit on "guocci-appdb-appliance-2a1294c6d78d16a152396f48837471f78a1edfd8"
+Cache hit on "guocci-appdb-appliance-86a38ce879e3ddf26ed394f8493059c9e283c8b8"
+Cache hit on "guocci-appdb-appliance-2bcd116752ca765addb20ff685258621db6a1064"
+Cache hit on "guocci-appdb-appliance-af929c45bb4fb0900692b1758546a534d07e7f83"
+Cache hit on "guocci-appdb-appliance-ba850507ef58c092b44a1008a71c40a68aba48a6"
+Cache hit on "guocci-appdb-appliance-75d092b2648845f7bf198f849478625b6b0b601f"
+Cache hit on "guocci-appdb-appliance-f08c38f360c2df1211f21cb8b3712f720928ec8b"
+Cache hit on "guocci-appdb-appliance-24cda9f3598f722a468c3ad4c9dff18aed2ac0d5"
+Cache hit on "guocci-appdb-appliance-a7db80516b9edf925cdc600aa61afbc6e7079e8a"
+Completed 200 OK in 18ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/4454G0/appliances/?limit=2" for ::1 at 2016-08-16 15:52:32 +0200
+Processing by V1::AppliancesController#index as JSON
+  Parameters: {"limit"=>"2", "site_id"=>"4454G0", "appliance"=>{}}
+Cache hit on "guocci-appdb-sites"
+Cache hit on "guocci-appdb-appliance-e166c5732e5712ec76cff8ad611ca41e5fbefa9f"
+Cache hit on "guocci-appdb-appliance-d15ed6d0c08faedf55db84dcd24495a6b57a2769"
+Cache hit on "guocci-appdb-appliance-ee6b60d119bf71d128ebfeeb265fe395b85bd762"
+Cache hit on "guocci-appdb-appliance-0cda92558fb8c007412fb9259cb565a420fff7a2"
+Cache hit on "guocci-appdb-appliance-de714e22bb2fd2b32b0679af843b478d62148680"
+Cache hit on "guocci-appdb-appliance-afc7a3f0c78651e1ed8af82aa918c27d4ba7a774"
+Cache hit on "guocci-appdb-appliance-0d64b48d0b6cd3810fa73434c9ea8c81566159fc"
+Cache hit on "guocci-appdb-appliance-b96182a13cc9658a4e70ea049c3d15893cda1e41"
+Cache hit on "guocci-appdb-appliance-d1aff60770773e903e06669f35da71459a503cb2"
+Cache hit on "guocci-appdb-appliance-efb98d831e3dfe5cb5f164de70e5a985dfa3abbf"
+Cache hit on "guocci-appdb-appliance-f5a9dc86846e613180f22a764af597359f6a07c9"
+Cache hit on "guocci-appdb-appliance-0841fe0817d16a00301e5305eb5cd19e75f56bf1"
+Cache hit on "guocci-appdb-appliance-cbaf9c0d1a63965c53b934e9fd98c50e1dbd17fd"
+Cache hit on "guocci-appdb-appliance-34b8a528a769ec428516809ed8782df9b94426d6"
+Cache hit on "guocci-appdb-appliance-11abd779f3c86f65deb14c47eefa8621149ce08a"
+Cache hit on "guocci-appdb-appliance-6f5333de12b891ec934c832eea5c8979864a7ce9"
+Cache hit on "guocci-appdb-appliance-db019c01accae6ac7e6048f4042c0c8651804973"
+Cache hit on "guocci-appdb-appliance-734c22aedbb14c62935e21ecb05468cdfa2fee48"
+Cache hit on "guocci-appdb-appliance-0c8e07904283b46ad1dfe7a49b67735537e555d5"
+Cache hit on "guocci-appdb-appliance-a149b2a32e16b8803a50984ea982f60f7b1fb98c"
+Cache hit on "guocci-appdb-appliance-3350e4b53649a362dcc44eb3ac3facd38affe428"
+Cache hit on "guocci-appdb-appliance-ee06b84aecf0083db07f0b2b9c2906d58b32aaaa"
+Cache hit on "guocci-appdb-appliance-4d2a660a61e857fd38544f069c9edbaa1af33e3f"
+Cache hit on "guocci-appdb-appliance-9772f5872d17b5064871d3e434099737b4d4c43f"
+Cache hit on "guocci-appdb-appliance-2e3ea1dc9a511c0f215caac46db675e88496b275"
+Cache hit on "guocci-appdb-appliance-6073252c68f3939bae8dc10a622cc7ef392b3c95"
+Cache hit on "guocci-appdb-appliance-2ccacf5109bcabb118fd4b4bdbf551c98ec4893c"
+Cache hit on "guocci-appdb-appliance-909491a28198fa40105a7fcbcb643f887d0f79a2"
+Cache hit on "guocci-appdb-appliance-8c85d4a699c6b99387c9ac59dfe444164b1f3ce9"
+Cache hit on "guocci-appdb-appliance-2a1294c6d78d16a152396f48837471f78a1edfd8"
+Cache hit on "guocci-appdb-appliance-86a38ce879e3ddf26ed394f8493059c9e283c8b8"
+Cache hit on "guocci-appdb-appliance-2bcd116752ca765addb20ff685258621db6a1064"
+Cache hit on "guocci-appdb-appliance-af929c45bb4fb0900692b1758546a534d07e7f83"
+Cache hit on "guocci-appdb-appliance-ba850507ef58c092b44a1008a71c40a68aba48a6"
+Cache hit on "guocci-appdb-appliance-75d092b2648845f7bf198f849478625b6b0b601f"
+Cache hit on "guocci-appdb-appliance-f08c38f360c2df1211f21cb8b3712f720928ec8b"
+Cache hit on "guocci-appdb-appliance-24cda9f3598f722a468c3ad4c9dff18aed2ac0d5"
+Cache hit on "guocci-appdb-appliance-a7db80516b9edf925cdc600aa61afbc6e7079e8a"
+Completed 200 OK in 20ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/4454G0/appliances/?limit=2" for ::1 at 2016-08-16 15:53:22 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::AppliancesController#index as JSON
+  Parameters: {"limit"=>"2", "site_id"=>"4454G0", "appliance"=>{}}
+Cache hit on "guocci-appdb-sites"
+Cache hit on "guocci-appdb-appliance-e166c5732e5712ec76cff8ad611ca41e5fbefa9f"
+Cache hit on "guocci-appdb-appliance-d15ed6d0c08faedf55db84dcd24495a6b57a2769"
+Cache hit on "guocci-appdb-appliance-ee6b60d119bf71d128ebfeeb265fe395b85bd762"
+Cache hit on "guocci-appdb-appliance-0cda92558fb8c007412fb9259cb565a420fff7a2"
+Cache hit on "guocci-appdb-appliance-de714e22bb2fd2b32b0679af843b478d62148680"
+Cache hit on "guocci-appdb-appliance-afc7a3f0c78651e1ed8af82aa918c27d4ba7a774"
+Cache hit on "guocci-appdb-appliance-0d64b48d0b6cd3810fa73434c9ea8c81566159fc"
+Cache hit on "guocci-appdb-appliance-b96182a13cc9658a4e70ea049c3d15893cda1e41"
+Cache hit on "guocci-appdb-appliance-d1aff60770773e903e06669f35da71459a503cb2"
+Cache hit on "guocci-appdb-appliance-efb98d831e3dfe5cb5f164de70e5a985dfa3abbf"
+Cache hit on "guocci-appdb-appliance-f5a9dc86846e613180f22a764af597359f6a07c9"
+Cache hit on "guocci-appdb-appliance-0841fe0817d16a00301e5305eb5cd19e75f56bf1"
+Cache hit on "guocci-appdb-appliance-cbaf9c0d1a63965c53b934e9fd98c50e1dbd17fd"
+Cache hit on "guocci-appdb-appliance-34b8a528a769ec428516809ed8782df9b94426d6"
+Cache hit on "guocci-appdb-appliance-11abd779f3c86f65deb14c47eefa8621149ce08a"
+Cache hit on "guocci-appdb-appliance-6f5333de12b891ec934c832eea5c8979864a7ce9"
+Cache hit on "guocci-appdb-appliance-db019c01accae6ac7e6048f4042c0c8651804973"
+Cache hit on "guocci-appdb-appliance-734c22aedbb14c62935e21ecb05468cdfa2fee48"
+Cache hit on "guocci-appdb-appliance-0c8e07904283b46ad1dfe7a49b67735537e555d5"
+Cache hit on "guocci-appdb-appliance-a149b2a32e16b8803a50984ea982f60f7b1fb98c"
+Cache hit on "guocci-appdb-appliance-3350e4b53649a362dcc44eb3ac3facd38affe428"
+Cache hit on "guocci-appdb-appliance-ee06b84aecf0083db07f0b2b9c2906d58b32aaaa"
+Cache hit on "guocci-appdb-appliance-4d2a660a61e857fd38544f069c9edbaa1af33e3f"
+Cache hit on "guocci-appdb-appliance-9772f5872d17b5064871d3e434099737b4d4c43f"
+Cache hit on "guocci-appdb-appliance-2e3ea1dc9a511c0f215caac46db675e88496b275"
+Cache hit on "guocci-appdb-appliance-6073252c68f3939bae8dc10a622cc7ef392b3c95"
+Cache hit on "guocci-appdb-appliance-2ccacf5109bcabb118fd4b4bdbf551c98ec4893c"
+Cache hit on "guocci-appdb-appliance-909491a28198fa40105a7fcbcb643f887d0f79a2"
+Cache hit on "guocci-appdb-appliance-8c85d4a699c6b99387c9ac59dfe444164b1f3ce9"
+Cache hit on "guocci-appdb-appliance-2a1294c6d78d16a152396f48837471f78a1edfd8"
+Cache hit on "guocci-appdb-appliance-86a38ce879e3ddf26ed394f8493059c9e283c8b8"
+Cache hit on "guocci-appdb-appliance-2bcd116752ca765addb20ff685258621db6a1064"
+Cache hit on "guocci-appdb-appliance-af929c45bb4fb0900692b1758546a534d07e7f83"
+Cache hit on "guocci-appdb-appliance-ba850507ef58c092b44a1008a71c40a68aba48a6"
+Cache hit on "guocci-appdb-appliance-75d092b2648845f7bf198f849478625b6b0b601f"
+Cache hit on "guocci-appdb-appliance-f08c38f360c2df1211f21cb8b3712f720928ec8b"
+Cache hit on "guocci-appdb-appliance-24cda9f3598f722a468c3ad4c9dff18aed2ac0d5"
+Cache hit on "guocci-appdb-appliance-a7db80516b9edf925cdc600aa61afbc6e7079e8a"
+Completed 200 OK in 14ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/4454G0/appliances/?limit=0" for ::1 at 2016-08-16 15:54:17 +0200
+Processing by V1::AppliancesController#index as JSON
+  Parameters: {"limit"=>"0", "site_id"=>"4454G0", "appliance"=>{}}
+Cache hit on "guocci-appdb-sites"
+Cache hit on "guocci-appdb-appliance-e166c5732e5712ec76cff8ad611ca41e5fbefa9f"
+Cache hit on "guocci-appdb-appliance-d15ed6d0c08faedf55db84dcd24495a6b57a2769"
+Cache hit on "guocci-appdb-appliance-ee6b60d119bf71d128ebfeeb265fe395b85bd762"
+Cache hit on "guocci-appdb-appliance-0cda92558fb8c007412fb9259cb565a420fff7a2"
+Cache hit on "guocci-appdb-appliance-de714e22bb2fd2b32b0679af843b478d62148680"
+Cache hit on "guocci-appdb-appliance-afc7a3f0c78651e1ed8af82aa918c27d4ba7a774"
+Cache hit on "guocci-appdb-appliance-0d64b48d0b6cd3810fa73434c9ea8c81566159fc"
+Cache hit on "guocci-appdb-appliance-b96182a13cc9658a4e70ea049c3d15893cda1e41"
+Cache hit on "guocci-appdb-appliance-d1aff60770773e903e06669f35da71459a503cb2"
+Cache hit on "guocci-appdb-appliance-efb98d831e3dfe5cb5f164de70e5a985dfa3abbf"
+Cache hit on "guocci-appdb-appliance-f5a9dc86846e613180f22a764af597359f6a07c9"
+Cache hit on "guocci-appdb-appliance-0841fe0817d16a00301e5305eb5cd19e75f56bf1"
+Cache hit on "guocci-appdb-appliance-cbaf9c0d1a63965c53b934e9fd98c50e1dbd17fd"
+Cache hit on "guocci-appdb-appliance-34b8a528a769ec428516809ed8782df9b94426d6"
+Cache hit on "guocci-appdb-appliance-11abd779f3c86f65deb14c47eefa8621149ce08a"
+Cache hit on "guocci-appdb-appliance-6f5333de12b891ec934c832eea5c8979864a7ce9"
+Cache hit on "guocci-appdb-appliance-db019c01accae6ac7e6048f4042c0c8651804973"
+Cache hit on "guocci-appdb-appliance-734c22aedbb14c62935e21ecb05468cdfa2fee48"
+Cache hit on "guocci-appdb-appliance-0c8e07904283b46ad1dfe7a49b67735537e555d5"
+Cache hit on "guocci-appdb-appliance-a149b2a32e16b8803a50984ea982f60f7b1fb98c"
+Cache hit on "guocci-appdb-appliance-3350e4b53649a362dcc44eb3ac3facd38affe428"
+Cache hit on "guocci-appdb-appliance-ee06b84aecf0083db07f0b2b9c2906d58b32aaaa"
+Cache hit on "guocci-appdb-appliance-4d2a660a61e857fd38544f069c9edbaa1af33e3f"
+Cache hit on "guocci-appdb-appliance-9772f5872d17b5064871d3e434099737b4d4c43f"
+Cache hit on "guocci-appdb-appliance-2e3ea1dc9a511c0f215caac46db675e88496b275"
+Cache hit on "guocci-appdb-appliance-6073252c68f3939bae8dc10a622cc7ef392b3c95"
+Cache hit on "guocci-appdb-appliance-2ccacf5109bcabb118fd4b4bdbf551c98ec4893c"
+Cache hit on "guocci-appdb-appliance-909491a28198fa40105a7fcbcb643f887d0f79a2"
+Cache hit on "guocci-appdb-appliance-8c85d4a699c6b99387c9ac59dfe444164b1f3ce9"
+Cache hit on "guocci-appdb-appliance-2a1294c6d78d16a152396f48837471f78a1edfd8"
+Cache hit on "guocci-appdb-appliance-86a38ce879e3ddf26ed394f8493059c9e283c8b8"
+Cache hit on "guocci-appdb-appliance-2bcd116752ca765addb20ff685258621db6a1064"
+Cache hit on "guocci-appdb-appliance-af929c45bb4fb0900692b1758546a534d07e7f83"
+Cache hit on "guocci-appdb-appliance-ba850507ef58c092b44a1008a71c40a68aba48a6"
+Cache hit on "guocci-appdb-appliance-75d092b2648845f7bf198f849478625b6b0b601f"
+Cache hit on "guocci-appdb-appliance-f08c38f360c2df1211f21cb8b3712f720928ec8b"
+Cache hit on "guocci-appdb-appliance-24cda9f3598f722a468c3ad4c9dff18aed2ac0d5"
+Cache hit on "guocci-appdb-appliance-a7db80516b9edf925cdc600aa61afbc6e7079e8a"
+Completed 200 OK in 25ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/4454G0/appliances/?limit=0" for ::1 at 2016-08-16 15:58:17 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::AppliancesController#index as JSON
+  Parameters: {"limit"=>"0", "site_id"=>"4454G0", "appliance"=>{}}
+Cache hit on "guocci-appdb-sites"
+Cache hit on "guocci-appdb-appliance-e166c5732e5712ec76cff8ad611ca41e5fbefa9f"
+Cache hit on "guocci-appdb-appliance-d15ed6d0c08faedf55db84dcd24495a6b57a2769"
+Cache hit on "guocci-appdb-appliance-ee6b60d119bf71d128ebfeeb265fe395b85bd762"
+Cache hit on "guocci-appdb-appliance-0cda92558fb8c007412fb9259cb565a420fff7a2"
+Cache hit on "guocci-appdb-appliance-de714e22bb2fd2b32b0679af843b478d62148680"
+Cache hit on "guocci-appdb-appliance-afc7a3f0c78651e1ed8af82aa918c27d4ba7a774"
+Cache hit on "guocci-appdb-appliance-0d64b48d0b6cd3810fa73434c9ea8c81566159fc"
+Cache hit on "guocci-appdb-appliance-b96182a13cc9658a4e70ea049c3d15893cda1e41"
+Cache hit on "guocci-appdb-appliance-d1aff60770773e903e06669f35da71459a503cb2"
+Cache hit on "guocci-appdb-appliance-efb98d831e3dfe5cb5f164de70e5a985dfa3abbf"
+Cache hit on "guocci-appdb-appliance-f5a9dc86846e613180f22a764af597359f6a07c9"
+Cache hit on "guocci-appdb-appliance-0841fe0817d16a00301e5305eb5cd19e75f56bf1"
+Cache hit on "guocci-appdb-appliance-cbaf9c0d1a63965c53b934e9fd98c50e1dbd17fd"
+Cache hit on "guocci-appdb-appliance-34b8a528a769ec428516809ed8782df9b94426d6"
+Cache hit on "guocci-appdb-appliance-11abd779f3c86f65deb14c47eefa8621149ce08a"
+Cache hit on "guocci-appdb-appliance-6f5333de12b891ec934c832eea5c8979864a7ce9"
+Cache hit on "guocci-appdb-appliance-db019c01accae6ac7e6048f4042c0c8651804973"
+Cache hit on "guocci-appdb-appliance-734c22aedbb14c62935e21ecb05468cdfa2fee48"
+Cache hit on "guocci-appdb-appliance-0c8e07904283b46ad1dfe7a49b67735537e555d5"
+Cache hit on "guocci-appdb-appliance-a149b2a32e16b8803a50984ea982f60f7b1fb98c"
+Cache hit on "guocci-appdb-appliance-3350e4b53649a362dcc44eb3ac3facd38affe428"
+Cache hit on "guocci-appdb-appliance-ee06b84aecf0083db07f0b2b9c2906d58b32aaaa"
+Cache hit on "guocci-appdb-appliance-4d2a660a61e857fd38544f069c9edbaa1af33e3f"
+Cache hit on "guocci-appdb-appliance-9772f5872d17b5064871d3e434099737b4d4c43f"
+Cache hit on "guocci-appdb-appliance-2e3ea1dc9a511c0f215caac46db675e88496b275"
+Cache hit on "guocci-appdb-appliance-6073252c68f3939bae8dc10a622cc7ef392b3c95"
+Cache hit on "guocci-appdb-appliance-2ccacf5109bcabb118fd4b4bdbf551c98ec4893c"
+Cache hit on "guocci-appdb-appliance-909491a28198fa40105a7fcbcb643f887d0f79a2"
+Cache hit on "guocci-appdb-appliance-8c85d4a699c6b99387c9ac59dfe444164b1f3ce9"
+Cache hit on "guocci-appdb-appliance-2a1294c6d78d16a152396f48837471f78a1edfd8"
+Cache hit on "guocci-appdb-appliance-86a38ce879e3ddf26ed394f8493059c9e283c8b8"
+Cache hit on "guocci-appdb-appliance-2bcd116752ca765addb20ff685258621db6a1064"
+Cache hit on "guocci-appdb-appliance-af929c45bb4fb0900692b1758546a534d07e7f83"
+Cache hit on "guocci-appdb-appliance-ba850507ef58c092b44a1008a71c40a68aba48a6"
+Cache hit on "guocci-appdb-appliance-75d092b2648845f7bf198f849478625b6b0b601f"
+Cache hit on "guocci-appdb-appliance-f08c38f360c2df1211f21cb8b3712f720928ec8b"
+Cache hit on "guocci-appdb-appliance-24cda9f3598f722a468c3ad4c9dff18aed2ac0d5"
+Cache hit on "guocci-appdb-appliance-a7db80516b9edf925cdc600aa61afbc6e7079e8a"
+Completed 200 OK in 15ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/4454G0/appliances/" for ::1 at 2016-08-16 15:58:33 +0200
+Processing by V1::AppliancesController#index as JSON
+  Parameters: {"site_id"=>"4454G0", "appliance"=>{}}
+Cache hit on "guocci-appdb-sites"
+Cache hit on "guocci-appdb-appliance-e166c5732e5712ec76cff8ad611ca41e5fbefa9f"
+Cache hit on "guocci-appdb-appliance-d15ed6d0c08faedf55db84dcd24495a6b57a2769"
+Cache hit on "guocci-appdb-appliance-ee6b60d119bf71d128ebfeeb265fe395b85bd762"
+Cache hit on "guocci-appdb-appliance-0cda92558fb8c007412fb9259cb565a420fff7a2"
+Cache hit on "guocci-appdb-appliance-de714e22bb2fd2b32b0679af843b478d62148680"
+Cache hit on "guocci-appdb-appliance-afc7a3f0c78651e1ed8af82aa918c27d4ba7a774"
+Cache hit on "guocci-appdb-appliance-0d64b48d0b6cd3810fa73434c9ea8c81566159fc"
+Cache hit on "guocci-appdb-appliance-b96182a13cc9658a4e70ea049c3d15893cda1e41"
+Cache hit on "guocci-appdb-appliance-d1aff60770773e903e06669f35da71459a503cb2"
+Cache hit on "guocci-appdb-appliance-efb98d831e3dfe5cb5f164de70e5a985dfa3abbf"
+Cache hit on "guocci-appdb-appliance-f5a9dc86846e613180f22a764af597359f6a07c9"
+Cache hit on "guocci-appdb-appliance-0841fe0817d16a00301e5305eb5cd19e75f56bf1"
+Cache hit on "guocci-appdb-appliance-cbaf9c0d1a63965c53b934e9fd98c50e1dbd17fd"
+Cache hit on "guocci-appdb-appliance-34b8a528a769ec428516809ed8782df9b94426d6"
+Cache hit on "guocci-appdb-appliance-11abd779f3c86f65deb14c47eefa8621149ce08a"
+Cache hit on "guocci-appdb-appliance-6f5333de12b891ec934c832eea5c8979864a7ce9"
+Cache hit on "guocci-appdb-appliance-db019c01accae6ac7e6048f4042c0c8651804973"
+Cache hit on "guocci-appdb-appliance-734c22aedbb14c62935e21ecb05468cdfa2fee48"
+Cache hit on "guocci-appdb-appliance-0c8e07904283b46ad1dfe7a49b67735537e555d5"
+Cache hit on "guocci-appdb-appliance-a149b2a32e16b8803a50984ea982f60f7b1fb98c"
+Cache hit on "guocci-appdb-appliance-3350e4b53649a362dcc44eb3ac3facd38affe428"
+Cache hit on "guocci-appdb-appliance-ee06b84aecf0083db07f0b2b9c2906d58b32aaaa"
+Cache hit on "guocci-appdb-appliance-4d2a660a61e857fd38544f069c9edbaa1af33e3f"
+Cache hit on "guocci-appdb-appliance-9772f5872d17b5064871d3e434099737b4d4c43f"
+Cache hit on "guocci-appdb-appliance-2e3ea1dc9a511c0f215caac46db675e88496b275"
+Cache hit on "guocci-appdb-appliance-6073252c68f3939bae8dc10a622cc7ef392b3c95"
+Cache hit on "guocci-appdb-appliance-2ccacf5109bcabb118fd4b4bdbf551c98ec4893c"
+Cache hit on "guocci-appdb-appliance-909491a28198fa40105a7fcbcb643f887d0f79a2"
+Cache hit on "guocci-appdb-appliance-8c85d4a699c6b99387c9ac59dfe444164b1f3ce9"
+Cache hit on "guocci-appdb-appliance-2a1294c6d78d16a152396f48837471f78a1edfd8"
+Cache hit on "guocci-appdb-appliance-86a38ce879e3ddf26ed394f8493059c9e283c8b8"
+Cache hit on "guocci-appdb-appliance-2bcd116752ca765addb20ff685258621db6a1064"
+Cache hit on "guocci-appdb-appliance-af929c45bb4fb0900692b1758546a534d07e7f83"
+Cache hit on "guocci-appdb-appliance-ba850507ef58c092b44a1008a71c40a68aba48a6"
+Cache hit on "guocci-appdb-appliance-75d092b2648845f7bf198f849478625b6b0b601f"
+Cache hit on "guocci-appdb-appliance-f08c38f360c2df1211f21cb8b3712f720928ec8b"
+Cache hit on "guocci-appdb-appliance-24cda9f3598f722a468c3ad4c9dff18aed2ac0d5"
+Cache hit on "guocci-appdb-appliance-a7db80516b9edf925cdc600aa61afbc6e7079e8a"
+Completed 200 OK in 16ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/4454G0/appliances/" for ::1 at 2016-08-16 15:59:34 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::AppliancesController#index as JSON
+  Parameters: {"site_id"=>"4454G0", "appliance"=>{}}
+Cache hit on "guocci-appdb-sites"
+Cache hit on "guocci-appdb-appliance-e166c5732e5712ec76cff8ad611ca41e5fbefa9f"
+Cache hit on "guocci-appdb-appliance-d15ed6d0c08faedf55db84dcd24495a6b57a2769"
+Cache hit on "guocci-appdb-appliance-ee6b60d119bf71d128ebfeeb265fe395b85bd762"
+Cache hit on "guocci-appdb-appliance-0cda92558fb8c007412fb9259cb565a420fff7a2"
+Cache hit on "guocci-appdb-appliance-de714e22bb2fd2b32b0679af843b478d62148680"
+Cache hit on "guocci-appdb-appliance-afc7a3f0c78651e1ed8af82aa918c27d4ba7a774"
+Cache hit on "guocci-appdb-appliance-0d64b48d0b6cd3810fa73434c9ea8c81566159fc"
+Cache hit on "guocci-appdb-appliance-b96182a13cc9658a4e70ea049c3d15893cda1e41"
+Cache hit on "guocci-appdb-appliance-d1aff60770773e903e06669f35da71459a503cb2"
+Cache hit on "guocci-appdb-appliance-efb98d831e3dfe5cb5f164de70e5a985dfa3abbf"
+Cache hit on "guocci-appdb-appliance-f5a9dc86846e613180f22a764af597359f6a07c9"
+Cache hit on "guocci-appdb-appliance-0841fe0817d16a00301e5305eb5cd19e75f56bf1"
+Cache hit on "guocci-appdb-appliance-cbaf9c0d1a63965c53b934e9fd98c50e1dbd17fd"
+Cache hit on "guocci-appdb-appliance-34b8a528a769ec428516809ed8782df9b94426d6"
+Cache hit on "guocci-appdb-appliance-11abd779f3c86f65deb14c47eefa8621149ce08a"
+Cache hit on "guocci-appdb-appliance-6f5333de12b891ec934c832eea5c8979864a7ce9"
+Cache hit on "guocci-appdb-appliance-db019c01accae6ac7e6048f4042c0c8651804973"
+Cache hit on "guocci-appdb-appliance-734c22aedbb14c62935e21ecb05468cdfa2fee48"
+Cache hit on "guocci-appdb-appliance-0c8e07904283b46ad1dfe7a49b67735537e555d5"
+Cache hit on "guocci-appdb-appliance-a149b2a32e16b8803a50984ea982f60f7b1fb98c"
+Cache hit on "guocci-appdb-appliance-3350e4b53649a362dcc44eb3ac3facd38affe428"
+Cache hit on "guocci-appdb-appliance-ee06b84aecf0083db07f0b2b9c2906d58b32aaaa"
+Cache hit on "guocci-appdb-appliance-4d2a660a61e857fd38544f069c9edbaa1af33e3f"
+Cache hit on "guocci-appdb-appliance-9772f5872d17b5064871d3e434099737b4d4c43f"
+Cache hit on "guocci-appdb-appliance-2e3ea1dc9a511c0f215caac46db675e88496b275"
+Cache hit on "guocci-appdb-appliance-6073252c68f3939bae8dc10a622cc7ef392b3c95"
+Cache hit on "guocci-appdb-appliance-2ccacf5109bcabb118fd4b4bdbf551c98ec4893c"
+Cache hit on "guocci-appdb-appliance-909491a28198fa40105a7fcbcb643f887d0f79a2"
+Cache hit on "guocci-appdb-appliance-8c85d4a699c6b99387c9ac59dfe444164b1f3ce9"
+Cache hit on "guocci-appdb-appliance-2a1294c6d78d16a152396f48837471f78a1edfd8"
+Cache hit on "guocci-appdb-appliance-86a38ce879e3ddf26ed394f8493059c9e283c8b8"
+Cache hit on "guocci-appdb-appliance-2bcd116752ca765addb20ff685258621db6a1064"
+Cache hit on "guocci-appdb-appliance-af929c45bb4fb0900692b1758546a534d07e7f83"
+Cache hit on "guocci-appdb-appliance-ba850507ef58c092b44a1008a71c40a68aba48a6"
+Cache hit on "guocci-appdb-appliance-75d092b2648845f7bf198f849478625b6b0b601f"
+Cache hit on "guocci-appdb-appliance-f08c38f360c2df1211f21cb8b3712f720928ec8b"
+Cache hit on "guocci-appdb-appliance-24cda9f3598f722a468c3ad4c9dff18aed2ac0d5"
+Cache hit on "guocci-appdb-appliance-a7db80516b9edf925cdc600aa61afbc6e7079e8a"
+Completed 200 OK in 16ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/4454G0/appliances/?limit=4" for ::1 at 2016-08-16 15:59:42 +0200
+Processing by V1::AppliancesController#index as JSON
+  Parameters: {"limit"=>"4", "site_id"=>"4454G0", "appliance"=>{}}
+Cache hit on "guocci-appdb-sites"
+Cache hit on "guocci-appdb-appliance-e166c5732e5712ec76cff8ad611ca41e5fbefa9f"
+Cache hit on "guocci-appdb-appliance-d15ed6d0c08faedf55db84dcd24495a6b57a2769"
+Cache hit on "guocci-appdb-appliance-ee6b60d119bf71d128ebfeeb265fe395b85bd762"
+Cache hit on "guocci-appdb-appliance-0cda92558fb8c007412fb9259cb565a420fff7a2"
+Cache hit on "guocci-appdb-appliance-de714e22bb2fd2b32b0679af843b478d62148680"
+Cache hit on "guocci-appdb-appliance-afc7a3f0c78651e1ed8af82aa918c27d4ba7a774"
+Cache hit on "guocci-appdb-appliance-0d64b48d0b6cd3810fa73434c9ea8c81566159fc"
+Cache hit on "guocci-appdb-appliance-b96182a13cc9658a4e70ea049c3d15893cda1e41"
+Cache hit on "guocci-appdb-appliance-d1aff60770773e903e06669f35da71459a503cb2"
+Cache hit on "guocci-appdb-appliance-efb98d831e3dfe5cb5f164de70e5a985dfa3abbf"
+Cache hit on "guocci-appdb-appliance-f5a9dc86846e613180f22a764af597359f6a07c9"
+Cache hit on "guocci-appdb-appliance-0841fe0817d16a00301e5305eb5cd19e75f56bf1"
+Cache hit on "guocci-appdb-appliance-cbaf9c0d1a63965c53b934e9fd98c50e1dbd17fd"
+Cache hit on "guocci-appdb-appliance-34b8a528a769ec428516809ed8782df9b94426d6"
+Cache hit on "guocci-appdb-appliance-11abd779f3c86f65deb14c47eefa8621149ce08a"
+Cache hit on "guocci-appdb-appliance-6f5333de12b891ec934c832eea5c8979864a7ce9"
+Cache hit on "guocci-appdb-appliance-db019c01accae6ac7e6048f4042c0c8651804973"
+Cache hit on "guocci-appdb-appliance-734c22aedbb14c62935e21ecb05468cdfa2fee48"
+Cache hit on "guocci-appdb-appliance-0c8e07904283b46ad1dfe7a49b67735537e555d5"
+Cache hit on "guocci-appdb-appliance-a149b2a32e16b8803a50984ea982f60f7b1fb98c"
+Cache hit on "guocci-appdb-appliance-3350e4b53649a362dcc44eb3ac3facd38affe428"
+Cache hit on "guocci-appdb-appliance-ee06b84aecf0083db07f0b2b9c2906d58b32aaaa"
+Cache hit on "guocci-appdb-appliance-4d2a660a61e857fd38544f069c9edbaa1af33e3f"
+Cache hit on "guocci-appdb-appliance-9772f5872d17b5064871d3e434099737b4d4c43f"
+Cache hit on "guocci-appdb-appliance-2e3ea1dc9a511c0f215caac46db675e88496b275"
+Cache hit on "guocci-appdb-appliance-6073252c68f3939bae8dc10a622cc7ef392b3c95"
+Cache hit on "guocci-appdb-appliance-2ccacf5109bcabb118fd4b4bdbf551c98ec4893c"
+Cache hit on "guocci-appdb-appliance-909491a28198fa40105a7fcbcb643f887d0f79a2"
+Cache hit on "guocci-appdb-appliance-8c85d4a699c6b99387c9ac59dfe444164b1f3ce9"
+Cache hit on "guocci-appdb-appliance-2a1294c6d78d16a152396f48837471f78a1edfd8"
+Cache hit on "guocci-appdb-appliance-86a38ce879e3ddf26ed394f8493059c9e283c8b8"
+Cache hit on "guocci-appdb-appliance-2bcd116752ca765addb20ff685258621db6a1064"
+Cache hit on "guocci-appdb-appliance-af929c45bb4fb0900692b1758546a534d07e7f83"
+Cache hit on "guocci-appdb-appliance-ba850507ef58c092b44a1008a71c40a68aba48a6"
+Cache hit on "guocci-appdb-appliance-75d092b2648845f7bf198f849478625b6b0b601f"
+Cache hit on "guocci-appdb-appliance-f08c38f360c2df1211f21cb8b3712f720928ec8b"
+Cache hit on "guocci-appdb-appliance-24cda9f3598f722a468c3ad4c9dff18aed2ac0d5"
+Cache hit on "guocci-appdb-appliance-a7db80516b9edf925cdc600aa61afbc6e7079e8a"
+Completed 200 OK in 17ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/4454G0/appliances/?limit=4" for ::1 at 2016-08-16 16:04:53 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::AppliancesController#index as JSON
+  Parameters: {"limit"=>"4", "site_id"=>"4454G0", "appliance"=>{}}
+Cache hit on "guocci-appdb-sites"
+Cache hit on "guocci-appdb-appliance-e166c5732e5712ec76cff8ad611ca41e5fbefa9f"
+Cache hit on "guocci-appdb-appliance-d15ed6d0c08faedf55db84dcd24495a6b57a2769"
+Cache hit on "guocci-appdb-appliance-ee6b60d119bf71d128ebfeeb265fe395b85bd762"
+Cache hit on "guocci-appdb-appliance-0cda92558fb8c007412fb9259cb565a420fff7a2"
+Cache hit on "guocci-appdb-appliance-de714e22bb2fd2b32b0679af843b478d62148680"
+Cache hit on "guocci-appdb-appliance-afc7a3f0c78651e1ed8af82aa918c27d4ba7a774"
+Cache hit on "guocci-appdb-appliance-0d64b48d0b6cd3810fa73434c9ea8c81566159fc"
+Cache hit on "guocci-appdb-appliance-b96182a13cc9658a4e70ea049c3d15893cda1e41"
+Cache hit on "guocci-appdb-appliance-d1aff60770773e903e06669f35da71459a503cb2"
+Cache hit on "guocci-appdb-appliance-efb98d831e3dfe5cb5f164de70e5a985dfa3abbf"
+Cache hit on "guocci-appdb-appliance-f5a9dc86846e613180f22a764af597359f6a07c9"
+Cache hit on "guocci-appdb-appliance-0841fe0817d16a00301e5305eb5cd19e75f56bf1"
+Cache hit on "guocci-appdb-appliance-cbaf9c0d1a63965c53b934e9fd98c50e1dbd17fd"
+Cache hit on "guocci-appdb-appliance-34b8a528a769ec428516809ed8782df9b94426d6"
+Cache hit on "guocci-appdb-appliance-11abd779f3c86f65deb14c47eefa8621149ce08a"
+Cache hit on "guocci-appdb-appliance-6f5333de12b891ec934c832eea5c8979864a7ce9"
+Cache hit on "guocci-appdb-appliance-db019c01accae6ac7e6048f4042c0c8651804973"
+Cache hit on "guocci-appdb-appliance-734c22aedbb14c62935e21ecb05468cdfa2fee48"
+Cache hit on "guocci-appdb-appliance-0c8e07904283b46ad1dfe7a49b67735537e555d5"
+Cache hit on "guocci-appdb-appliance-a149b2a32e16b8803a50984ea982f60f7b1fb98c"
+Cache hit on "guocci-appdb-appliance-3350e4b53649a362dcc44eb3ac3facd38affe428"
+Cache hit on "guocci-appdb-appliance-ee06b84aecf0083db07f0b2b9c2906d58b32aaaa"
+Cache hit on "guocci-appdb-appliance-4d2a660a61e857fd38544f069c9edbaa1af33e3f"
+Cache hit on "guocci-appdb-appliance-9772f5872d17b5064871d3e434099737b4d4c43f"
+Cache hit on "guocci-appdb-appliance-2e3ea1dc9a511c0f215caac46db675e88496b275"
+Cache hit on "guocci-appdb-appliance-6073252c68f3939bae8dc10a622cc7ef392b3c95"
+Cache hit on "guocci-appdb-appliance-2ccacf5109bcabb118fd4b4bdbf551c98ec4893c"
+Cache hit on "guocci-appdb-appliance-909491a28198fa40105a7fcbcb643f887d0f79a2"
+Cache hit on "guocci-appdb-appliance-8c85d4a699c6b99387c9ac59dfe444164b1f3ce9"
+Cache hit on "guocci-appdb-appliance-2a1294c6d78d16a152396f48837471f78a1edfd8"
+Cache hit on "guocci-appdb-appliance-86a38ce879e3ddf26ed394f8493059c9e283c8b8"
+Cache hit on "guocci-appdb-appliance-2bcd116752ca765addb20ff685258621db6a1064"
+Cache hit on "guocci-appdb-appliance-af929c45bb4fb0900692b1758546a534d07e7f83"
+Cache hit on "guocci-appdb-appliance-ba850507ef58c092b44a1008a71c40a68aba48a6"
+Cache hit on "guocci-appdb-appliance-75d092b2648845f7bf198f849478625b6b0b601f"
+Cache hit on "guocci-appdb-appliance-f08c38f360c2df1211f21cb8b3712f720928ec8b"
+Cache hit on "guocci-appdb-appliance-24cda9f3598f722a468c3ad4c9dff18aed2ac0d5"
+Cache hit on "guocci-appdb-appliance-a7db80516b9edf925cdc600aa61afbc6e7079e8a"
+Completed 200 OK in 17ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/4454G5/appliances/?limit=4" for ::1 at 2016-08-16 16:04:59 +0200
+Processing by V1::AppliancesController#index as JSON
+  Parameters: {"limit"=>"4", "site_id"=>"4454G5", "appliance"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 204 No Content in 11ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/4454G5/appliances/" for ::1 at 2016-08-16 16:05:06 +0200
+Processing by V1::AppliancesController#index as JSON
+  Parameters: {"site_id"=>"4454G5", "appliance"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 204 No Content in 14ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/4454G5/appliances/" for ::1 at 2016-08-16 16:06:10 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::AppliancesController#index as JSON
+  Parameters: {"site_id"=>"4454G5", "appliance"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 400 Bad Request in 12ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/4454G5/appliances/5" for ::1 at 2016-08-16 16:06:26 +0200
+Processing by V1::AppliancesController#show as JSON
+  Parameters: {"site_id"=>"4454G5", "id"=>"5", "appliance"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 500 Internal Server Error in 16ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/application_controller.rb:55:in `vaprovider_appliances'
+app/controllers/v1/appliances_controller.rb:34:in `show'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.9ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (13.0ms)
+Started GET "/v1/sites/4454G5/appliances/5" for ::1 at 2016-08-16 16:06:42 +0200
+Processing by V1::AppliancesController#show as JSON
+  Parameters: {"site_id"=>"4454G5", "id"=>"5", "appliance"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 500 Internal Server Error in 8ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/application_controller.rb:55:in `vaprovider_appliances'
+app/controllers/v1/appliances_controller.rb:34:in `show'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.9ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.9ms)
+Started GET "/v1/sites/4454G5/appliances/" for ::1 at 2016-08-16 16:06:46 +0200
+Processing by V1::AppliancesController#index as JSON
+  Parameters: {"site_id"=>"4454G5", "appliance"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 400 Bad Request in 9ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/4454G0/appliances/" for ::1 at 2016-08-16 16:06:58 +0200
+Processing by V1::AppliancesController#index as JSON
+  Parameters: {"site_id"=>"4454G0", "appliance"=>{}}
+Cache hit on "guocci-appdb-sites"
+Cache hit on "guocci-appdb-appliance-e166c5732e5712ec76cff8ad611ca41e5fbefa9f"
+Cache hit on "guocci-appdb-appliance-d15ed6d0c08faedf55db84dcd24495a6b57a2769"
+Cache hit on "guocci-appdb-appliance-ee6b60d119bf71d128ebfeeb265fe395b85bd762"
+Cache hit on "guocci-appdb-appliance-0cda92558fb8c007412fb9259cb565a420fff7a2"
+Cache hit on "guocci-appdb-appliance-de714e22bb2fd2b32b0679af843b478d62148680"
+Cache hit on "guocci-appdb-appliance-afc7a3f0c78651e1ed8af82aa918c27d4ba7a774"
+Cache hit on "guocci-appdb-appliance-0d64b48d0b6cd3810fa73434c9ea8c81566159fc"
+Cache hit on "guocci-appdb-appliance-b96182a13cc9658a4e70ea049c3d15893cda1e41"
+Cache hit on "guocci-appdb-appliance-d1aff60770773e903e06669f35da71459a503cb2"
+Cache hit on "guocci-appdb-appliance-efb98d831e3dfe5cb5f164de70e5a985dfa3abbf"
+Cache hit on "guocci-appdb-appliance-f5a9dc86846e613180f22a764af597359f6a07c9"
+Cache hit on "guocci-appdb-appliance-0841fe0817d16a00301e5305eb5cd19e75f56bf1"
+Cache hit on "guocci-appdb-appliance-cbaf9c0d1a63965c53b934e9fd98c50e1dbd17fd"
+Cache hit on "guocci-appdb-appliance-34b8a528a769ec428516809ed8782df9b94426d6"
+Cache hit on "guocci-appdb-appliance-11abd779f3c86f65deb14c47eefa8621149ce08a"
+Cache hit on "guocci-appdb-appliance-6f5333de12b891ec934c832eea5c8979864a7ce9"
+Cache hit on "guocci-appdb-appliance-db019c01accae6ac7e6048f4042c0c8651804973"
+Cache hit on "guocci-appdb-appliance-734c22aedbb14c62935e21ecb05468cdfa2fee48"
+Cache hit on "guocci-appdb-appliance-0c8e07904283b46ad1dfe7a49b67735537e555d5"
+Cache hit on "guocci-appdb-appliance-a149b2a32e16b8803a50984ea982f60f7b1fb98c"
+Cache hit on "guocci-appdb-appliance-3350e4b53649a362dcc44eb3ac3facd38affe428"
+Cache hit on "guocci-appdb-appliance-ee06b84aecf0083db07f0b2b9c2906d58b32aaaa"
+Cache hit on "guocci-appdb-appliance-4d2a660a61e857fd38544f069c9edbaa1af33e3f"
+Cache hit on "guocci-appdb-appliance-9772f5872d17b5064871d3e434099737b4d4c43f"
+Cache hit on "guocci-appdb-appliance-2e3ea1dc9a511c0f215caac46db675e88496b275"
+Cache hit on "guocci-appdb-appliance-6073252c68f3939bae8dc10a622cc7ef392b3c95"
+Cache hit on "guocci-appdb-appliance-2ccacf5109bcabb118fd4b4bdbf551c98ec4893c"
+Cache hit on "guocci-appdb-appliance-909491a28198fa40105a7fcbcb643f887d0f79a2"
+Cache hit on "guocci-appdb-appliance-8c85d4a699c6b99387c9ac59dfe444164b1f3ce9"
+Cache hit on "guocci-appdb-appliance-2a1294c6d78d16a152396f48837471f78a1edfd8"
+Cache hit on "guocci-appdb-appliance-86a38ce879e3ddf26ed394f8493059c9e283c8b8"
+Cache hit on "guocci-appdb-appliance-2bcd116752ca765addb20ff685258621db6a1064"
+Cache hit on "guocci-appdb-appliance-af929c45bb4fb0900692b1758546a534d07e7f83"
+Cache hit on "guocci-appdb-appliance-ba850507ef58c092b44a1008a71c40a68aba48a6"
+Cache hit on "guocci-appdb-appliance-75d092b2648845f7bf198f849478625b6b0b601f"
+Cache hit on "guocci-appdb-appliance-f08c38f360c2df1211f21cb8b3712f720928ec8b"
+Cache hit on "guocci-appdb-appliance-24cda9f3598f722a468c3ad4c9dff18aed2ac0d5"
+Cache hit on "guocci-appdb-appliance-a7db80516b9edf925cdc600aa61afbc6e7079e8a"
+Completed 200 OK in 17ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/4454G0x/appliances/" for ::1 at 2016-08-16 16:07:04 +0200
+Processing by V1::AppliancesController#index as JSON
+  Parameters: {"site_id"=>"4454G0x", "appliance"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 400 Bad Request in 7ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/4454G0/appliances/" for ::1 at 2016-08-16 16:07:14 +0200
+Processing by V1::AppliancesController#index as JSON
+  Parameters: {"site_id"=>"4454G0", "appliance"=>{}}
+Cache hit on "guocci-appdb-sites"
+Cache hit on "guocci-appdb-appliance-e166c5732e5712ec76cff8ad611ca41e5fbefa9f"
+Cache hit on "guocci-appdb-appliance-d15ed6d0c08faedf55db84dcd24495a6b57a2769"
+Cache hit on "guocci-appdb-appliance-ee6b60d119bf71d128ebfeeb265fe395b85bd762"
+Cache hit on "guocci-appdb-appliance-0cda92558fb8c007412fb9259cb565a420fff7a2"
+Cache hit on "guocci-appdb-appliance-de714e22bb2fd2b32b0679af843b478d62148680"
+Cache hit on "guocci-appdb-appliance-afc7a3f0c78651e1ed8af82aa918c27d4ba7a774"
+Cache hit on "guocci-appdb-appliance-0d64b48d0b6cd3810fa73434c9ea8c81566159fc"
+Cache hit on "guocci-appdb-appliance-b96182a13cc9658a4e70ea049c3d15893cda1e41"
+Cache hit on "guocci-appdb-appliance-d1aff60770773e903e06669f35da71459a503cb2"
+Cache hit on "guocci-appdb-appliance-efb98d831e3dfe5cb5f164de70e5a985dfa3abbf"
+Cache hit on "guocci-appdb-appliance-f5a9dc86846e613180f22a764af597359f6a07c9"
+Cache hit on "guocci-appdb-appliance-0841fe0817d16a00301e5305eb5cd19e75f56bf1"
+Cache hit on "guocci-appdb-appliance-cbaf9c0d1a63965c53b934e9fd98c50e1dbd17fd"
+Cache hit on "guocci-appdb-appliance-34b8a528a769ec428516809ed8782df9b94426d6"
+Cache hit on "guocci-appdb-appliance-11abd779f3c86f65deb14c47eefa8621149ce08a"
+Cache hit on "guocci-appdb-appliance-6f5333de12b891ec934c832eea5c8979864a7ce9"
+Cache hit on "guocci-appdb-appliance-db019c01accae6ac7e6048f4042c0c8651804973"
+Cache hit on "guocci-appdb-appliance-734c22aedbb14c62935e21ecb05468cdfa2fee48"
+Cache hit on "guocci-appdb-appliance-0c8e07904283b46ad1dfe7a49b67735537e555d5"
+Cache hit on "guocci-appdb-appliance-a149b2a32e16b8803a50984ea982f60f7b1fb98c"
+Cache hit on "guocci-appdb-appliance-3350e4b53649a362dcc44eb3ac3facd38affe428"
+Cache hit on "guocci-appdb-appliance-ee06b84aecf0083db07f0b2b9c2906d58b32aaaa"
+Cache hit on "guocci-appdb-appliance-4d2a660a61e857fd38544f069c9edbaa1af33e3f"
+Cache hit on "guocci-appdb-appliance-9772f5872d17b5064871d3e434099737b4d4c43f"
+Cache hit on "guocci-appdb-appliance-2e3ea1dc9a511c0f215caac46db675e88496b275"
+Cache hit on "guocci-appdb-appliance-6073252c68f3939bae8dc10a622cc7ef392b3c95"
+Cache hit on "guocci-appdb-appliance-2ccacf5109bcabb118fd4b4bdbf551c98ec4893c"
+Cache hit on "guocci-appdb-appliance-909491a28198fa40105a7fcbcb643f887d0f79a2"
+Cache hit on "guocci-appdb-appliance-8c85d4a699c6b99387c9ac59dfe444164b1f3ce9"
+Cache hit on "guocci-appdb-appliance-2a1294c6d78d16a152396f48837471f78a1edfd8"
+Cache hit on "guocci-appdb-appliance-86a38ce879e3ddf26ed394f8493059c9e283c8b8"
+Cache hit on "guocci-appdb-appliance-2bcd116752ca765addb20ff685258621db6a1064"
+Cache hit on "guocci-appdb-appliance-af929c45bb4fb0900692b1758546a534d07e7f83"
+Cache hit on "guocci-appdb-appliance-ba850507ef58c092b44a1008a71c40a68aba48a6"
+Cache hit on "guocci-appdb-appliance-75d092b2648845f7bf198f849478625b6b0b601f"
+Cache hit on "guocci-appdb-appliance-f08c38f360c2df1211f21cb8b3712f720928ec8b"
+Cache hit on "guocci-appdb-appliance-24cda9f3598f722a468c3ad4c9dff18aed2ac0d5"
+Cache hit on "guocci-appdb-appliance-a7db80516b9edf925cdc600aa61afbc6e7079e8a"
+Completed 200 OK in 16ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/4454G0/appliances/a" for ::1 at 2016-08-16 16:07:26 +0200
+Processing by V1::AppliancesController#show as JSON
+  Parameters: {"site_id"=>"4454G0", "id"=>"a", "appliance"=>{}}
+Cache hit on "guocci-appdb-sites"
+Cache hit on "guocci-appdb-appliance-e166c5732e5712ec76cff8ad611ca41e5fbefa9f"
+Cache hit on "guocci-appdb-appliance-d15ed6d0c08faedf55db84dcd24495a6b57a2769"
+Cache hit on "guocci-appdb-appliance-ee6b60d119bf71d128ebfeeb265fe395b85bd762"
+Cache hit on "guocci-appdb-appliance-0cda92558fb8c007412fb9259cb565a420fff7a2"
+Cache hit on "guocci-appdb-appliance-de714e22bb2fd2b32b0679af843b478d62148680"
+Cache hit on "guocci-appdb-appliance-afc7a3f0c78651e1ed8af82aa918c27d4ba7a774"
+Cache hit on "guocci-appdb-appliance-0d64b48d0b6cd3810fa73434c9ea8c81566159fc"
+Cache hit on "guocci-appdb-appliance-b96182a13cc9658a4e70ea049c3d15893cda1e41"
+Cache hit on "guocci-appdb-appliance-d1aff60770773e903e06669f35da71459a503cb2"
+Cache hit on "guocci-appdb-appliance-efb98d831e3dfe5cb5f164de70e5a985dfa3abbf"
+Cache hit on "guocci-appdb-appliance-f5a9dc86846e613180f22a764af597359f6a07c9"
+Cache hit on "guocci-appdb-appliance-0841fe0817d16a00301e5305eb5cd19e75f56bf1"
+Cache hit on "guocci-appdb-appliance-cbaf9c0d1a63965c53b934e9fd98c50e1dbd17fd"
+Cache hit on "guocci-appdb-appliance-34b8a528a769ec428516809ed8782df9b94426d6"
+Cache hit on "guocci-appdb-appliance-11abd779f3c86f65deb14c47eefa8621149ce08a"
+Cache hit on "guocci-appdb-appliance-6f5333de12b891ec934c832eea5c8979864a7ce9"
+Cache hit on "guocci-appdb-appliance-db019c01accae6ac7e6048f4042c0c8651804973"
+Cache hit on "guocci-appdb-appliance-734c22aedbb14c62935e21ecb05468cdfa2fee48"
+Cache hit on "guocci-appdb-appliance-0c8e07904283b46ad1dfe7a49b67735537e555d5"
+Cache hit on "guocci-appdb-appliance-a149b2a32e16b8803a50984ea982f60f7b1fb98c"
+Cache hit on "guocci-appdb-appliance-3350e4b53649a362dcc44eb3ac3facd38affe428"
+Cache hit on "guocci-appdb-appliance-ee06b84aecf0083db07f0b2b9c2906d58b32aaaa"
+Cache hit on "guocci-appdb-appliance-4d2a660a61e857fd38544f069c9edbaa1af33e3f"
+Cache hit on "guocci-appdb-appliance-9772f5872d17b5064871d3e434099737b4d4c43f"
+Cache hit on "guocci-appdb-appliance-2e3ea1dc9a511c0f215caac46db675e88496b275"
+Cache hit on "guocci-appdb-appliance-6073252c68f3939bae8dc10a622cc7ef392b3c95"
+Cache hit on "guocci-appdb-appliance-2ccacf5109bcabb118fd4b4bdbf551c98ec4893c"
+Cache hit on "guocci-appdb-appliance-909491a28198fa40105a7fcbcb643f887d0f79a2"
+Cache hit on "guocci-appdb-appliance-8c85d4a699c6b99387c9ac59dfe444164b1f3ce9"
+Cache hit on "guocci-appdb-appliance-2a1294c6d78d16a152396f48837471f78a1edfd8"
+Cache hit on "guocci-appdb-appliance-86a38ce879e3ddf26ed394f8493059c9e283c8b8"
+Cache hit on "guocci-appdb-appliance-2bcd116752ca765addb20ff685258621db6a1064"
+Cache hit on "guocci-appdb-appliance-af929c45bb4fb0900692b1758546a534d07e7f83"
+Cache hit on "guocci-appdb-appliance-ba850507ef58c092b44a1008a71c40a68aba48a6"
+Cache hit on "guocci-appdb-appliance-75d092b2648845f7bf198f849478625b6b0b601f"
+Cache hit on "guocci-appdb-appliance-f08c38f360c2df1211f21cb8b3712f720928ec8b"
+Cache hit on "guocci-appdb-appliance-24cda9f3598f722a468c3ad4c9dff18aed2ac0d5"
+Cache hit on "guocci-appdb-appliance-a7db80516b9edf925cdc600aa61afbc6e7079e8a"
+Cache hit on "guocci-appdb-appliance-e166c5732e5712ec76cff8ad611ca41e5fbefa9f"
+Cache hit on "guocci-appdb-appliance-d15ed6d0c08faedf55db84dcd24495a6b57a2769"
+Cache hit on "guocci-appdb-appliance-ee6b60d119bf71d128ebfeeb265fe395b85bd762"
+Cache hit on "guocci-appdb-appliance-0cda92558fb8c007412fb9259cb565a420fff7a2"
+Cache hit on "guocci-appdb-appliance-de714e22bb2fd2b32b0679af843b478d62148680"
+Cache hit on "guocci-appdb-appliance-afc7a3f0c78651e1ed8af82aa918c27d4ba7a774"
+Cache hit on "guocci-appdb-appliance-0d64b48d0b6cd3810fa73434c9ea8c81566159fc"
+Cache hit on "guocci-appdb-appliance-b96182a13cc9658a4e70ea049c3d15893cda1e41"
+Cache hit on "guocci-appdb-appliance-d1aff60770773e903e06669f35da71459a503cb2"
+Cache hit on "guocci-appdb-appliance-efb98d831e3dfe5cb5f164de70e5a985dfa3abbf"
+Cache hit on "guocci-appdb-appliance-f5a9dc86846e613180f22a764af597359f6a07c9"
+Cache hit on "guocci-appdb-appliance-0841fe0817d16a00301e5305eb5cd19e75f56bf1"
+Cache hit on "guocci-appdb-appliance-cbaf9c0d1a63965c53b934e9fd98c50e1dbd17fd"
+Cache hit on "guocci-appdb-appliance-34b8a528a769ec428516809ed8782df9b94426d6"
+Cache hit on "guocci-appdb-appliance-11abd779f3c86f65deb14c47eefa8621149ce08a"
+Cache hit on "guocci-appdb-appliance-6f5333de12b891ec934c832eea5c8979864a7ce9"
+Cache hit on "guocci-appdb-appliance-db019c01accae6ac7e6048f4042c0c8651804973"
+Cache hit on "guocci-appdb-appliance-734c22aedbb14c62935e21ecb05468cdfa2fee48"
+Cache hit on "guocci-appdb-appliance-0c8e07904283b46ad1dfe7a49b67735537e555d5"
+Cache hit on "guocci-appdb-appliance-a149b2a32e16b8803a50984ea982f60f7b1fb98c"
+Cache hit on "guocci-appdb-appliance-3350e4b53649a362dcc44eb3ac3facd38affe428"
+Cache hit on "guocci-appdb-appliance-ee06b84aecf0083db07f0b2b9c2906d58b32aaaa"
+Cache hit on "guocci-appdb-appliance-4d2a660a61e857fd38544f069c9edbaa1af33e3f"
+Cache hit on "guocci-appdb-appliance-9772f5872d17b5064871d3e434099737b4d4c43f"
+Cache hit on "guocci-appdb-appliance-2e3ea1dc9a511c0f215caac46db675e88496b275"
+Cache hit on "guocci-appdb-appliance-6073252c68f3939bae8dc10a622cc7ef392b3c95"
+Cache hit on "guocci-appdb-appliance-2ccacf5109bcabb118fd4b4bdbf551c98ec4893c"
+Cache hit on "guocci-appdb-appliance-909491a28198fa40105a7fcbcb643f887d0f79a2"
+Cache hit on "guocci-appdb-appliance-8c85d4a699c6b99387c9ac59dfe444164b1f3ce9"
+Cache hit on "guocci-appdb-appliance-2a1294c6d78d16a152396f48837471f78a1edfd8"
+Cache hit on "guocci-appdb-appliance-86a38ce879e3ddf26ed394f8493059c9e283c8b8"
+Cache hit on "guocci-appdb-appliance-2bcd116752ca765addb20ff685258621db6a1064"
+Cache hit on "guocci-appdb-appliance-af929c45bb4fb0900692b1758546a534d07e7f83"
+Cache hit on "guocci-appdb-appliance-ba850507ef58c092b44a1008a71c40a68aba48a6"
+Cache hit on "guocci-appdb-appliance-75d092b2648845f7bf198f849478625b6b0b601f"
+Cache hit on "guocci-appdb-appliance-f08c38f360c2df1211f21cb8b3712f720928ec8b"
+Cache hit on "guocci-appdb-appliance-24cda9f3598f722a468c3ad4c9dff18aed2ac0d5"
+Cache hit on "guocci-appdb-appliance-a7db80516b9edf925cdc600aa61afbc6e7079e8a"
+Completed 200 OK in 31ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/4454Gx0/appliances/a" for ::1 at 2016-08-16 16:07:31 +0200
+Processing by V1::AppliancesController#show as JSON
+  Parameters: {"site_id"=>"4454Gx0", "id"=>"a", "appliance"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 500 Internal Server Error in 7ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/application_controller.rb:55:in `vaprovider_appliances'
+app/controllers/v1/appliances_controller.rb:34:in `show'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.8ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (12.8ms)
+Started GET "/v1/sites/4454Gx0/appliances/a" for ::1 at 2016-08-16 16:07:51 +0200
+Processing by V1::AppliancesController#show as JSON
+  Parameters: {"site_id"=>"4454Gx0", "id"=>"a", "appliance"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 500 Internal Server Error in 8ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/application_controller.rb:55:in `vaprovider_appliances'
+app/controllers/v1/appliances_controller.rb:34:in `show'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.8ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (13.3ms)
+Started GET "/v1/sites/4454Gx0/appliances/a" for ::1 at 2016-08-16 16:08:14 +0200
+Processing by V1::AppliancesController#show as JSON
+  Parameters: {"site_id"=>"4454Gx0", "id"=>"a", "appliance"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 500 Internal Server Error in 12ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/application_controller.rb:55:in `vaprovider_appliances'
+app/controllers/v1/appliances_controller.rb:34:in `show'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.8ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (13.0ms)
+Started GET "/v1/sites/4454Gx0/appliances/a" for ::1 at 2016-08-16 16:08:19 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::AppliancesController#show as JSON
+  Parameters: {"site_id"=>"4454Gx0", "id"=>"a", "appliance"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 500 Internal Server Error in 8ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/application_controller.rb:55:in `vaprovider_appliances'
+app/controllers/v1/appliances_controller.rb:35:in `show'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.9ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (13.5ms)
+Started GET "/v1/sites/4454Gx0/appliances/a" for ::1 at 2016-08-16 16:08:29 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::AppliancesController#show as JSON
+  Parameters: {"site_id"=>"4454Gx0", "id"=>"a", "appliance"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 400 Bad Request in 9ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/4454Gx0/appliances/a" for ::1 at 2016-08-16 16:08:41 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::AppliancesController#show as JSON
+  Parameters: {"site_id"=>"4454Gx0", "id"=>"a", "appliance"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 400 Bad Request in 15ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/4454Gx0/appliances/a" for ::1 at 2016-08-16 16:09:10 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::AppliancesController#show as JSON
+  Parameters: {"site_id"=>"4454Gx0", "id"=>"a", "appliance"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 400 Bad Request in 8ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/4454Gx0/appliances/a" for ::1 at 2016-08-16 16:12:52 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::AppliancesController#show as JSON
+  Parameters: {"site_id"=>"4454Gx0", "id"=>"a", "appliance"=>{}}
+Cache hit on "guocci-appdb-sites"
+Completed 400 Bad Request in 6ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/4454G0/appliances/a" for ::1 at 2016-08-16 16:12:56 +0200
+Processing by V1::AppliancesController#show as JSON
+  Parameters: {"site_id"=>"4454G0", "id"=>"a", "appliance"=>{}}
+Cache hit on "guocci-appdb-sites"
+Cache hit on "guocci-appdb-appliance-e166c5732e5712ec76cff8ad611ca41e5fbefa9f"
+Cache hit on "guocci-appdb-appliance-d15ed6d0c08faedf55db84dcd24495a6b57a2769"
+Cache hit on "guocci-appdb-appliance-ee6b60d119bf71d128ebfeeb265fe395b85bd762"
+Cache hit on "guocci-appdb-appliance-0cda92558fb8c007412fb9259cb565a420fff7a2"
+Cache hit on "guocci-appdb-appliance-de714e22bb2fd2b32b0679af843b478d62148680"
+Cache hit on "guocci-appdb-appliance-afc7a3f0c78651e1ed8af82aa918c27d4ba7a774"
+Cache hit on "guocci-appdb-appliance-0d64b48d0b6cd3810fa73434c9ea8c81566159fc"
+Cache hit on "guocci-appdb-appliance-b96182a13cc9658a4e70ea049c3d15893cda1e41"
+Cache hit on "guocci-appdb-appliance-d1aff60770773e903e06669f35da71459a503cb2"
+Cache hit on "guocci-appdb-appliance-efb98d831e3dfe5cb5f164de70e5a985dfa3abbf"
+Cache hit on "guocci-appdb-appliance-f5a9dc86846e613180f22a764af597359f6a07c9"
+Cache hit on "guocci-appdb-appliance-0841fe0817d16a00301e5305eb5cd19e75f56bf1"
+Cache hit on "guocci-appdb-appliance-cbaf9c0d1a63965c53b934e9fd98c50e1dbd17fd"
+Cache hit on "guocci-appdb-appliance-34b8a528a769ec428516809ed8782df9b94426d6"
+Cache hit on "guocci-appdb-appliance-11abd779f3c86f65deb14c47eefa8621149ce08a"
+Cache hit on "guocci-appdb-appliance-6f5333de12b891ec934c832eea5c8979864a7ce9"
+Cache hit on "guocci-appdb-appliance-db019c01accae6ac7e6048f4042c0c8651804973"
+Cache hit on "guocci-appdb-appliance-734c22aedbb14c62935e21ecb05468cdfa2fee48"
+Cache hit on "guocci-appdb-appliance-0c8e07904283b46ad1dfe7a49b67735537e555d5"
+Cache hit on "guocci-appdb-appliance-a149b2a32e16b8803a50984ea982f60f7b1fb98c"
+Cache hit on "guocci-appdb-appliance-3350e4b53649a362dcc44eb3ac3facd38affe428"
+Cache hit on "guocci-appdb-appliance-ee06b84aecf0083db07f0b2b9c2906d58b32aaaa"
+Cache hit on "guocci-appdb-appliance-4d2a660a61e857fd38544f069c9edbaa1af33e3f"
+Cache hit on "guocci-appdb-appliance-9772f5872d17b5064871d3e434099737b4d4c43f"
+Cache hit on "guocci-appdb-appliance-2e3ea1dc9a511c0f215caac46db675e88496b275"
+Cache hit on "guocci-appdb-appliance-6073252c68f3939bae8dc10a622cc7ef392b3c95"
+Cache hit on "guocci-appdb-appliance-2ccacf5109bcabb118fd4b4bdbf551c98ec4893c"
+Cache hit on "guocci-appdb-appliance-909491a28198fa40105a7fcbcb643f887d0f79a2"
+Cache hit on "guocci-appdb-appliance-8c85d4a699c6b99387c9ac59dfe444164b1f3ce9"
+Cache hit on "guocci-appdb-appliance-2a1294c6d78d16a152396f48837471f78a1edfd8"
+Cache hit on "guocci-appdb-appliance-86a38ce879e3ddf26ed394f8493059c9e283c8b8"
+Cache hit on "guocci-appdb-appliance-2bcd116752ca765addb20ff685258621db6a1064"
+Cache hit on "guocci-appdb-appliance-af929c45bb4fb0900692b1758546a534d07e7f83"
+Cache hit on "guocci-appdb-appliance-ba850507ef58c092b44a1008a71c40a68aba48a6"
+Cache hit on "guocci-appdb-appliance-75d092b2648845f7bf198f849478625b6b0b601f"
+Cache hit on "guocci-appdb-appliance-f08c38f360c2df1211f21cb8b3712f720928ec8b"
+Cache hit on "guocci-appdb-appliance-24cda9f3598f722a468c3ad4c9dff18aed2ac0d5"
+Cache hit on "guocci-appdb-appliance-a7db80516b9edf925cdc600aa61afbc6e7079e8a"
+Completed 200 OK in 17ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/4454G0/appliances/" for ::1 at 2016-08-16 16:12:58 +0200
+Processing by V1::AppliancesController#index as JSON
+  Parameters: {"site_id"=>"4454G0", "appliance"=>{}}
+Cache hit on "guocci-appdb-sites"
+Cache hit on "guocci-appdb-appliance-e166c5732e5712ec76cff8ad611ca41e5fbefa9f"
+Cache hit on "guocci-appdb-appliance-d15ed6d0c08faedf55db84dcd24495a6b57a2769"
+Cache hit on "guocci-appdb-appliance-ee6b60d119bf71d128ebfeeb265fe395b85bd762"
+Cache hit on "guocci-appdb-appliance-0cda92558fb8c007412fb9259cb565a420fff7a2"
+Cache hit on "guocci-appdb-appliance-de714e22bb2fd2b32b0679af843b478d62148680"
+Cache hit on "guocci-appdb-appliance-afc7a3f0c78651e1ed8af82aa918c27d4ba7a774"
+Cache hit on "guocci-appdb-appliance-0d64b48d0b6cd3810fa73434c9ea8c81566159fc"
+Cache hit on "guocci-appdb-appliance-b96182a13cc9658a4e70ea049c3d15893cda1e41"
+Cache hit on "guocci-appdb-appliance-d1aff60770773e903e06669f35da71459a503cb2"
+Cache hit on "guocci-appdb-appliance-efb98d831e3dfe5cb5f164de70e5a985dfa3abbf"
+Cache hit on "guocci-appdb-appliance-f5a9dc86846e613180f22a764af597359f6a07c9"
+Cache hit on "guocci-appdb-appliance-0841fe0817d16a00301e5305eb5cd19e75f56bf1"
+Cache hit on "guocci-appdb-appliance-cbaf9c0d1a63965c53b934e9fd98c50e1dbd17fd"
+Cache hit on "guocci-appdb-appliance-34b8a528a769ec428516809ed8782df9b94426d6"
+Cache hit on "guocci-appdb-appliance-11abd779f3c86f65deb14c47eefa8621149ce08a"
+Cache hit on "guocci-appdb-appliance-6f5333de12b891ec934c832eea5c8979864a7ce9"
+Cache hit on "guocci-appdb-appliance-db019c01accae6ac7e6048f4042c0c8651804973"
+Cache hit on "guocci-appdb-appliance-734c22aedbb14c62935e21ecb05468cdfa2fee48"
+Cache hit on "guocci-appdb-appliance-0c8e07904283b46ad1dfe7a49b67735537e555d5"
+Cache hit on "guocci-appdb-appliance-a149b2a32e16b8803a50984ea982f60f7b1fb98c"
+Cache hit on "guocci-appdb-appliance-3350e4b53649a362dcc44eb3ac3facd38affe428"
+Cache hit on "guocci-appdb-appliance-ee06b84aecf0083db07f0b2b9c2906d58b32aaaa"
+Cache hit on "guocci-appdb-appliance-4d2a660a61e857fd38544f069c9edbaa1af33e3f"
+Cache hit on "guocci-appdb-appliance-9772f5872d17b5064871d3e434099737b4d4c43f"
+Cache hit on "guocci-appdb-appliance-2e3ea1dc9a511c0f215caac46db675e88496b275"
+Cache hit on "guocci-appdb-appliance-6073252c68f3939bae8dc10a622cc7ef392b3c95"
+Cache hit on "guocci-appdb-appliance-2ccacf5109bcabb118fd4b4bdbf551c98ec4893c"
+Cache hit on "guocci-appdb-appliance-909491a28198fa40105a7fcbcb643f887d0f79a2"
+Cache hit on "guocci-appdb-appliance-8c85d4a699c6b99387c9ac59dfe444164b1f3ce9"
+Cache hit on "guocci-appdb-appliance-2a1294c6d78d16a152396f48837471f78a1edfd8"
+Cache hit on "guocci-appdb-appliance-86a38ce879e3ddf26ed394f8493059c9e283c8b8"
+Cache hit on "guocci-appdb-appliance-2bcd116752ca765addb20ff685258621db6a1064"
+Cache hit on "guocci-appdb-appliance-af929c45bb4fb0900692b1758546a534d07e7f83"
+Cache hit on "guocci-appdb-appliance-ba850507ef58c092b44a1008a71c40a68aba48a6"
+Cache hit on "guocci-appdb-appliance-75d092b2648845f7bf198f849478625b6b0b601f"
+Cache hit on "guocci-appdb-appliance-f08c38f360c2df1211f21cb8b3712f720928ec8b"
+Cache hit on "guocci-appdb-appliance-24cda9f3598f722a468c3ad4c9dff18aed2ac0d5"
+Cache hit on "guocci-appdb-appliance-a7db80516b9edf925cdc600aa61afbc6e7079e8a"
+Completed 200 OK in 17ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/4454G0/appliances/?id=http://occi.carach5.ics.muni.cz/occi/infrastructure/os_tpl" for ::1 at 2016-08-16 16:13:32 +0200
+Processing by V1::AppliancesController#index as JSON
+  Parameters: {"id"=>"http://occi.carach5.ics.muni.cz/occi/infrastructure/os_tpl", "site_id"=>"4454G0", "appliance"=>{}}
+Cache hit on "guocci-appdb-sites"
+Cache hit on "guocci-appdb-appliance-e166c5732e5712ec76cff8ad611ca41e5fbefa9f"
+Cache hit on "guocci-appdb-appliance-d15ed6d0c08faedf55db84dcd24495a6b57a2769"
+Cache hit on "guocci-appdb-appliance-ee6b60d119bf71d128ebfeeb265fe395b85bd762"
+Cache hit on "guocci-appdb-appliance-0cda92558fb8c007412fb9259cb565a420fff7a2"
+Cache hit on "guocci-appdb-appliance-de714e22bb2fd2b32b0679af843b478d62148680"
+Cache hit on "guocci-appdb-appliance-afc7a3f0c78651e1ed8af82aa918c27d4ba7a774"
+Cache hit on "guocci-appdb-appliance-0d64b48d0b6cd3810fa73434c9ea8c81566159fc"
+Cache hit on "guocci-appdb-appliance-b96182a13cc9658a4e70ea049c3d15893cda1e41"
+Cache hit on "guocci-appdb-appliance-d1aff60770773e903e06669f35da71459a503cb2"
+Cache hit on "guocci-appdb-appliance-efb98d831e3dfe5cb5f164de70e5a985dfa3abbf"
+Cache hit on "guocci-appdb-appliance-f5a9dc86846e613180f22a764af597359f6a07c9"
+Cache hit on "guocci-appdb-appliance-0841fe0817d16a00301e5305eb5cd19e75f56bf1"
+Cache hit on "guocci-appdb-appliance-cbaf9c0d1a63965c53b934e9fd98c50e1dbd17fd"
+Cache hit on "guocci-appdb-appliance-34b8a528a769ec428516809ed8782df9b94426d6"
+Cache hit on "guocci-appdb-appliance-11abd779f3c86f65deb14c47eefa8621149ce08a"
+Cache hit on "guocci-appdb-appliance-6f5333de12b891ec934c832eea5c8979864a7ce9"
+Cache hit on "guocci-appdb-appliance-db019c01accae6ac7e6048f4042c0c8651804973"
+Cache hit on "guocci-appdb-appliance-734c22aedbb14c62935e21ecb05468cdfa2fee48"
+Cache hit on "guocci-appdb-appliance-0c8e07904283b46ad1dfe7a49b67735537e555d5"
+Cache hit on "guocci-appdb-appliance-a149b2a32e16b8803a50984ea982f60f7b1fb98c"
+Cache hit on "guocci-appdb-appliance-3350e4b53649a362dcc44eb3ac3facd38affe428"
+Cache hit on "guocci-appdb-appliance-ee06b84aecf0083db07f0b2b9c2906d58b32aaaa"
+Cache hit on "guocci-appdb-appliance-4d2a660a61e857fd38544f069c9edbaa1af33e3f"
+Cache hit on "guocci-appdb-appliance-9772f5872d17b5064871d3e434099737b4d4c43f"
+Cache hit on "guocci-appdb-appliance-2e3ea1dc9a511c0f215caac46db675e88496b275"
+Cache hit on "guocci-appdb-appliance-6073252c68f3939bae8dc10a622cc7ef392b3c95"
+Cache hit on "guocci-appdb-appliance-2ccacf5109bcabb118fd4b4bdbf551c98ec4893c"
+Cache hit on "guocci-appdb-appliance-909491a28198fa40105a7fcbcb643f887d0f79a2"
+Cache hit on "guocci-appdb-appliance-8c85d4a699c6b99387c9ac59dfe444164b1f3ce9"
+Cache hit on "guocci-appdb-appliance-2a1294c6d78d16a152396f48837471f78a1edfd8"
+Cache hit on "guocci-appdb-appliance-86a38ce879e3ddf26ed394f8493059c9e283c8b8"
+Cache hit on "guocci-appdb-appliance-2bcd116752ca765addb20ff685258621db6a1064"
+Cache hit on "guocci-appdb-appliance-af929c45bb4fb0900692b1758546a534d07e7f83"
+Cache hit on "guocci-appdb-appliance-ba850507ef58c092b44a1008a71c40a68aba48a6"
+Cache hit on "guocci-appdb-appliance-75d092b2648845f7bf198f849478625b6b0b601f"
+Cache hit on "guocci-appdb-appliance-f08c38f360c2df1211f21cb8b3712f720928ec8b"
+Cache hit on "guocci-appdb-appliance-24cda9f3598f722a468c3ad4c9dff18aed2ac0d5"
+Cache hit on "guocci-appdb-appliance-a7db80516b9edf925cdc600aa61afbc6e7079e8a"
+Completed 200 OK in 18ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/4454G0/appliances/?id=http://occi.carach5.ics.muni.cz/occi/infrastructure/os_tpl" for ::1 at 2016-08-16 16:14:15 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::AppliancesController#index as JSON
+  Parameters: {"id"=>"http://occi.carach5.ics.muni.cz/occi/infrastructure/os_tpl", "site_id"=>"4454G0", "appliance"=>{}}
+Cache hit on "guocci-appdb-sites"
+Cache hit on "guocci-appdb-appliance-e166c5732e5712ec76cff8ad611ca41e5fbefa9f"
+Cache hit on "guocci-appdb-appliance-d15ed6d0c08faedf55db84dcd24495a6b57a2769"
+Cache hit on "guocci-appdb-appliance-ee6b60d119bf71d128ebfeeb265fe395b85bd762"
+Cache hit on "guocci-appdb-appliance-0cda92558fb8c007412fb9259cb565a420fff7a2"
+Cache hit on "guocci-appdb-appliance-de714e22bb2fd2b32b0679af843b478d62148680"
+Cache hit on "guocci-appdb-appliance-afc7a3f0c78651e1ed8af82aa918c27d4ba7a774"
+Cache hit on "guocci-appdb-appliance-0d64b48d0b6cd3810fa73434c9ea8c81566159fc"
+Cache hit on "guocci-appdb-appliance-b96182a13cc9658a4e70ea049c3d15893cda1e41"
+Cache hit on "guocci-appdb-appliance-d1aff60770773e903e06669f35da71459a503cb2"
+Cache hit on "guocci-appdb-appliance-efb98d831e3dfe5cb5f164de70e5a985dfa3abbf"
+Cache hit on "guocci-appdb-appliance-f5a9dc86846e613180f22a764af597359f6a07c9"
+Cache hit on "guocci-appdb-appliance-0841fe0817d16a00301e5305eb5cd19e75f56bf1"
+Cache hit on "guocci-appdb-appliance-cbaf9c0d1a63965c53b934e9fd98c50e1dbd17fd"
+Cache hit on "guocci-appdb-appliance-34b8a528a769ec428516809ed8782df9b94426d6"
+Cache hit on "guocci-appdb-appliance-11abd779f3c86f65deb14c47eefa8621149ce08a"
+Cache hit on "guocci-appdb-appliance-6f5333de12b891ec934c832eea5c8979864a7ce9"
+Cache hit on "guocci-appdb-appliance-db019c01accae6ac7e6048f4042c0c8651804973"
+Cache hit on "guocci-appdb-appliance-734c22aedbb14c62935e21ecb05468cdfa2fee48"
+Cache hit on "guocci-appdb-appliance-0c8e07904283b46ad1dfe7a49b67735537e555d5"
+Cache hit on "guocci-appdb-appliance-a149b2a32e16b8803a50984ea982f60f7b1fb98c"
+Cache hit on "guocci-appdb-appliance-3350e4b53649a362dcc44eb3ac3facd38affe428"
+Cache hit on "guocci-appdb-appliance-ee06b84aecf0083db07f0b2b9c2906d58b32aaaa"
+Cache hit on "guocci-appdb-appliance-4d2a660a61e857fd38544f069c9edbaa1af33e3f"
+Cache hit on "guocci-appdb-appliance-9772f5872d17b5064871d3e434099737b4d4c43f"
+Cache hit on "guocci-appdb-appliance-2e3ea1dc9a511c0f215caac46db675e88496b275"
+Cache hit on "guocci-appdb-appliance-6073252c68f3939bae8dc10a622cc7ef392b3c95"
+Cache hit on "guocci-appdb-appliance-2ccacf5109bcabb118fd4b4bdbf551c98ec4893c"
+Cache hit on "guocci-appdb-appliance-909491a28198fa40105a7fcbcb643f887d0f79a2"
+Cache hit on "guocci-appdb-appliance-8c85d4a699c6b99387c9ac59dfe444164b1f3ce9"
+Cache hit on "guocci-appdb-appliance-2a1294c6d78d16a152396f48837471f78a1edfd8"
+Cache hit on "guocci-appdb-appliance-86a38ce879e3ddf26ed394f8493059c9e283c8b8"
+Cache hit on "guocci-appdb-appliance-2bcd116752ca765addb20ff685258621db6a1064"
+Cache hit on "guocci-appdb-appliance-af929c45bb4fb0900692b1758546a534d07e7f83"
+Cache hit on "guocci-appdb-appliance-ba850507ef58c092b44a1008a71c40a68aba48a6"
+Cache hit on "guocci-appdb-appliance-75d092b2648845f7bf198f849478625b6b0b601f"
+Cache hit on "guocci-appdb-appliance-f08c38f360c2df1211f21cb8b3712f720928ec8b"
+Cache hit on "guocci-appdb-appliance-24cda9f3598f722a468c3ad4c9dff18aed2ac0d5"
+Cache hit on "guocci-appdb-appliance-a7db80516b9edf925cdc600aa61afbc6e7079e8a"
+Completed 200 OK in 16ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/4454G0/appliances/?id=http://occi.carach5.ics.muni.cz/occi/infrastructure/os_tpl" for ::1 at 2016-08-16 16:14:36 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::AppliancesController#index as JSON
+  Parameters: {"id"=>"http://occi.carach5.ics.muni.cz/occi/infrastructure/os_tpl", "site_id"=>"4454G0", "appliance"=>{}}
+Cache hit on "guocci-appdb-sites"
+Cache hit on "guocci-appdb-appliance-e166c5732e5712ec76cff8ad611ca41e5fbefa9f"
+Cache hit on "guocci-appdb-appliance-d15ed6d0c08faedf55db84dcd24495a6b57a2769"
+Cache hit on "guocci-appdb-appliance-ee6b60d119bf71d128ebfeeb265fe395b85bd762"
+Cache hit on "guocci-appdb-appliance-0cda92558fb8c007412fb9259cb565a420fff7a2"
+Cache hit on "guocci-appdb-appliance-de714e22bb2fd2b32b0679af843b478d62148680"
+Cache hit on "guocci-appdb-appliance-afc7a3f0c78651e1ed8af82aa918c27d4ba7a774"
+Cache hit on "guocci-appdb-appliance-0d64b48d0b6cd3810fa73434c9ea8c81566159fc"
+Cache hit on "guocci-appdb-appliance-b96182a13cc9658a4e70ea049c3d15893cda1e41"
+Cache hit on "guocci-appdb-appliance-d1aff60770773e903e06669f35da71459a503cb2"
+Cache hit on "guocci-appdb-appliance-efb98d831e3dfe5cb5f164de70e5a985dfa3abbf"
+Cache hit on "guocci-appdb-appliance-f5a9dc86846e613180f22a764af597359f6a07c9"
+Cache hit on "guocci-appdb-appliance-0841fe0817d16a00301e5305eb5cd19e75f56bf1"
+Cache hit on "guocci-appdb-appliance-cbaf9c0d1a63965c53b934e9fd98c50e1dbd17fd"
+Cache hit on "guocci-appdb-appliance-34b8a528a769ec428516809ed8782df9b94426d6"
+Cache hit on "guocci-appdb-appliance-11abd779f3c86f65deb14c47eefa8621149ce08a"
+Cache hit on "guocci-appdb-appliance-6f5333de12b891ec934c832eea5c8979864a7ce9"
+Cache hit on "guocci-appdb-appliance-db019c01accae6ac7e6048f4042c0c8651804973"
+Cache hit on "guocci-appdb-appliance-734c22aedbb14c62935e21ecb05468cdfa2fee48"
+Cache hit on "guocci-appdb-appliance-0c8e07904283b46ad1dfe7a49b67735537e555d5"
+Cache hit on "guocci-appdb-appliance-a149b2a32e16b8803a50984ea982f60f7b1fb98c"
+Cache hit on "guocci-appdb-appliance-3350e4b53649a362dcc44eb3ac3facd38affe428"
+Cache hit on "guocci-appdb-appliance-ee06b84aecf0083db07f0b2b9c2906d58b32aaaa"
+Cache hit on "guocci-appdb-appliance-4d2a660a61e857fd38544f069c9edbaa1af33e3f"
+Cache hit on "guocci-appdb-appliance-9772f5872d17b5064871d3e434099737b4d4c43f"
+Cache hit on "guocci-appdb-appliance-2e3ea1dc9a511c0f215caac46db675e88496b275"
+Cache hit on "guocci-appdb-appliance-6073252c68f3939bae8dc10a622cc7ef392b3c95"
+Cache hit on "guocci-appdb-appliance-2ccacf5109bcabb118fd4b4bdbf551c98ec4893c"
+Cache hit on "guocci-appdb-appliance-909491a28198fa40105a7fcbcb643f887d0f79a2"
+Cache hit on "guocci-appdb-appliance-8c85d4a699c6b99387c9ac59dfe444164b1f3ce9"
+Cache hit on "guocci-appdb-appliance-2a1294c6d78d16a152396f48837471f78a1edfd8"
+Cache hit on "guocci-appdb-appliance-86a38ce879e3ddf26ed394f8493059c9e283c8b8"
+Cache hit on "guocci-appdb-appliance-2bcd116752ca765addb20ff685258621db6a1064"
+Cache hit on "guocci-appdb-appliance-af929c45bb4fb0900692b1758546a534d07e7f83"
+Cache hit on "guocci-appdb-appliance-ba850507ef58c092b44a1008a71c40a68aba48a6"
+Cache hit on "guocci-appdb-appliance-75d092b2648845f7bf198f849478625b6b0b601f"
+Cache hit on "guocci-appdb-appliance-f08c38f360c2df1211f21cb8b3712f720928ec8b"
+Cache hit on "guocci-appdb-appliance-24cda9f3598f722a468c3ad4c9dff18aed2ac0d5"
+Cache hit on "guocci-appdb-appliance-a7db80516b9edf925cdc600aa61afbc6e7079e8a"
+Completed 200 OK in 19ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites/4454G0/appliances/http://occi.carach5.ics.muni.cz/occi/infrastructure/os_tpl" for ::1 at 2016-08-16 16:14:46 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/v1/sites/4454G0/appliances/http:/occi.carach5.ics.muni.cz/occi/infrastructure/os_tpl"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered collection of /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [31 times] (4.7ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.7ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (19.9ms)
