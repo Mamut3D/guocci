@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -24,5 +23,3 @@ Things you may want to cover:
 
 * ...
 =======
-# guocci
->>>>>>> 133fe51d1d802ef07b0882f65bdcd498090dc4fa
