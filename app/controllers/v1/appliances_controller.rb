@@ -3,44 +3,19 @@ module V1
     respond_to :json
 
     def index
-      vaprovider = vaproviders_from_appdb.select { |prov| prov['id'] == params[:site_id] }.first
-      if vaprovider
-        appliances = vaprovider_appliances(vaprovider)
-        if appliances.blank?
-          respond_with(status: 204)
-        else
-          respond_with(appliances[0, @limit])
-        end
+      appliances = Appliances.new
+      appliances_list = appliances.list(params[:site_id])
+      if appliances_list
+        appliances_list.blank? ? respond_with({}, status: 204) : respond_with(appliances_list[0, @limit])
       else
-        response = {
-          message: "Site with ID #{params[:site_id]} could not be found!"
-        }
-        respond_with(response, status: 400)
+        respond_with({ message: "Site with ID #{params[:site_id]} could not be found!" }, status: 400)
       end
     end
 
     def show
-      vaprovider = vaproviders_from_appdb.select { |prov| prov['id'] == params[:site_id] }.first
-      if vaprovider
-        appliances = vaprovider_appliances(vaprovider)
-        appliance = appliances.select { |appl| appl['id'] == params[:id]}
-        if appliance
-          respond_with(appliance)
-        else
-          response = {
-            message: "Appliance with ID #{params[:id]} could not be found at site #{params[:site_id]}!"
-          }
-          respond_with(response, status: 400)
-          return
-        end
-      else
-        response = {
-          message: "Site with ID #{params[:site_id]} could not be found!"
-        }
-        respond_with(response, status: 400)
-
-      end
-      return
+      appliances = Appliances.new
+      appliance= appliances.list(params[:site_id], params[:site])
+      appliance.key?(:message) ? respond_with(appliance, status: 400) : respond_with(appliance)
     end
   end
 end

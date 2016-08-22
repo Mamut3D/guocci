@@ -4,23 +4,22 @@ class ApplicationController < ActionController::Base
 
   protected
 
-  CACHE_DIR = '/tmp/guocci_cache'.freeze
-  APPDB_PROXY_URL = 'https://appdb.egi.eu/api/proxy'.freeze
-  APPDB_REQUEST_FORM = 'version=1.0&resource=broker&data=%3Cappdb%3Abroker%20xmlns%3Axs%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%22%20xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22%20xmlns%3Aappdb%3D%22http%3A%2F%2Fappdb.egi.eu%2Fapi%2F1.0%2Fappdb%22%3E%3Cappdb%3Arequest%20id%3D%22vaproviders%22%20method%3D%22GET%22%20resource%3D%22va_providers%22%3E%3Cappdb%3Aparam%20name%3D%22listmode%22%3Edetails%3C%2Fappdb%3Aparam%3E%3C%2Fappdb%3Arequest%3E%3C%2Fappdb%3Abroker%3E'.freeze
+  DEFAULT_LIMIT = '10'.freeze
+  DEFAULT_OFFSET = '0'.freeze
 
-
-  DEFAULT_LIMIT = '10'
-  DEFAULT_OFFSET = '0'
+  def cache_manager
+    @cache_instance ||= Utils::MongoDBCache.new(logger: Rails.logger)
+  end
 
   def check_limit_and_offset_param
-
     limit = params[:limit] || DEFAULT_LIMIT
     offset = params[:offset] || DEFAULT_OFFSET
 
-    if !(limit =~ /\A?\d+\z/)
+    unless limit =~ /\A\d+\z/
       respond_with({ message: 'Limit is set incorrectly' }, status: 400)
       return false
-    elsif !(offset =~ /\A?\d+\z/)
+    end
+    unless offset =~ /\A\d+\z/
       respond_with({ message: 'Offset is set incorrectly' }, status: 400)
       return false
     end
@@ -28,96 +27,4 @@ class ApplicationController < ActionController::Base
     @offset = offset.to_i
     true
   end
-
-  def vaproviders_from_appdb
-    providers = cache_fetch('guocci-appdb-sites', 2.days) do
-      response = HTTParty.post(APPDB_PROXY_URL, body: APPDB_REQUEST_FORM)
-      response.success? ? response.parsed_response : nil
-    end
-    providers ? providers['broker']['reply']['appdb']['provider'] : []
-  end
-
-  def vaprovider_sizes(vaprovider)
-    templates = [vaprovider['template']].flatten.compact
-    templates.collect do |template|
-      next if template['resource_name'].blank?
-      {
-        id: template['resource_name'],
-        name: template['resource_name'].split('#').last,
-        memory: template['main_memory_size'],
-        vcpu: template['logical_cpus'],
-        cpu: template['physical_cpus']
-      }
-    end.compact
-  end
-
-  def vaprovider_appliances(vaprovider)
-    images = [vaprovider['image']].flatten.compact
-    images.collect do |image|
-      next if image['va_provider_image_id'].blank? || image['mp_uri'].blank?
-
-      appl = cache_fetch("guocci-appdb-appliance-#{Digest::SHA1.hexdigest(image['mp_uri'])}", 2.days) do
-        response = HTTParty.get("#{image['mp_uri'].chomp('/')}/json")
-        response.success? ? response.parsed_response : nil
-      end
-      next unless appl
-
-      vo = vaprovider_appliances_vo(vaprovider, appl, image)
-      # next if vo.strip != proxy_vo
-
-      {
-        id: image['va_provider_image_id'],
-        name: appl['title'].gsub(/\[.+\]/, ''),
-        mpuri: image['mp_uri'],
-        vo: vo
-      }
-    end.compact
-  end
-
-  def vaprovider_appliances_vo(vaprovider, appl, image)
-    appl['sites'].each do |site|
-      site['services'].each do |service|
-        next unless service['id'] == vaprovider['id']
-
-        service['vos'].each do |vo|
-          return vo['name'] if vo['occi']['id'] == image['va_provider_image_id']
-        end
-      end
-    end
-
-    'unknown'
-  end
-
-  def cache_fetch(key, expiration = 1.hour)
-    raise 'You have to provide a block!' unless block_given?
-    FileUtils.mkdir_p CACHE_DIR
-    filename = File.join(CACHE_DIR, key)
-
-    if cache_valid?(filename, expiration)
-      Rails.logger.debug "Cache hit on #{key.inspect}"
-      File.open(filename, 'r') do |file|
-        file.flock(File::LOCK_SH)
-        JSON.parse file.read
-      end
-    else
-      Rails.logger.debug "Cache miss on #{key.inspect}"
-      data = yield
-      File.open(filename, File::RDWR | File::CREAT, 0o644) do |file|
-        file.flock(File::LOCK_EX)
-        file.write JSON.pretty_generate(data)
-        file.flush
-        file.truncate(file.pos)
-      end unless data.blank?
-      data
-    end
-  end
-
-  def cache_valid?(filename, expiration)
-    File.exist?(filename) && !File.zero?(filename) && ((Time.now - expiration) < File.stat(filename).mtime)
-  end
-
-  def proxy_vo
-    @proxy_vo ||= ProxyController.proxy_info(voms_proxy_path)[:vo]
-  end
-
 end

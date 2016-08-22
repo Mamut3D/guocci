@@ -3,41 +3,18 @@ module V1
     respond_to :json
 
     def index
-      vaproviders = vaproviders_from_appdb.select { |prov| prov['in_production'] == 'true' && !prov['endpoint_url'].blank? }
-
-      if vaproviders.blank?
-        respond_with(status: 204)
-      else
-        # vaproviders.reject! { |prov| vaprovider_appliances(prov).blank? }
-        providers = vaproviders.collect do |prov|
-          {
-            id: prov['id'], name: prov['name'],
-            country: prov['country']['isocode'],
-            endpoint: prov['endpoint_url']
-          }
-        end
-
-        respond_with(providers[0, @limit])
-      end
+      sites = Sites.new
+      vaproviders = sites.list
+      vaproviders.blank? ? respond_with(vaproviders, status: 204) : respond_with(vaproviders[0, @limit])
     end
 
     def show
-      vaprovider = vaproviders_from_appdb.select { |prov| prov['id'] == params[:id] }.first
-      if vaprovider
-        site_data = {}
-        site_data[:id] = vaprovider['id']
-        site_data[:name] = vaprovider['name']
-        site_data[:country] = vaprovider['country']['isocode'] if vaprovider['country']
-        site_data[:endpoint] = vaprovider['endpoint_url']
-        # site_data[:sizes] = vaprovider_sizes(vaprovider)
-        # site_data[:appliances] = vaprovider_appliances(vaprovider)
-        respond_with(site_data)
+      sites = Sites.new
+      vaprovider = sites.show(params[:id])
+      if vaprovider.blank?
+        respond_with({ message: "Site with ID #{params[:id]} could not be found!" }, status: 404)
       else
-        response = {
-          code: 42,
-          message: "Site with ID #{params[:id]} could not be found!"
-        }
-        respond_with(response, status: 404)
+        respond_with(vaprovider)
       end
     end
   end

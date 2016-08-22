@@ -1,3 +1,11 @@
+PATH
+  remote: /home/mtd/Documents/CesnetWork/rails/appdb_reader
+  specs:
+    appdb_reader (0.1.0)
+      activesupport (~> 5.0)
+      httparty (~> 0.14)
+      mongo (~> 2.3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -40,6 +48,7 @@ GEM
       tzinfo (~> 1.1)
     arel (7.1.1)
     ast (2.3.0)
+    bson (4.1.1)
     builder (3.2.2)
     byebug (9.0.5)
     coderay (1.1.1)
@@ -80,6 +89,8 @@ GEM
     mime-types-data (3.2016.0521)
     mini_portile2 (2.1.0)
     minitest (5.9.0)
+    mongo (2.3.0)
+      bson (~> 4.1)
     multi_json (1.12.1)
     multi_xml (0.5.5)
     nio4r (1.2.1)
@@ -179,6 +190,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  appdb_reader!
   byebug
   coffee-rails (~> 4.2)
   httparty
