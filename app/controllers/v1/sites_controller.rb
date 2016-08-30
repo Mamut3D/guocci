@@ -3,21 +3,18 @@ module V1
     respond_to :json
 
     def index
-      #respond_with(Utils::AppdbReader.all_sites) unless params[:appliance_id]
-      respond_with(Utils::AppdbReader.vaproviders_from_appdb) unless params[:appliance_id]
-
-      #sites = Sites.new
-      #vaproviders = sites.list
-      #vaproviders.blank? ? respond_with(vaproviders, status: 204) : respond_with(vaproviders[0, @limit])
+      sites = Sites.new
+      sites_list = sites.list
+      sites_list.blank? ? respond_with(sites_list, status: 204) : respond_with(sites_list[0, @limit])
     end
 
     def show
       sites = Sites.new
-      vaprovider = sites.show(params[:id])
-      if vaprovider.blank?
+      site = sites.show(params[:id])
+      if site.blank?
         respond_with({ message: "Site with ID #{params[:id]} could not be found!" }, status: 404)
       else
-        respond_with(vaprovider)
+        respond_with(site)
       end
     end
   end

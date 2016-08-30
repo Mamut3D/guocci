@@ -36,14 +36,14 @@ module Utils
             image['occi'].collect do |occi_image|
               if (occi_image.key? ('vo')) #&& (occi_image['vo'].key? ('name'))
                 voname = occi_image['vo']['name']
-                void = occi_image['vo']['id']
+                image_id = occi_image['id'].split('os_tpl#')[1]
               else
-                voname = ''
+                image_id = ''
                 void = ''
               end
               {
                 #image_global_id: image['id'],
-                id: void,
+                id: image_id,
                 name: image['application']['name'],
                 mpuri: image['mpuri'],
                 vo: voname
@@ -55,8 +55,33 @@ module Utils
         end
       end
 
-      #TODO refactor and finnish
       def all_sites
+        response = HTTParty.post(APPDB_PROXY_URL, body: APPDB_REQUEST_FORM)
+        providers = response.success? ? response.parsed_response : nil
+        if providers
+          providers = providers['broker']['reply']['appdb']['provider']
+          providers.select! do |prov|
+            prov['in_production'] == 'true' && !prov['endpoint_url'].blank?
+          end
+          if providers.blank?
+            {}
+          else
+            providers.collect do |prov|
+              {
+                id: prov['id'],
+                name: prov['name'],
+                country: prov['country']['isocode'],
+                endpoint: prov['endpoint_url']
+              }
+            end
+          end
+        else
+          []
+        end
+      end
+
+      #TODO refactor and finnish
+      def all_sites_new
         response = HTTParty.get(APPDB_REQUEST_ALL_IMAGES)
         if response.success?
 

@@ -13745,3 +13745,458 @@ Processing by V1::AppliancesController#index as */*
 Completed 200 OK in 26ms (Views: 15.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/v1/appliances" for ::1 at 2016-08-30 15:30:17 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::AppliancesController#index as */*
+Completed 200 OK in 3118ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances" for ::1 at 2016-08-30 15:30:28 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::AppliancesController#index as */*
+Completed 200 OK in 3491ms (Views: 314.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances" for ::1 at 2016-08-30 15:31:51 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::AppliancesController#index as */*
+Completed 200 OK in 3097ms (Views: 19.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances" for ::1 at 2016-08-30 15:34:18 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::AppliancesController#index as */*
+Completed 200 OK in 27ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/os_tpl" for ::1 at 2016-08-30 15:34:26 +0200
+Processing by V1::AppliancesController#show as */*
+  Parameters: {"id"=>"os_tpl"}
+Completed 200 OK in 37ms (Views: 31.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/os_tpl" for ::1 at 2016-08-30 15:34:28 +0200
+Processing by V1::AppliancesController#show as */*
+  Parameters: {"id"=>"os_tpl"}
+Completed 200 OK in 36ms (Views: 26.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/os_tpl" for ::1 at 2016-08-30 15:34:28 +0200
+Processing by V1::AppliancesController#show as */*
+  Parameters: {"id"=>"os_tpl"}
+Completed 200 OK in 27ms (Views: 21.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/os_tpl" for ::1 at 2016-08-30 15:34:29 +0200
+Processing by V1::AppliancesController#show as */*
+  Parameters: {"id"=>"os_tpl"}
+Completed 200 OK in 29ms (Views: 21.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/os_tpl" for ::1 at 2016-08-30 15:34:29 +0200
+Processing by V1::AppliancesController#show as */*
+  Parameters: {"id"=>"os_tpl"}
+Completed 200 OK in 29ms (Views: 23.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/os_tpl" for ::1 at 2016-08-30 15:34:29 +0200
+Processing by V1::AppliancesController#show as */*
+  Parameters: {"id"=>"os_tpl"}
+Completed 200 OK in 26ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/os_tpl" for ::1 at 2016-08-30 15:34:30 +0200
+Processing by V1::AppliancesController#show as */*
+  Parameters: {"id"=>"os_tpl"}
+Completed 200 OK in 41ms (Views: 23.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/os_tpl" for ::1 at 2016-08-30 15:34:30 +0200
+Processing by V1::AppliancesController#show as */*
+  Parameters: {"id"=>"os_tpl"}
+Completed 200 OK in 46ms (Views: 34.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/os_tpl" for ::1 at 2016-08-30 15:35:21 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::AppliancesController#show as */*
+  Parameters: {"id"=>"os_tpl"}
+Completed 200 OK in 9ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/os_tpl" for ::1 at 2016-08-30 15:35:38 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::AppliancesController#show as */*
+  Parameters: {"id"=>"os_tpl"}
+Completed 200 OK in 14ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances" for ::1 at 2016-08-30 15:35:54 +0200
+Processing by V1::AppliancesController#index as */*
+Completed 200 OK in 56ms (Views: 47.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances" for ::1 at 2016-08-30 15:38:01 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::AppliancesController#index as */*
+Completed 200 OK in 36ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances" for ::1 at 2016-08-30 15:38:44 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::AppliancesController#index as */*
+Completed 200 OK in 41ms (Views: 33.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances" for ::1 at 2016-08-30 15:41:07 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::AppliancesController#index as */*
+Completed 200 OK in 32ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/511a2916-d480-4b56-b788-c76cb8c57509" for ::1 at 2016-08-30 15:41:22 +0200
+Processing by V1::AppliancesController#show as */*
+  Parameters: {"id"=>"511a2916-d480-4b56-b788-c76cb8c57509"}
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/511a2916-d480-4b56-b788-c76cb8c57509" for ::1 at 2016-08-30 15:42:05 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::AppliancesController#show as */*
+  Parameters: {"id"=>"511a2916-d480-4b56-b788-c76cb8c57509"}
+Completed 200 OK in 9ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/511a2916-d480-4b56-b788-c76cb8c57509" for ::1 at 2016-08-30 15:42:11 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::AppliancesController#show as */*
+  Parameters: {"id"=>"511a2916-d480-4b56-b788-c76cb8c57509"}
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/511a2916-d480-4b56-b788-c76cb8c57509" for ::1 at 2016-08-30 15:42:28 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::AppliancesController#show as */*
+  Parameters: {"id"=>"511a2916-d480-4b56-b788-c76cb8c57509"}
+Completed 200 OK in 14ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/511a2916-d480-4b56-b788-c76cb8c57509" for ::1 at 2016-08-30 15:42:40 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::AppliancesController#show as */*
+  Parameters: {"id"=>"511a2916-d480-4b56-b788-c76cb8c57509"}
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/511a2916-d480-4b56-b788-c76cb8c57509" for ::1 at 2016-08-30 15:42:51 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::AppliancesController#show as */*
+  Parameters: {"id"=>"511a2916-d480-4b56-b788-c76cb8c57509"}
+Completed 200 OK in 16ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/511a2916-d480-4b56-b788-c76cb8c57509" for ::1 at 2016-08-30 15:42:52 +0200
+Processing by V1::AppliancesController#show as */*
+  Parameters: {"id"=>"511a2916-d480-4b56-b788-c76cb8c57509"}
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/511a2916-d480-4b56-b788-c76cb8c57509" for ::1 at 2016-08-30 15:43:49 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::AppliancesController#show as */*
+  Parameters: {"id"=>"511a2916-d480-4b56-b788-c76cb8c57509"}
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/511a2916-d480-4b56-b788-c76cb8c57509" for ::1 at 2016-08-30 15:43:58 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::AppliancesController#show as */*
+  Parameters: {"id"=>"511a2916-d480-4b56-b788-c76cb8c57509"}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `flaten' for #<Array:0x007f57e08a7d68>
+Did you mean?  flatten
+               flatten!):
+  
+app/models/appliances.rb:19:in `show'
+app/controllers/v1/appliances_controller.rb:29:in `show'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.7ms)
+Started GET "/v1/appliances/511a2916-d480-4b56-b788-c76cb8c57509" for ::1 at 2016-08-30 15:44:05 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::AppliancesController#show as */*
+  Parameters: {"id"=>"511a2916-d480-4b56-b788-c76cb8c57509"}
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/511a2916-d480-4b56-b788-c76cb8c57509" for ::1 at 2016-08-30 15:46:34 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::AppliancesController#show as */*
+  Parameters: {"id"=>"511a2916-d480-4b56-b788-c76cb8c57509"}
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/511a2916-d480-4b56-b788-c76cb8c57509d" for ::1 at 2016-08-30 15:46:37 +0200
+Processing by V1::AppliancesController#show as */*
+  Parameters: {"id"=>"511a2916-d480-4b56-b788-c76cb8c57509d"}
+Completed 204 No Content in 9ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/511a2916-d480-4b56-b788-c76cb8c57509d" for ::1 at 2016-08-30 15:47:02 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::AppliancesController#show as */*
+  Parameters: {"id"=>"511a2916-d480-4b56-b788-c76cb8c57509d"}
+Completed 205 Reset Content in 7ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/511a2916-d480-4b56-b788-c76cb8c57509d" for ::1 at 2016-08-30 15:47:17 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::AppliancesController#show as */*
+  Parameters: {"id"=>"511a2916-d480-4b56-b788-c76cb8c57509d"}
+Completed 204 No Content in 13ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/" for ::1 at 2016-08-30 15:47:55 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::AppliancesController#index as */*
+Completed 200 OK in 9ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/511a2916-d480-4b56-b788-c76cb8c57509" for ::1 at 2016-08-30 15:48:18 +0200
+Processing by V1::AppliancesController#show as */*
+  Parameters: {"id"=>"511a2916-d480-4b56-b788-c76cb8c57509"}
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/511a2916-d480-4b56-b788-c76cb8c575095" for ::1 at 2016-08-30 15:48:21 +0200
+Processing by V1::AppliancesController#show as */*
+  Parameters: {"id"=>"511a2916-d480-4b56-b788-c76cb8c575095"}
+Completed 204 No Content in 8ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/511a2916-d480-4b56-b788-c76cb8c575095" for ::1 at 2016-08-30 15:48:38 +0200
+  
+SyntaxError (/home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/v1/appliances_controller.rb:14: unterminated string meets end of file
+/home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/v1/appliances_controller.rb:14: syntax error, unexpected end-of-input, expecting '}'):
+  
+app/controllers/v1/appliances_controller.rb:14: unterminated string meets end of file
+app/controllers/v1/appliances_controller.rb:14: syntax error, unexpected end-of-input, expecting '}'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.2ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (16.4ms)
+Started GET "/v1/appliances/511a2916-d480-4b56-b788-c76cb8c575095" for ::1 at 2016-08-30 15:48:54 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::AppliancesController#show as */*
+  Parameters: {"id"=>"511a2916-d480-4b56-b788-c76cb8c575095"}
+Completed 204 No Content in 7ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/511a2916-d480-4b56-b788-c76cb8c575095" for ::1 at 2016-08-30 15:49:03 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::AppliancesController#show as */*
+  Parameters: {"id"=>"511a2916-d480-4b56-b788-c76cb8c575095"}
+Completed 404 Not Found in 7ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/511a2916-d480-4b56-b788-c76cb8c575095" for ::1 at 2016-08-30 15:49:16 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::AppliancesController#show as */*
+  Parameters: {"id"=>"511a2916-d480-4b56-b788-c76cb8c575095"}
+Completed 404 Not Found in 10ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites" for ::1 at 2016-08-30 15:51:30 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as */*
+Completed 200 OK in 1215ms (Views: 142.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites" for ::1 at 2016-08-30 16:02:15 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as */*
+Completed 200 OK in 1212ms (Views: 149.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites" for ::1 at 2016-08-30 16:02:44 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as */*
+Completed 200 OK in 1067ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites" for ::1 at 2016-08-30 16:05:27 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as */*
+Completed 200 OK in 1067ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites" for ::1 at 2016-08-30 16:07:19 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as */*
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites" for ::1 at 2016-08-30 16:07:20 +0200
+Processing by V1::SitesController#index as */*
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites" for ::1 at 2016-08-30 16:07:21 +0200
+Processing by V1::SitesController#index as */*
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites" for ::1 at 2016-08-30 16:07:21 +0200
+Processing by V1::SitesController#index as */*
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites" for ::1 at 2016-08-30 16:07:22 +0200
+Processing by V1::SitesController#index as */*
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites" for ::1 at 2016-08-30 16:07:22 +0200
+Processing by V1::SitesController#index as */*
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites" for ::1 at 2016-08-30 16:07:22 +0200
+Processing by V1::SitesController#index as */*
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites" for ::1 at 2016-08-30 16:07:23 +0200
+Processing by V1::SitesController#index as */*
+Completed 200 OK in 5ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites" for ::1 at 2016-08-30 16:07:23 +0200
+Processing by V1::SitesController#index as */*
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites" for ::1 at 2016-08-30 16:07:24 +0200
+Processing by V1::SitesController#index as */*
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites" for ::1 at 2016-08-30 16:07:32 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as */*
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 2, expected 1)):
+  
+app/controllers/v1/sites_controller.rb:10:in `[]'
+app/controllers/v1/sites_controller.rb:10:in `index'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.5ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (15.5ms)
+Started GET "/v1/sites" for ::1 at 2016-08-30 16:07:48 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as */*
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites" for ::1 at 2016-08-30 16:07:56 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as */*
+Completed 200 OK in 9ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances" for ::1 at 2016-08-30 16:12:01 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::AppliancesController#index as */*
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+lib/utils/mongodb_cache.rb:33:in `cache_read'
+app/models/appliances.rb:10:in `list'
+app/controllers/v1/appliances_controller.rb:7:in `index'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.5ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (15.2ms)
+Started GET "/v1/appliances" for ::1 at 2016-08-30 16:12:49 +0200
+Processing by V1::AppliancesController#index as */*
+Completed 200 OK in 15ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/511a2916-d480-4b56-b788-c76cb8c57509" for ::1 at 2016-08-30 16:13:07 +0200
+Processing by V1::AppliancesController#show as */*
+  Parameters: {"id"=>"511a2916-d480-4b56-b788-c76cb8c57509"}
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/511a2916-d480-4b56-b788-c76cb8c57509/sites" for ::1 at 2016-08-30 16:13:11 +0200
+Processing by V1::SitesController#index as */*
+  Parameters: {"appliance_id"=>"511a2916-d480-4b56-b788-c76cb8c57509"}
+Completed 200 OK in 22ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/511a2916-d480-4b56-b788-c76cb8c57509/sites/8253G0" for ::1 at 2016-08-30 16:13:24 +0200
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"511a2916-d480-4b56-b788-c76cb8c57509", "id"=>"8253G0"}
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/511a2916-d480-4b56-b788-c76cb8c57509/sites/8253G0" for ::1 at 2016-08-30 16:13:26 +0200
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"511a2916-d480-4b56-b788-c76cb8c57509", "id"=>"8253G0"}
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/511a2916-d480-4b56-9/sites/8253G0" for ::1 at 2016-08-30 16:13:37 +0200
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"511a2916-d480-4b56-9", "id"=>"8253G0"}
+Completed 200 OK in 49ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/511a2916-d480-4b56-9/sites/8253G0" for ::1 at 2016-08-30 16:14:39 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"511a2916-d480-4b56-9", "id"=>"8253G0"}
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/511a2916-d480-4b56-9/sites/8253G0" for ::1 at 2016-08-30 16:15:13 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"511a2916-d480-4b56-9", "id"=>"8253G0"}
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/511a2916-d480-4b56-9/sites/8253G0" for ::1 at 2016-08-30 16:15:50 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"511a2916-d480-4b56-9", "id"=>"8253G0"}
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+

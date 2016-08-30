@@ -3,7 +3,6 @@ class ApplicationController < ActionController::Base
   before_filter :check_limit_and_offset_param
 
   protected
-
   DEFAULT_LIMIT = '10'.freeze
   DEFAULT_OFFSET = '0'.freeze
 
