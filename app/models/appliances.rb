@@ -1,24 +1,26 @@
 class Appliances
+  DB_COLLECTION_VAPROVIDERS = 'vaproviders_from_appdb'
+  DB_COLLECTION_APPLIANCES = 'appliances_from_appdb'
+
   def initialize(options = {})
-    #
+    @db_collection_vaproviders = options[:db_collection_vaproviders] || DB_COLLECTION_VAPROVIDERS
+    @db_collection_appliances = options[:db_collection_appliances] || DB_COLLECTION_APPLIANCES
+    @cache = Utils::MongodbCache.new
   end
 
-  def list(site_id)
-    vaprovider = Utils::AppdbReader.vaproviders_from_appdb.select { |prov| prov['id'] == site_id }.first
-    if vaprovider
-      appliances = Utils::AppdbReader.vaprovider_appliances(vaprovider)
-      appliances.blank? ? {} : appliances
-    end
+  def list
+    appliances = @cache.cache_read(@db_collection_appliances).flatten
   end
 
   def show(id)
-    vaprovider = Utils::AppdbReader.vaproviders_from_appdb.select { |prov| prov['id'] == site_id }.first
-    if vaprovider
-      appliances = Utils::AppdbReader.vaprovider_appliances(vaprovider)
-      appliance = appliances.select { |appl| appl['id'] == id }
-      { message: "Appliance with ID #{id} could not be found at site #{site_id}!" } unless appliance
-    else
-      { message: "Site with ID #{site_id} could not be found!" }
-    end
+    appliances = @cache.cache_read(@db_collection_appliances).flatten
+    #TODO
+    #appliances.collect { |appliance| appliance['id']}
+  end
+
+  def refresh_database
+    @cache.cache_fetch(@db_collection_appliances) {Utils::AppdbReader.all_appliances}
+    #TODO
+    #@cache.cache_fetch(@db_collection_vaproviders) {Utils::AppdbReader.}
   end
 end

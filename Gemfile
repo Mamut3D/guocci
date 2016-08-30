@@ -29,8 +29,8 @@ gem 'jbuilder', '~> 2.5'
 # App dependencies
 gem 'httparty'
 gem 'responders', '~> 2.0'
-gem 'appdb_reader', path: '/home/mtd/Documents/CesnetWork/rails/appdb_reader'
-
+gem 'mongo', '~> 2.3'
+gem 'whenever', '~> 0.9.7'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

@@ -1,6 +1,11 @@
 class Sites
+  DB_COLLECTION_VAPROVIDERS = 'vaproviders_from_appdb'
+  DB_COLLECTION_APPLIANCES = 'appliances_from_appdb'
+
   def initialize(options = {})
-    #
+    @db_collection_vaproviders = options[:db_collection_vaproviders] || DB_COLLECTION_VAPROVIDERS
+    @db_collection_appliances = options[:db_collection_appliances] || DB_COLLECTION_APPLIANCES
+    @db = Utils::MongodbCache.new
   end
 
   def list

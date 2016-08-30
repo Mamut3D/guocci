@@ -3,9 +3,12 @@ module V1
     respond_to :json
 
     def index
-      sites = Sites.new
-      vaproviders = sites.list
-      vaproviders.blank? ? respond_with(vaproviders, status: 204) : respond_with(vaproviders[0, @limit])
+      #respond_with(Utils::AppdbReader.all_sites) unless params[:appliance_id]
+      respond_with(Utils::AppdbReader.vaproviders_from_appdb) unless params[:appliance_id]
+
+      #sites = Sites.new
+      #vaproviders = sites.list
+      #vaproviders.blank? ? respond_with(vaproviders, status: 204) : respond_with(vaproviders[0, @limit])
     end
 
     def show

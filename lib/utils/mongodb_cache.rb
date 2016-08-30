@@ -6,7 +6,7 @@ module Utils
   # Best Regards
   # Your Mama
   # (fat)
-  class MongoDBCache
+  class MongodbCache
     attr_reader :logger
 
     MONGODB_HOST = '127.0.0.1'.freeze
@@ -27,6 +27,11 @@ module Utils
       cached_data = @client[:cache].find(key: key).first
 
       cache_valid?(cached_data, expiration) ? cache_hit(cached_data, key) : cache_miss(yield, key)
+    end
+
+    def cache_read(key)
+      cached_data = @client[:cache].find(key: key).first[:data]
+      JSON.parse cached_data
     end
 
     private

@@ -1,20 +1,24 @@
 Rails.application.routes.draw do
   namespace :v1 do
-    resources :sites, only: [:index, :show] do
-      resources :appliances, only: [:show, :index]
 
-      resources :instances, only: [:create, :index, :show, :destroy] do
-        resources :disks, only: [:create, :index, :show, :destroy]
-        resources :interfaces, only: [:create, :index, :show, :destroy]
+    resources :appliances, only: [:index, :show] do
+      resources :sites, only: [:index, :show] do
+        resources :flavours, only: [:index, :show]
       end
-
-      resources :flavours, only: [:index, :show]
-      resources :networks, only: [:create, :index, :show, :destroy]
-      resources :storages, only: [:create, :index, :show, :destroy]
     end
 
-    resources :user, only: [:index] do
-      resources :credentials, only: [:create, :index, :show, :destroy]
+    resources :user, only: [:show] do
+      resources :credentials, only: [:index, :show, :create, :delete]
+    end
+
+    resources :sites, only: [:index] do
+      resources :instances, only: [:index, :show, :create, :delete] do
+        resources :disks, only: [:index, :show, :create, :delete]
+        resources :interfaces, only: [:index, :show, :create, :delete]
+      end
+
+      resources :networks, only: [:index, :show, :create, :delete]
+      resources :storages, only: [:index, :show, :create, :delete]
     end
   end
 end

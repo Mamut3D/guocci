@@ -14,7 +14,78 @@ module Utils
                          '%3Aparam%20name%3D%22listmode%22%3Edetails%3C%2Fappdb%3Aparam%3E%3C%2Fappdb%3Arequest%3E%3C%'\
                          '2Fappdb%3Abroker%3E'.freeze
 
+    APPDB_REQUEST_ALL_IMAGES = 'https://appdb-pi.egi.eu/rest/1.0/sites?listmode=details&flt=%2B%3Dsite.supports%3A1%20'\
+                               '%2B%3Dsite.hasinstances%3A1%0A'.freeze
+
     class << self
+
+      #TODO refactor
+      def all_appliances
+        response = HTTParty.get(APPDB_REQUEST_ALL_IMAGES)
+        if response.success?
+
+          sites = response['appdb']['site'].collect do |site|
+            site['service'] = [site['service']].flatten
+          end.flatten
+
+          sites.select! { |site| site['type'] == 'occi' }
+          images = sites.collect { |site| site['image']}.flatten.compact
+
+          images.collect do |image|
+            image['occi'] = [image['occi']].flatten.compact
+            image['occi'].collect do |occi_image|
+              if (occi_image.key? ('vo')) #&& (occi_image['vo'].key? ('name'))
+                voname = occi_image['vo']['name']
+                void = occi_image['vo']['id']
+              else
+                voname = ''
+                void = ''
+              end
+              {
+                #image_global_id: image['id'],
+                id: void,
+                name: image['application']['name'],
+                mpuri: image['mpuri'],
+                vo: voname
+              }
+            end
+          end.flatten
+        else
+          nil
+        end
+      end
+
+      #TODO refactor and finnish
+      def all_sites
+        response = HTTParty.get(APPDB_REQUEST_ALL_IMAGES)
+        if response.success?
+
+          sites = response['appdb']['site'].collect do |site|
+            site['service'] = [site['service']].flatten
+          end.flatten
+
+          sites.select! { |site| site['type'] == 'occi' }
+          images = sites.collect { |site| site['image']}.flatten.compact
+
+          sites.collect do |site|
+            {
+              name: site['image'],
+              endpoint: site['occi_endpoint_url'],
+              #id: "",
+              #name: "",
+              #country: "",
+            }
+          end
+        else
+          nil
+        end
+      end
+
+
+
+
+
+
       def vaproviders_from_appdb
         response = HTTParty.post(APPDB_PROXY_URL, body: APPDB_REQUEST_FORM)
         providers = response.success? ? response.parsed_response : nil
