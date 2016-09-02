@@ -1,22 +1,33 @@
-class Sites
-  DB_COLLECTION_SITES = 'sites_from_appdb'
-
-  def initialize(options = {})
-    @db_collection_sites = options[:db_collection_sites] || DB_COLLECTION_SITES
-    @cache = Utils::MongodbCache.new
+class Sites < Base
+  def list(appliance_id)
+    appliance_id.blank? ? get_services : get_app_sites(appliance_id)
   end
 
-  def list
-    @cache.cache_read(@db_collection_sites).flatten
+  def show(appliance_id,id)
+    get_app_sites(appliance_id).select { |service| service[:id] == id }.first
   end
 
-  def show(id)
-    vaprovider = @cache.cache_read(@db_collection_sites).select { |prov| prov['id'] == id }.first
+  private
+
+  def get_services
+    format_sites(get_servs_and_flavs)
   end
 
-  def refresh_database
-    #TODO put db refresh elsewhere
-    @cache.cache_fetch(@db_collection_sites) {Utils::AppdbReader.all_sites}
+  def get_app_sites(appliance_id)
+    service_ids = get_service_ids(appliance_id)
+    get_services.select! do |service|
+      service[:service_id].in? service_ids
+    end
   end
 
+  def format_sites(sites_and_flavours)
+    sites_and_flavours.collect do |site|
+      {
+        id: site['siteid'],
+        name: site['name'],
+        country: site['country'],
+        service_id: site['service_id']
+      }
+    end
+  end
 end

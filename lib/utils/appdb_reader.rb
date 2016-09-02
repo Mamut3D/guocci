@@ -20,9 +20,83 @@ module Utils
     class << self
 
       #TODO refactor
-      def all_appliances
+      def appliances
         response = HTTParty.get(APPDB_REQUEST_ALL_IMAGES)
         if response.success?
+          response = response.parsed_response
+
+          services = response['appdb']['site'].collect do |site|
+            [site['service']].flatten.collect do |service|
+              {
+                service_id: service['id'],
+                site_id: site['id'],
+                service: service
+              } if service['type'] == 'occi'
+            end
+          end.flatten.compact
+
+          services.select! { |service| service[:service].key? ('image')}
+
+          appliances = services.collect do |service|
+            {
+              site_id: service[:site_id],
+              service_id: service[:service_id],
+              appliance: get_appliances(service[:service]['image']),
+            }
+          end
+        else
+          nil
+        end
+      end
+
+      #TODO refactor and finnish
+      def sites_and_flavours
+        response = HTTParty.get(APPDB_REQUEST_ALL_IMAGES)
+        if response.success?
+          response = response.parsed_response
+          sites = response['appdb']['site'].collect do |site|
+            [site['service']].flatten.collect do |service|
+              {
+                siteid: site['id'],
+                name: site['name'],
+                country: site['country']['isocode'],
+                service_id: service['id'],
+                template: filter_template([service['template']].flatten)
+              } if (service['type'] == 'occi')
+            end
+          end.flatten.compact
+          #sites.select! { |site| !site[:template].blank?}
+          return sites
+        else
+          nil
+        end
+      end
+
+      def sites_old_method
+        response = HTTParty.get(APPDB_REQUEST_ALL_IMAGES)
+        if response.success?
+          response = response.parsed_response
+          sites = response['appdb']['site'].collect do |site|
+            [site['service']].flatten.collect do |service|
+              {
+                site_id: site['id'],
+                name: site['name'],
+                country: site['country']['isocode'],
+                endpoint: service['occi_endpoint_url'],
+                service_id: service['id']
+              } if service['type'] == 'occi'
+            end
+          end.flatten.compact
+        else
+          nil
+        end
+      end
+
+
+      def appliances_old_method
+        response = HTTParty.get(APPDB_REQUEST_ALL_IMAGES)
+        if response.success?
+          response = response.parsed_response
 
           sites = response['appdb']['site'].collect do |site|
             site['service'] = [site['service']].flatten
@@ -55,120 +129,41 @@ module Utils
         end
       end
 
-      def all_sites
-        response = HTTParty.post(APPDB_PROXY_URL, body: APPDB_REQUEST_FORM)
-        providers = response.success? ? response.parsed_response : nil
-        if providers
-          providers = providers['broker']['reply']['appdb']['provider']
-          providers.select! do |prov|
-            prov['in_production'] == 'true' && !prov['endpoint_url'].blank?
-          end
-          if providers.blank?
-            {}
-          else
-            providers.collect do |prov|
-              {
-                id: prov['id'],
-                name: prov['name'],
-                country: prov['country']['isocode'],
-                endpoint: prov['endpoint_url']
-              }
-            end
-          end
-        else
-          []
-        end
-      end
+      private
 
-      #TODO refactor and finnish
-      def all_sites_new
-        response = HTTParty.get(APPDB_REQUEST_ALL_IMAGES)
-        if response.success?
-
-          sites = response['appdb']['site'].collect do |site|
-            site['service'] = [site['service']].flatten
-          end.flatten
-
-          sites.select! { |site| site['type'] == 'occi' }
-          images = sites.collect { |site| site['image']}.flatten.compact
-
-          sites.collect do |site|
-            {
-              name: site['image'],
-              endpoint: site['occi_endpoint_url'],
-              #id: "",
-              #name: "",
-              #country: "",
-            }
-          end
-        else
-          nil
-        end
-      end
-
-
-
-
-
-
-      def vaproviders_from_appdb
-        response = HTTParty.post(APPDB_PROXY_URL, body: APPDB_REQUEST_FORM)
-        providers = response.success? ? response.parsed_response : nil
-        providers ? providers['broker']['reply']['appdb']['provider'] : []
-      end
-
-      def vaprovider_sizes(vaprovider)
-        templates = [vaprovider['template']].flatten.compact
+      def filter_template(templates)
         templates.collect do |template|
-          next if template['resource_name'].blank?
           {
-            id: template['resource_name'],
-            name: template['resource_name'].split('#').last,
+            #template: template,
+            resource_id: Base64.strict_encode64(template['group_hash']),
+            name: template['resource_name'],
             memory: template['main_memory_size'],
             vcpu: template['logical_cpus'],
             cpu: template['physical_cpus']
-          }
-        end.compact
+          } unless template['group_hash'].blank?
+        end.flatten.compact
       end
 
-      def vaprovider_appliances(vaprovider)
-        images = [vaprovider['image']].flatten.compact
+      def get_appliances(images)
+        images = [images].flatten.compact
         images.collect do |image|
-          appl = image_appliance(image)
-          next unless appl
-
-          vo = vaprovider_appliances_vo(vaprovider, appl, image)
-
-          {
-            id: image['va_provider_image_id'],
-            name: appl['title'].gsub(/\[.+\]/, ''),
-            mpuri: image['mp_uri'],
-            vo: vo
-          }
-        end.compact
-      end
-
-      private
-
-      def image_appliance(image)
-        return nil if image['va_provider_image_id'].blank? || image['mp_uri'].blank?
-
-        response = HTTParty.get("#{image['mp_uri'].chomp('/')}/json")
-        response.success? ? response.parsed_response : nil
-      end
-
-      def vaprovider_appliances_vo(vaprovider, appl, image)
-        appl['sites'].each do |site|
-          site['services'].each do |service|
-            next unless service['id'] == vaprovider['id']
-
-            service['vos'].each do |vo|
-              return vo['name'] if vo['occi']['id'] == image['va_provider_image_id']
+          image['occi'] = [image['occi']].flatten.compact
+          image['occi'].collect do |occi_image|
+            if (occi_image.key? ('vo'))
+              voname = occi_image['vo']['name']
+              image_id = occi_image['id'].split('os_tpl#')[1]
+            else
+              image_id = ''
+              void = ''
             end
+            {
+              id: image_id,
+              name: image['application']['name'],
+              mpuri: image['mpuri'],
+              vo: voname
+            }
           end
-        end
-
-        'unknown'
+        end.flatten
       end
     end
   end

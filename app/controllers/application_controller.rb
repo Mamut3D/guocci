@@ -15,11 +15,11 @@ class ApplicationController < ActionController::Base
     offset = params[:offset] || DEFAULT_OFFSET
 
     unless limit =~ /\A\d+\z/
-      respond_with({ message: 'Limit is set incorrectly' }, status: 400)
+      respond_with({ message: "Limit '#{params[:limit]}' is incorrect. Integer is required" }, status: 400)
       return false
     end
     unless offset =~ /\A\d+\z/
-      respond_with({ message: 'Offset is set incorrectly' }, status: 400)
+      respond_with({ message: "Offset '#{params[:offset]}' is incorrect. Integer is required" }, status: 400)
       return false
     end
     @limit = limit.to_i

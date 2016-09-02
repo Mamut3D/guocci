@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   namespace :v1 do
 
+    #TODO remove from final project
+    resources :test_appliances, only: [:index]
+    resources :test_sites, only: [:index]
+
     resources :appliances, only: [:index, :show] do
       resources :sites, only: [:index, :show] do
         resources :flavours, only: [:index, :show]
