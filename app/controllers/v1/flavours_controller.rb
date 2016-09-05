@@ -5,17 +5,18 @@ module V1
     def index
       flavours = Flavours.new
       flavour_list = flavours.list(params[:appliance_id],params[:site_id])
-      flavour_list.blank? ? respond_with(flavour_list, status: 204) : respond_with(flavour_list)#[0, @limit])
+      if flavour_list.first.key? (:message)
+        respond_with(flavour_list.first, status: 404)
+      else
+        flavour_list.blank? ? respond_with(flavour_list, status: 204) : respond_with(flavour_list[0, @limit])
+      end
     end
 
     def show
       flavours = Flavours.new
-      flavour = sites.show(params[:id])
-      if site.blank?
-        respond_with({ message: "Site with ID #{params[:id]} could not be found!" }, status: 404)
-      else
-        respond_with(site)
-      end
+      flavour = flavours.show(params[:appliance_id], params[:site_id], params[:id])
+      flavour.first.key? (:message) ? respond_with(flavour.first, status: 404) : respond_with(flavour)
     end
+
   end
 end

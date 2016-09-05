@@ -19504,3 +19504,2045 @@ Processing by V1::SitesController#index as */*
 Completed 200 OK in 51ms (Views: 0.2ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/v1/appliances/f43e7a32-340c-4e1e-bffb-286c40ba70df/sites" for ::1 at 2016-09-05 08:41:42 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as */*
+  Parameters: {"appliance_id"=>"f43e7a32-340c-4e1e-bffb-286c40ba70df"}
+Completed 200 OK in 5070ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/f43e7a32-340c-4e1e-bffb-286c40ba70df/sites" for ::1 at 2016-09-05 09:06:28 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as */*
+  Parameters: {"appliance_id"=>"f43e7a32-340c-4e1e-bffb-286c40ba70df"}
+Completed 200 OK in 17ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/f43e7a32-340c-4e1e-bffb-286c40ba70dfe/sites" for ::1 at 2016-09-05 09:06:39 +0200
+Processing by V1::SitesController#index as */*
+  Parameters: {"appliance_id"=>"f43e7a32-340c-4e1e-bffb-286c40ba70dfe"}
+Completed 404 Not Found in 15ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/f43e7a32-340c-4e1e-bffb-286c40ba70df/sites" for ::1 at 2016-09-05 09:06:53 +0200
+Processing by V1::SitesController#index as */*
+  Parameters: {"appliance_id"=>"f43e7a32-340c-4e1e-bffb-286c40ba70df"}
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/test_appliances" for ::1 at 2016-09-05 09:08:27 +0200
+Processing by V1::TestAppliancesController#index as */*
+Completed 200 OK in 2448ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0" for ::1 at 2016-09-05 09:08:32 +0200
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0"}
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0/flavour" for ::1 at 2016-09-05 09:08:45 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0/flavour"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered collection of /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [28 times] (4.9ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (21.7ms)
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0/flavours" for ::1 at 2016-09-05 09:09:01 +0200
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0"}
+Completed 200 OK in 34ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0/flavours" for ::1 at 2016-09-05 09:31:39 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0"}
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `id' for #<Flavours:0x007ff9fdb51130>):
+  
+app/models/flavours.rb:3:in `list'
+app/controllers/v1/flavours_controller.rb:7:in `index'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.9ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.2ms)
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0/flavours" for ::1 at 2016-09-05 09:31:54 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0"}
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0/flavours" for ::1 at 2016-09-05 09:32:38 +0200
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0"}
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0/flavours" for ::1 at 2016-09-05 09:43:07 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/mtd/Documents/CesnetWork/rails/guocci/app/models/flavours.rb:37: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/models/flavours.rb:37: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/v1/flavours_controller.rb:6:in `index'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.3ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.0ms)
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0/flavours" for ::1 at 2016-09-05 09:43:31 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0"}
+Completed 200 OK in 4770ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites" for ::1 at 2016-09-05 09:44:53 +0200
+Processing by V1::SitesController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55"}
+Completed 200 OK in 47ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/test_appliances" for ::1 at 2016-09-05 09:47:32 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::TestAppliancesController#index as */*
+Completed 200 OK in 2455ms (Views: 26.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/test_appliances" for ::1 at 2016-09-05 09:48:41 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::TestAppliancesController#index as */*
+Completed 200 OK in 2403ms (Views: 12.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/test_sites" for ::1 at 2016-09-05 09:48:51 +0200
+Processing by V1::TestSitesController#index as */*
+Completed 200 OK in 2350ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/test_sites" for ::1 at 2016-09-05 09:50:25 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::TestSitesController#index as */*
+Completed 200 OK in 2428ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/test_appliances" for ::1 at 2016-09-05 09:50:31 +0200
+Processing by V1::TestAppliancesController#index as */*
+Completed 500 Internal Server Error in 2396ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `site_id' for Utils::AppdbReader:Class):
+  
+lib/utils/appdb_reader.rb:42:in `block in appliances'
+lib/utils/appdb_reader.rb:40:in `collect'
+lib/utils/appdb_reader.rb:40:in `appliances'
+app/controllers/v1/test_appliances_controller.rb:6:in `index'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.8ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (13.1ms)
+Started GET "/v1/test_appliances" for ::1 at 2016-09-05 09:50:54 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::TestAppliancesController#index as */*
+Completed 200 OK in 2461ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites" for ::1 at 2016-09-05 09:51:05 +0200
+Processing by V1::SitesController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55"}
+Completed 200 OK in 4988ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites" for ::1 at 2016-09-05 09:52:14 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55"}
+Completed 200 OK in 15ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/test_sites" for ::1 at 2016-09-05 09:56:59 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::TestSitesController#index as */*
+Completed 200 OK in 2433ms (Views: 19.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/sites" for ::1 at 2016-09-05 09:57:37 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as */*
+Completed 200 OK in 5014ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/f43e7a32-340c-4e1e-bffb-286c40ba70df/sites" for ::1 at 2016-09-05 09:59:51 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as */*
+  Parameters: {"appliance_id"=>"f43e7a32-340c-4e1e-bffb-286c40ba70df"}
+Completed 404 Not Found in 16ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances" for ::1 at 2016-09-05 10:00:01 +0200
+Processing by V1::AppliancesController#index as */*
+Completed 200 OK in 11ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites" for ::1 at 2016-09-05 10:00:12 +0200
+Processing by V1::SitesController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55"}
+Completed 404 Not Found in 14ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/" for ::1 at 2016-09-05 10:00:23 +0200
+Processing by V1::AppliancesController#index as */*
+Completed 200 OK in 12ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites" for ::1 at 2016-09-05 10:00:36 +0200
+Processing by V1::SitesController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55"}
+Completed 404 Not Found in 20ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites" for ::1 at 2016-09-05 10:01:54 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55"}
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites" for ::1 at 2016-09-05 10:02:27 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55"}
+Completed 200 OK in 59ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites" for ::1 at 2016-09-05 10:03:05 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55"}
+Completed 404 Not Found in 17ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites" for ::1 at 2016-09-05 10:03:29 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55"}
+Completed 200 OK in 56ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites" for ::1 at 2016-09-05 10:03:45 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55"}
+Completed 200 OK in 17ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 10:03:54 +0200
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 10:04:14 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:04:50 +0200
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:05:24 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 200 OK in 14ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:05:50 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:06:13 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 200 OK in 15ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:06:18 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 200 OK in 55ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:07:21 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `compact' for nil:NilClass):
+  
+app/models/flavours.rb:27:in `block in get_flavours'
+app/models/flavours.rb:24:in `select'
+app/models/flavours.rb:24:in `get_flavours'
+app/models/flavours.rb:7:in `list'
+app/controllers/v1/flavours_controller.rb:7:in `index'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.2ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.2ms)
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:07:35 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `compact' for nil:NilClass):
+  
+app/models/flavours.rb:27:in `block in get_flavours'
+app/models/flavours.rb:24:in `select'
+app/models/flavours.rb:24:in `get_flavours'
+app/models/flavours.rb:7:in `list'
+app/controllers/v1/flavours_controller.rb:7:in `index'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.8ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.2ms)
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:08:04 +0200
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `compact' for nil:NilClass):
+  
+app/models/flavours.rb:27:in `block in get_flavours'
+app/models/flavours.rb:24:in `select'
+app/models/flavours.rb:24:in `get_flavours'
+app/models/flavours.rb:7:in `list'
+app/controllers/v1/flavours_controller.rb:7:in `index'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.3ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (15.0ms)
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:08:33 +0200
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `compact' for nil:NilClass):
+  
+app/models/flavours.rb:27:in `block in get_flavours'
+app/models/flavours.rb:24:in `select'
+app/models/flavours.rb:24:in `get_flavours'
+app/models/flavours.rb:7:in `list'
+app/controllers/v1/flavours_controller.rb:7:in `index'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.2ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.7ms)
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:08:49 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 200 OK in 15ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:09:05 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 200 OK in 31ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:09:21 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of String into Integer):
+  
+app/models/flavours.rb:24:in `[]'
+app/models/flavours.rb:24:in `get_flavours'
+app/models/flavours.rb:7:in `list'
+app/controllers/v1/flavours_controller.rb:7:in `index'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.2ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.8ms)
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:09:34 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `compact' for nil:NilClass):
+  
+app/models/flavours.rb:27:in `block in get_flavours'
+app/models/flavours.rb:24:in `collect'
+app/models/flavours.rb:24:in `get_flavours'
+app/models/flavours.rb:7:in `list'
+app/controllers/v1/flavours_controller.rb:7:in `index'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.1ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.2ms)
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:09:46 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 200 OK in 16ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:09:51 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 200 OK in 16ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:10:13 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/mtd/Documents/CesnetWork/rails/guocci/app/models/flavours.rb:26: syntax error, unexpected '}', expecting =>
+        {service}#['flavours']
+                 ^
+/home/mtd/Documents/CesnetWork/rails/guocci/app/models/flavours.rb:37: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/models/flavours.rb:26: syntax error, unexpected '}', expecting =>
+app/models/flavours.rb:37: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/v1/flavours_controller.rb:6:in `index'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.4ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (15.4ms)
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:10:22 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 200 OK in 16ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:10:38 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 200 OK in 14ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:10:49 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 200 OK in 51ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:10:54 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 200 OK in 16ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/test_sites" for ::1 at 2016-09-05 10:12:48 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::TestSitesController#index as */*
+Completed 500 Internal Server Error in 2423ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `filter_template' for Utils::AppdbReader:Class
+Did you mean?  filter_flavour):
+  
+lib/utils/appdb_reader.rb:67:in `block (2 levels) in sites_and_flavours'
+lib/utils/appdb_reader.rb:59:in `collect'
+lib/utils/appdb_reader.rb:59:in `block in sites_and_flavours'
+lib/utils/appdb_reader.rb:58:in `collect'
+lib/utils/appdb_reader.rb:58:in `sites_and_flavours'
+app/controllers/v1/test_sites_controller.rb:6:in `index'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (15.9ms)
+Started GET "/v1/test_sites" for ::1 at 2016-09-05 10:13:05 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::TestSitesController#index as */*
+Completed 200 OK in 2798ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/test_sites" for ::1 at 2016-09-05 10:13:42 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::TestSitesController#index as */*
+Completed 200 OK in 2448ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:14:11 +0200
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 200 OK in 5026ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015Gx0/flavours" for ::1 at 2016-09-05 10:14:34 +0200
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015Gx0"}
+Completed 200 OK in 53ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:14:45 +0200
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 200 OK in 31ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/x6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:14:49 +0200
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"x6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:14:55 +0200
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 200 OK in 12ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:15:33 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 200 OK in 17ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:17:21 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0d/flavours" for ::1 at 2016-09-05 10:17:26 +0200
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0d"}
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0d/flavours" for ::1 at 2016-09-05 10:17:56 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0d"}
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0d/flavours" for ::1 at 2016-09-05 10:18:10 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0d"}
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:18:18 +0200
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 200 OK in 13ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:25:25 +0200
+  
+SyntaxError (/home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/v1/flavours_controller.rb:22: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/v1/flavours_controller.rb:22: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.0ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.8ms)
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:26:34 +0200
+  
+SyntaxError (/home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/v1/flavours_controller.rb:22: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/v1/flavours_controller.rb:22: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.1ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (15.7ms)
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:28:03 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `key?' for #<Array:0x007ff9faa27e60>):
+  
+app/controllers/v1/flavours_controller.rb:8:in `index'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.0ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (15.6ms)
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:28:19 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+No template found for V1::FlavoursController#index, rendering head :no_content
+Completed 204 No Content in 24ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:29:17 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 200 OK in 60ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:29:24 +0200
+  
+SyntaxError (/home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/v1/flavours_controller.rb:11: syntax error, unexpected ')', expecting keyword_end
+/home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/v1/flavours_controller.rb:25: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/v1/flavours_controller.rb:11: syntax error, unexpected ')', expecting keyword_end
+app/controllers/v1/flavours_controller.rb:25: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.9ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.0ms)
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:29:34 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 200 OK in 19ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-48ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:29:43 +0200
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-48ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `key?' for #<Array:0x007ffa02c1d848>):
+  
+app/controllers/v1/flavours_controller.rb:8:in `index'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.1ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.1ms)
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-48ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:30:18 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-48ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 200 OK in 15ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-48ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:30:39 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-48ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-48ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:30:48 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-48ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-48ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:31:23 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-48ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `flaten' for #<Array:0x007ff9b46d6c98>
+Did you mean?  flatten
+               flatten!):
+  
+app/controllers/v1/flavours_controller.rb:9:in `index'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.3ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (15.0ms)
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-48ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:31:31 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-48ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 404 Not Found in 13ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-48ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:31:46 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-48ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 404 Not Found in 67ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances" for ::1 at 2016-09-05 10:31:57 +0200
+Processing by V1::AppliancesController#index as */*
+Completed 200 OK in 11ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55" for ::1 at 2016-09-05 10:32:05 +0200
+Processing by V1::AppliancesController#show as */*
+  Parameters: {"id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55"}
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites" for ::1 at 2016-09-05 10:32:20 +0200
+Processing by V1::SitesController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55"}
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 10:32:30 +0200
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 58ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/8l3757G0:8015G0" for ::1 at 2016-09-05 10:32:35 +0200
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"8l3757G0:8015G0"}
+Completed 404 Not Found in 14ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/8l3757G0:8015G0" for ::1 at 2016-09-05 10:35:28 +0200
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"8l3757G0:8015G0"}
+Completed 404 Not Found in 16ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/8l3757G0:8015G0" for ::1 at 2016-09-05 10:39:07 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"8l3757G0:8015G0"}
+Completed 404 Not Found in 15ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/test_sites" for ::1 at 2016-09-05 10:41:55 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::TestSitesController#index as */*
+Completed 200 OK in 2434ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/test_sites" for ::1 at 2016-09-05 10:43:27 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::TestSitesController#index as */*
+Completed 200 OK in 2482ms (Views: 27.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/test_sites" for ::1 at 2016-09-05 10:44:13 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::TestSitesController#index as */*
+Completed 200 OK in 2523ms (Views: 16.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/test_sites" for ::1 at 2016-09-05 10:44:34 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::TestSitesController#index as */*
+Completed 200 OK in 2547ms (Views: 27.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/test_sites" for ::1 at 2016-09-05 10:44:53 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::TestSitesController#index as */*
+Completed 200 OK in 2643ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/8l3757G0:8015G0" for ::1 at 2016-09-05 10:45:02 +0200
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"8l3757G0:8015G0"}
+Completed 404 Not Found in 5053ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/" for ::1 at 2016-09-05 10:45:13 +0200
+Processing by V1::SitesController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55"}
+Completed 200 OK in 16ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 10:45:19 +0200
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 15ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:45:28 +0200
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 200 OK in 14ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:46:19 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 200 OK in 15ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:52:19 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `first' for nil:NilClass):
+  
+app/controllers/v1/flavours_controller.rb:8:in `index'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.1ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.4ms)
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:52:38 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 200 OK in 17ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0x/flavours" for ::1 at 2016-09-05 10:52:45 +0200
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0x"}
+Completed 404 Not Found in 11ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55a/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:52:55 +0200
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55a", "site_id"=>"83757G0:8015G0"}
+Completed 404 Not Found in 9ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:53:00 +0200
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 200 OK in 14ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 10:54:47 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 200 OK in 14ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours/x" for ::1 at 2016-09-05 10:54:51 +0200
+Processing by V1::FlavoursController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0", "id"=>"x"}
+Completed 500 Internal Server Error in 85ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `sites' for #<V1::FlavoursController:0x007ffaaf653360>):
+  
+app/controllers/v1/flavours_controller.rb:17:in `show'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.6ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (36.7ms)
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours/x" for ::1 at 2016-09-05 10:55:50 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0", "id"=>"x"}
+Completed 500 Internal Server Error in 130ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `sites' for #<V1::FlavoursController:0x007ffa02ce9100>):
+  
+app/controllers/v1/flavours_controller.rb:17:in `show'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.3ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.0ms)
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours/x" for ::1 at 2016-09-05 10:56:01 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0", "id"=>"x"}
+Completed 500 Internal Server Error in 88ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `site' for #<V1::FlavoursController:0x007ffab358a1a0>):
+  
+app/controllers/v1/flavours_controller.rb:18:in `show'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.4ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.1ms)
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours/x" for ::1 at 2016-09-05 10:56:24 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0", "id"=>"x"}
+Completed 200 OK in 17ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours/x" for ::1 at 2016-09-05 10:57:05 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0", "id"=>"x"}
+Completed 200 OK in 14ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours/x" for ::1 at 2016-09-05 11:06:00 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0", "id"=>"x"}
+Completed 200 OK in 17ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours/" for ::1 at 2016-09-05 11:06:05 +0200
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 200 OK in 17ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours/cmVzb3VyY2VfdHBsI3hsYXJnZQ" for ::1 at 2016-09-05 11:06:15 +0200
+Processing by V1::FlavoursController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0", "id"=>"cmVzb3VyY2VfdHBsI3hsYXJnZQ"}
+Completed 200 OK in 15ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours/" for ::1 at 2016-09-05 11:06:33 +0200
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 200 OK in 17ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours/cmVzb3VyY2VfdHBsI3hsYXJnZQ==" for ::1 at 2016-09-05 11:06:42 +0200
+Processing by V1::FlavoursController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0", "id"=>"cmVzb3VyY2VfdHBsI3hsYXJnZQ=="}
+Completed 200 OK in 14ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours/" for ::1 at 2016-09-05 11:08:57 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 200 OK in 17ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours/d" for ::1 at 2016-09-05 11:09:01 +0200
+Processing by V1::FlavoursController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0", "id"=>"d"}
+Completed 200 OK in 29ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours/d" for ::1 at 2016-09-05 11:09:34 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0", "id"=>"d"}
+Completed 200 OK in 56ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours/d" for ::1 at 2016-09-05 11:09:48 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0", "id"=>"d"}
+Completed 200 OK in 16ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours/d" for ::1 at 2016-09-05 11:09:54 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0", "id"=>"d"}
+Completed 200 OK in 20ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours/d" for ::1 at 2016-09-05 11:10:13 +0200
+Processing by V1::FlavoursController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0", "id"=>"d"}
+Completed 200 OK in 15ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours/d" for ::1 at 2016-09-05 11:10:30 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0", "id"=>"d"}
+Completed 200 OK in 17ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours/" for ::1 at 2016-09-05 11:10:34 +0200
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 200 OK in 14ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours/cmVzb3VyY2VfdHBsI3Rpbnk=" for ::1 at 2016-09-05 11:10:43 +0200
+Processing by V1::FlavoursController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0", "id"=>"cmVzb3VyY2VfdHBsI3Rpbnk="}
+Completed 200 OK in 107ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours/cmVzb3VyY2VfdHBsI3Rpbnk=" for ::1 at 2016-09-05 11:11:03 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0", "id"=>"cmVzb3VyY2VfdHBsI3Rpbnk="}
+Completed 200 OK in 16ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours/cmVzb3VyY2VfdHBsI3Rpbnk=" for ::1 at 2016-09-05 11:11:25 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0", "id"=>"cmVzb3VyY2VfdHBsI3Rpbnk="}
+Completed 200 OK in 20ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours/cmVzb3VyY2VfdHBsI3Rpbnk=" for ::1 at 2016-09-05 11:11:27 +0200
+Processing by V1::FlavoursController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0", "id"=>"cmVzb3VyY2VfdHBsI3Rpbnk="}
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours/cmVzb3VyY2VfdHBsI3Rpbnk=" for ::1 at 2016-09-05 11:11:32 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0", "id"=>"cmVzb3VyY2VfdHBsI3Rpbnk="}
+Completed 200 OK in 58ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours/cmVzb3VyY2VfdHBsI3Rpbnk=" for ::1 at 2016-09-05 11:11:38 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0", "id"=>"cmVzb3VyY2VfdHBsI3Rpbnk="}
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `flaten' for #<Array:0x007ffa0adf1108>
+Did you mean?  flatten
+               flatten!):
+  
+app/models/flavours.rb:14:in `show'
+app/controllers/v1/flavours_controller.rb:17:in `show'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.2ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (15.2ms)
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours/cmVzb3VyY2VfdHBsI3Rpbnk=" for ::1 at 2016-09-05 11:11:43 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0", "id"=>"cmVzb3VyY2VfdHBsI3Rpbnk="}
+Completed 200 OK in 18ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours/cmVzb3VyY2VfdHBsI3Rpbnk=" for ::1 at 2016-09-05 11:11:53 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0", "id"=>"cmVzb3VyY2VfdHBsI3Rpbnk="}
+Completed 200 OK in 18ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours/cmVzb3VyY2VfdHBsI3Rpbnk=" for ::1 at 2016-09-05 11:11:58 +0200
+Processing by V1::FlavoursController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0", "id"=>"cmVzb3VyY2VfdHBsI3Rpbnk="}
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours/cmVzb3VyY2VfdHBsI3Rpbnk=" for ::1 at 2016-09-05 11:15:42 +0200
+Processing by V1::FlavoursController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0", "id"=>"cmVzb3VyY2VfdHBsI3Rpbnk="}
+Completed 200 OK in 63ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours/cmVzb3VyY2VfdHBsI3Rpbnkl=" for ::1 at 2016-09-05 11:15:46 +0200
+Processing by V1::FlavoursController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0", "id"=>"cmVzb3VyY2VfdHBsI3Rpbnkl="}
+Completed 200 OK in 17ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 11:19:53 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 500 Internal Server Error in 69ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `flavour_list' for #<V1::FlavoursController:0x007ffaacfdd3e8>
+Did you mean?  flavour_or_message):
+  
+app/controllers/v1/flavours_controller.rb:29:in `respond'
+app/controllers/v1/flavours_controller.rb:8:in `index'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (45.1ms)
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 11:20:44 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 200 OK in 30ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 11:20:59 +0200
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 200 OK in 342ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 11:21:52 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 200 OK in 16ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours" for ::1 at 2016-09-05 11:22:42 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 200 OK in 76ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours/k" for ::1 at 2016-09-05 11:22:52 +0200
+Processing by V1::FlavoursController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0", "id"=>"k"}
+Completed 404 Not Found in 13ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours/k" for ::1 at 2016-09-05 11:24:02 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0", "id"=>"k"}
+Completed 404 Not Found in 19ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours/k" for ::1 at 2016-09-05 11:24:41 +0200
+Processing by V1::FlavoursController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0", "id"=>"k"}
+Completed 404 Not Found in 11ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours/" for ::1 at 2016-09-05 11:24:46 +0200
+Processing by V1::FlavoursController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0"}
+Completed 200 OK in 14ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours/cmVzb3VyY2VfdHBsI2xhcmdl" for ::1 at 2016-09-05 11:24:52 +0200
+Processing by V1::FlavoursController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0", "id"=>"cmVzb3VyY2VfdHBsI2xhcmdl"}
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `key?' for ["id", "cmVzb3VyY2VfdHBsI2xhcmdl"]:Array):
+  
+app/controllers/v1/flavours_controller.rb:32:in `respond'
+app/controllers/v1/flavours_controller.rb:20:in `show'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.8ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (54.4ms)
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours/cmVzb3VyY2VfdHBsI2xhcmdl" for ::1 at 2016-09-05 11:29:21 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0", "id"=>"cmVzb3VyY2VfdHBsI2xhcmdl"}
+Completed 404 Not Found in 16ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours/cmVzb3VyY2VfdHBsI2xhcmdl" for ::1 at 2016-09-05 11:29:50 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0", "id"=>"cmVzb3VyY2VfdHBsI2xhcmdl"}
+Completed 404 Not Found in 14ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours/cmVzb3VyY2VfdHBsI2xhcmdlx" for ::1 at 2016-09-05 11:29:56 +0200
+Processing by V1::FlavoursController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0", "id"=>"cmVzb3VyY2VfdHBsI2xhcmdlx"}
+Completed 404 Not Found in 68ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours/cmVzb3VyY2VfdHBsI2xhcmdl" for ::1 at 2016-09-05 11:30:02 +0200
+Processing by V1::FlavoursController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0", "id"=>"cmVzb3VyY2VfdHBsI2xhcmdl"}
+Completed 404 Not Found in 14ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0/flavours/cmVzb3VyY2VfdHBsI2xhcmdl" for ::1 at 2016-09-05 11:31:32 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::FlavoursController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "site_id"=>"83757G0:8015G0", "id"=>"cmVzb3VyY2VfdHBsI2xhcmdl"}
+Completed 404 Not Found in 16ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites" for ::1 at 2016-09-05 11:39:03 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55"}
+Completed 200 OK in 15ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 11:39:16 +0200
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 2)):
+  
+app/models/base.rb:38:in `app_and_serv_check'
+app/models/sites.rb:7:in `show'
+app/controllers/v1/sites_controller.rb:23:in `show'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.0ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (15.2ms)
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 11:39:37 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 500 Internal Server Error in 19ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `key?' for [:id, "83757G0:8015G0"]:Array):
+  
+app/controllers/v1/sites_controller.rb:24:in `show'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.0ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.1ms)
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 11:40:14 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 404 Not Found in 23ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 11:40:23 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 404 Not Found in 18ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55x/sites/83757G0:8015G0" for ::1 at 2016-09-05 11:40:28 +0200
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55x", "id"=>"83757G0:8015G0"}
+Completed 404 Not Found in 11ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0c" for ::1 at 2016-09-05 11:40:44 +0200
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0c"}
+Completed 404 Not Found in 30ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 11:40:52 +0200
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 404 Not Found in 60ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites" for ::1 at 2016-09-05 11:45:35 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55"}
+Completed 404 Not Found in 6112ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites" for ::1 at 2016-09-05 11:45:43 +0200
+Processing by V1::SitesController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55"}
+Completed 404 Not Found in 29ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/" for ::1 at 2016-09-05 11:45:54 +0200
+Processing by V1::AppliancesController#index as */*
+Completed 200 OK in 12ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55" for ::1 at 2016-09-05 11:46:00 +0200
+Processing by V1::AppliancesController#show as */*
+  Parameters: {"id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55"}
+Completed 200 OK in 129ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55" for ::1 at 2016-09-05 11:46:28 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::AppliancesController#show as */*
+  Parameters: {"id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55"}
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55" for ::1 at 2016-09-05 11:47:06 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::AppliancesController#show as */*
+  Parameters: {"id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55"}
+Completed 200 OK in 15ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/" for ::1 at 2016-09-05 11:47:25 +0200
+Processing by V1::AppliancesController#index as */*
+Completed 200 OK in 12ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/test_sites" for ::1 at 2016-09-05 11:48:00 +0200
+Processing by V1::TestSitesController#index as */*
+Completed 200 OK in 2666ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/cmVzb3VyY2VfdHBsI20xLXhsYXJnZQ==" for ::1 at 2016-09-05 11:48:31 +0200
+Processing by V1::AppliancesController#show as */*
+  Parameters: {"id"=>"cmVzb3VyY2VfdHBsI20xLXhsYXJnZQ=="}
+Completed 404 Not Found in 56ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/" for ::1 at 2016-09-05 11:48:52 +0200
+Processing by V1::AppliancesController#index as */*
+Completed 200 OK in 14ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/test_appliances" for ::1 at 2016-09-05 11:49:04 +0200
+Processing by V1::TestAppliancesController#index as */*
+Completed 200 OK in 2740ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/0918f5dc-13af-451e-8475-0350b3538882" for ::1 at 2016-09-05 11:49:28 +0200
+Processing by V1::AppliancesController#show as */*
+  Parameters: {"id"=>"0918f5dc-13af-451e-8475-0350b3538882"}
+Completed 200 OK in 14ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/test_appliances" for ::1 at 2016-09-05 11:50:49 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::TestAppliancesController#index as */*
+Completed 200 OK in 2816ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/0918f5dc-13af-451e-8475-0350b3538882" for ::1 at 2016-09-05 11:50:53 +0200
+Processing by V1::AppliancesController#show as */*
+  Parameters: {"id"=>"0918f5dc-13af-451e-8475-0350b3538882"}
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/test_sites" for ::1 at 2016-09-05 11:53:40 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::TestSitesController#index as */*
+Completed 200 OK in 2670ms (Views: 20.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/0918f5dc-13af-451e-8475-0350b3538882" for ::1 at 2016-09-05 11:53:43 +0200
+Processing by V1::AppliancesController#show as */*
+  Parameters: {"id"=>"0918f5dc-13af-451e-8475-0350b3538882"}
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/0918f5dc-13af-451e-8475-0350b3538882" for ::1 at 2016-09-05 11:54:11 +0200
+Processing by V1::AppliancesController#show as */*
+  Parameters: {"id"=>"0918f5dc-13af-451e-8475-0350b3538882"}
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/test_appliances" for ::1 at 2016-09-05 11:58:07 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::TestAppliancesController#index as */*
+Completed 200 OK in 2673ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/test_appliances" for ::1 at 2016-09-05 11:59:11 +0200
+Processing by V1::TestAppliancesController#index as */*
+Completed 200 OK in 2655ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/test_appliances" for ::1 at 2016-09-05 12:00:19 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::TestAppliancesController#index as */*
+Completed 200 OK in 2865ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/0918f5dc-13af-451e-8475-0350b3538882" for ::1 at 2016-09-05 12:00:23 +0200
+Processing by V1::AppliancesController#show as */*
+  Parameters: {"id"=>"0918f5dc-13af-451e-8475-0350b3538882"}
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites" for ::1 at 2016-09-05 12:00:25 +0200
+Processing by V1::SitesController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55"}
+Completed 404 Not Found in 18ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/" for ::1 at 2016-09-05 12:00:32 +0200
+Processing by V1::AppliancesController#index as */*
+Completed 200 OK in 14ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55" for ::1 at 2016-09-05 12:00:37 +0200
+Processing by V1::AppliancesController#show as */*
+  Parameters: {"id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55"}
+Completed 200 OK in 10ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/setes" for ::1 at 2016-09-05 12:00:53 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/setes"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered collection of /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [28 times] (4.6ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (20.9ms)
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites" for ::1 at 2016-09-05 12:01:00 +0200
+Processing by V1::SitesController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55"}
+Completed 404 Not Found in 48ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55" for ::1 at 2016-09-05 12:01:33 +0200
+Processing by V1::AppliancesController#show as */*
+  Parameters: {"id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55"}
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites" for ::1 at 2016-09-05 12:01:41 +0200
+Processing by V1::SitesController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55"}
+Completed 404 Not Found in 59ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites" for ::1 at 2016-09-05 12:02:42 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55"}
+Completed 404 Not Found in 15ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites" for ::1 at 2016-09-05 12:05:57 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55"}
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `first' for nil:NilClass):
+  
+app/controllers/v1/sites_controller.rb:11:in `index'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.4ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (24.5ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (39.4ms)
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites" for ::1 at 2016-09-05 12:06:42 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55"}
+Completed 200 OK in 18ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites" for ::1 at 2016-09-05 12:07:14 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55"}
+Completed 200 OK in 17ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites" for ::1 at 2016-09-05 12:07:30 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55"}
+Completed 200 OK in 17ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites" for ::1 at 2016-09-05 12:07:43 +0200
+Processing by V1::SitesController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55"}
+Completed 200 OK in 17ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites" for ::1 at 2016-09-05 12:08:00 +0200
+Processing by V1::SitesController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55"}
+Completed 200 OK in 16ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/x" for ::1 at 2016-09-05 12:08:11 +0200
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"x"}
+Completed 404 Not Found in 11ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/" for ::1 at 2016-09-05 12:08:18 +0200
+Processing by V1::SitesController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55"}
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/" for ::1 at 2016-09-05 12:09:32 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#index as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55"}
+Completed 200 OK in 73ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:09:39 +0200
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `first' for nil:NilClass):
+  
+app/controllers/v1/sites_controller.rb:22:in `show'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.9ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (13.8ms)
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:10:43 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `first' for nil:NilClass):
+  
+app/controllers/v1/sites_controller.rb:22:in `show'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.1ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.2ms)
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:11:19 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `first' for nil:NilClass):
+  
+app/controllers/v1/sites_controller.rb:22:in `show'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.1ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.7ms)
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:11:51 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 500 Internal Server Error in 18ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `key?' for nil:NilClass):
+  
+app/controllers/v1/sites_controller.rb:22:in `show'
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.0ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/mtd/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.1ms)
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:12:12 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 14ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:12:41 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 18ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:12:50 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 19ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:13:12 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 25ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:13:35 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 20ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:13:47 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 69ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:13:59 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 25ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:14:28 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 27ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:14:50 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 20ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:15:07 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 26ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:15:14 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 28ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:15:24 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 91ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:15:48 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 18ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:15:56 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 64ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:15:58 +0200
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 22ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:15:58 +0200
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 20ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:15:59 +0200
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 21ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:15:59 +0200
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 25ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:15:59 +0200
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 22ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:15:59 +0200
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 18ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:15:59 +0200
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 31ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:16:00 +0200
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 28ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:16:00 +0200
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 20ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:16:00 +0200
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 17ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:16:00 +0200
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 15ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:16:00 +0200
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 62ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:16:00 +0200
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 16ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:16:00 +0200
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 15ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:16:01 +0200
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 21ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:16:01 +0200
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 39ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:16:01 +0200
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 33ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:16:01 +0200
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 32ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:16:01 +0200
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 380ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:16:02 +0200
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 16ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:16:03 +0200
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 19ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:16:03 +0200
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 17ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:16:03 +0200
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 423ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:16:04 +0200
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:16:04 +0200
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:16:05 +0200
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 16ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:16:05 +0200
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 85ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:16:06 +0200
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 23ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:16:20 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 18ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015G0" for ::1 at 2016-09-05 12:16:24 +0200
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:ApplicationController> at /home/mtd/Documents/CesnetWork/rails/guocci/app/controllers/application_controller.rb:3)
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015G0"}
+Completed 200 OK in 15ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/v1/appliances/6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55/sites/83757G0:8015Gx0" for ::1 at 2016-09-05 12:16:39 +0200
+Processing by V1::SitesController#show as */*
+  Parameters: {"appliance_id"=>"6f3d54d5-fbc2-43a1-8ffb-eaa4192d6e55", "id"=>"83757G0:8015Gx0"}
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+

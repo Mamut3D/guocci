@@ -5,19 +5,23 @@ module V1
     def index
       sites = Sites.new
       sites_list = sites.list(params[:appliance_id])
-      sites_list.blank? ? respond_with(sites_list, status: 204) : respond_with(sites_list[0, @limit])
+      if params[:appliance_id].blank?
+        sites_list.blank? ? respond_with(sites_list, status: 204) : respond_with(sites_list[0, @limit])
+      else
+        if sites_list.first.key? (:message)
+          respond_with(sites_list.first, status: 404)
+        else
+          respond_with(sites_list[0, @limit])
+        end
+      end
     end
 
-
-    #TODO add check appliance does not exist error and site does not exist error
     def show
       sites = Sites.new
       site = sites.show(params[:appliance_id],params[:id])
-      if site.blank?
-        respond_with({ message: "Site with ID #{params[:id]} could not be found!" }, status: 404)
-      else
-        respond_with(site)
-      end
+      respond_with(site)
+      return
+      site.first.key? (:message) ? respond_with(site.first, status: 404) : respond_with(site)
     end
   end
 end

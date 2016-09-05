@@ -1,27 +1,30 @@
 class Flavours < Base
-  def list(appliance_id,site_id_)
-    sites_and_flavours = get_servs_and_flavs
-    #get_appliance(appliance_id)
-    #get_flavours(sites_and_flavours)
+  def list(appliance_id, service_id)
+    message = app_and_serv_check(appliance_id, service_id)
+    message.blank? ? get_flavours(service_id) : message
   end
 
-  def show(id)
-    sites_and_flavours = @cache.cache_read(@db_coll_sites_and_flavour).flatten
-    flavours = get_flavours(sites_and_flavours)
-    flavours.select { |prov| prov['id'] == id }.first
+  def show(appliance_id, service_id, flavour_id)
+    flavours = list(appliance_id, service_id)
+    return flavours if flavours.first.key? ('message')
+    flavours.select! { |flavour| flavour['id'] == flavour_id }
+    if flavours.blank?
+      [{ message: "Flavour '#{flavour_id}' at site '#{service_id}' for appl. '#{appliance_id}' could not be found!" }]
+    else
+      flavours
+    end
   end
 
   private
 
-  def get_flavours(sites_and_flavours)
-
-
+  def get_flavours(service_id)
+    servs_and_flavs = get_servs_and_flavs
+    servs_and_flavs.collect do |service|
+      if service['id'] == service_id
+        service['flavours']
+      end
+    end.compact.flatten
   end
 
-  def get_appliance(appliance_id)
-    appliances = @cache.cache_read(@db_collection_appliances).flatten
-    appliance = appliances.select { |appliance| appliance['id'] == appliance_id}
-    appliance.first if appliance
-  end
 
 end
