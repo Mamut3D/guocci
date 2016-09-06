@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
   DEFAULT_OFFSET = '0'.freeze
 
   def cache_manager
-    @cache_instance ||= Utils::MongoDBCache.new(logger: Rails.logger)
+    @cache_instance ||= Utils::MongodbCache.new(logger: Rails.logger)
   end
 
   def check_limit_and_offset_param

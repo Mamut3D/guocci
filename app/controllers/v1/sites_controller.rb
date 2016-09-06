@@ -3,7 +3,7 @@ module V1
     respond_to :json
 
     def index
-      sites = Sites.new
+      sites = Sites.new(cache: cache_manager)
       sites_list = sites.list(params[:appliance_id])
       if params[:appliance_id].blank?
         sites_list.blank? ? respond_with(nil, status: 204) : respond_with(sites_list[0, @limit])
@@ -13,7 +13,7 @@ module V1
     end
 
     def show
-      sites = Sites.new
+      sites = Sites.new(cache: cache_manager)
       respond_with(sites.show(params[:appliance_id],params[:id]))
     end
   end

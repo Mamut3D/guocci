@@ -1,9 +1,10 @@
 class Sites < Base
   def list(appliance_id)
+    appdb_data = read_appdb_data
     if appliance_id.blank?
-      get_services
+      select_services(appdb_data)
     else
-      app_services = get_app_servs(appliance_id)
+      app_services = select_app_servs(appliance_id, appdb_data)
       raise Errors::ApplianceNotFoundError, "Appliance with ID '#{appliance_id}' " \
             "could not be found!" if app_services.blank?
       app_services
@@ -11,25 +12,22 @@ class Sites < Base
   end
 
   def show(appliance_id, service_id)
-    app_and_serv_check(appliance_id, service_id)
-    get_app_servs(appliance_id).select { |service| service[:id] == service_id }
+    appdb_data = read_appdb_data
+    app_and_serv_check(appliance_id, service_id, appdb_data)
+    select_app_servs(appliance_id, appdb_data).select { |service| service[:id] == service_id }.first
   end
 
   private
 
-  def get_services
-    format_sites(get_servs_and_flavs)
-  end
-
-  def get_app_servs(appliance_id)
-    service_ids = get_service_ids(appliance_id)
-    get_services.select! do |service|
+  def select_app_servs(appliance_id, appdb_data)
+    service_ids = get_service_ids(appliance_id, appdb_data)
+    select_services(appdb_data).select! do |service|
       service[:id].in? service_ids
     end
   end
 
-  def format_sites(servs_and_flavours)
-    servs_and_flavours.collect do |service|
+  def select_services(appdb_data)
+    appdb_data.collect do |service|
       {
         id: service['id'],
         name: service['name'],

@@ -1,6 +1,6 @@
 class Appliances < Base
   def list
-    get_servs_and_apps.collect do |service|
+    read_appdb_data.collect do |service|
       service['appliance']
     end.flatten
   end
