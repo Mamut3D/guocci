@@ -7,7 +7,8 @@ class Appliances < Base
 
   def show(id)
     appliance = list.select { |appliance| appliance['id'] == id}
-    #TODO add fix in swagger and here for sites allowing same appliances in multiple sites
-    appliance.first if appliance
+    raise Errors::ApplianceNotFoundError, "Appliance with ID '#{id}' " \
+          "could not be found!" if appliance.blank?
+    appliance.first
   end
 end

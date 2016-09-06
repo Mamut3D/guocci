@@ -39,7 +39,7 @@ module Utils
 
           appliances = services.collect do |service|
             {
-              id: service[:site_id]+':'+service[:service_id],
+              id: "#{service[:site_id]}:#{service[:service_id]}",
               site_id: service[:site_id],
               service_id: service[:service_id],
               #TODO might be reasonable to append service id to image id

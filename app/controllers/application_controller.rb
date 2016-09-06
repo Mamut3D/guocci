@@ -2,6 +2,10 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   before_filter :check_limit_and_offset_param
 
+  rescue_from ::Errors::ApplianceNotFoundError, with: :handle_not_found_err
+  rescue_from ::Errors::SiteNotFoundError, with: :handle_not_found_err
+  rescue_from ::Errors::FlavourNotFoundError, with: :handle_not_found_err
+
   protected
   DEFAULT_LIMIT = '10'.freeze
   DEFAULT_OFFSET = '0'.freeze
@@ -25,5 +29,9 @@ class ApplicationController < ActionController::Base
     @limit = limit.to_i
     @offset = offset.to_i
     true
+  end
+
+  def handle_not_found_err(ex)
+    respond_with({message: ex.message}, status: 404)
   end
 end

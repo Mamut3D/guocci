@@ -10,8 +10,7 @@ module V1
 
     def show
       appliances = Appliances.new
-      appliance = appliances.show(params['id'])
-      appliance.blank? ? respond_with({ message: "appliance '#{params[:id]}' not found!" }, status: 404) : respond_with(appliance)#[0, @limit])
+      respond_with(appliances.show(params['id']))
     end
   end
 end
