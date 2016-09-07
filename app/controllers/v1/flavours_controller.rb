@@ -3,19 +3,14 @@ module V1
     respond_to :json
 
     def index
-      flavours = Flavours.new
-      flavour_list = flavours.list(params[:appliance_id],params[:site_id])
-      flavour_list.blank? ? respond_with(flavour_list, status: 204) : respond_with(flavour_list)#[0, @limit])
+      flavours = Flavours.new(cache: cache_manager)
+      flavour_list = flavours.list(params[:appliance_id], params[:site_id])
+      flavour_list.blank? ? respond_with(nil, status: 204) : respond_with(flavour_list[0, @limit])
     end
 
     def show
-      flavours = Flavours.new
-      flavour = sites.show(params[:id])
-      if site.blank?
-        respond_with({ message: "Site with ID #{params[:id]} could not be found!" }, status: 404)
-      else
-        respond_with(site)
-      end
+      flavours = Flavours.new(cache: cache_manager)
+      respond_with(flavours.show(params[:appliance_id], params[:site_id], params[:id]))
     end
   end
 end
