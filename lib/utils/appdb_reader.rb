@@ -19,76 +19,20 @@ module Utils
         response = options[:appdb_raw] || appdb_raw_request
         if response.success?
           response = response.parsed_response
-          sites = response['appdb']['site'].collect do |site|
+          response['appdb']['site'].collect do |site|
             [site['service']].flatten.collect do |service|
               {
-                id: site['id']+':'+service['id'],
+                id: "#{site['id']}:#{service['id']}",
                 name: site['name'],
                 country: site['country']['isocode'],
                 endpoint: service['occi_endpoint_url'],
                 site_id: site['id'],
                 service_id: service['id'],
                 flavours: filter_flavour([service['template']].flatten),
-                appliance: get_appliances(service['image']),
-              } if (service['type'] == 'occi')
-            end
-          end.flatten.compact
-          return sites
-        else
-          nil
-        end
-      end
-
-      #TODO refactor
-      def appliances(options = {})
-        response = options[:appdb_raw] || appdb_raw_request
-        if response.success?
-          response = response.parsed_response
-          services = response['appdb']['site'].collect do |site|
-            [site['service']].flatten.collect do |service|
-              {
-                service_id: service['id'],
-                site_id: site['id'],
-                service: service
+                appliance: get_appliances(service['image'])
               } if service['type'] == 'occi'
             end
           end.flatten.compact
-          services.select! { |service| service[:service].key? ('image')}
-          appliances = services.collect do |service|
-            {
-              id: "#{service[:site_id]}:#{service[:service_id]}",
-              site_id: service[:site_id],
-              service_id: service[:service_id],
-              #TODO might be reasonable to append service id to image id
-              #TODO also, some appliances with id eq null were found in appdb = YEY!
-              appliance: get_appliances(service[:service]['image']),
-            }
-          end
-        else
-          nil
-        end
-      end
-
-      def sites_and_flavours(options = {})
-        response = options[:appdb_raw] || HTTParty.get(APPDB_REQUEST_ALL)
-        if response.success?
-          response = response.parsed_response
-          sites = response['appdb']['site'].collect do |site|
-            [site['service']].flatten.collect do |service|
-              {
-                id: site['id']+':'+service['id'],
-                name: site['name'],
-                country: site['country']['isocode'],
-                endpoint: service['occi_endpoint_url'],
-                site_id: site['id'],
-                service_id: service['id'],
-                flavours: filter_flavour([service['template']].flatten)
-              } if (service['type'] == 'occi')
-            end
-          end.flatten.compact
-          return sites
-        else
-          nil
         end
       end
 
@@ -111,12 +55,12 @@ module Utils
         images.collect do |image|
           image['occi'] = [image['occi']].flatten.compact
           image['occi'].collect do |occi_image|
-            if (occi_image.key? ('vo'))
+            if occi_image.key? 'vo'
               voname = occi_image['vo']['name']
               image_id = occi_image['id'].split('os_tpl#')[1]
             else
               image_id = ''
-              void = ''
+              voname = ''
             end
             {
               id: image_id,

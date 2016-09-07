@@ -14,7 +14,7 @@ module V1
 
     def show
       sites = Sites.new(cache: cache_manager)
-      respond_with(sites.show(params[:appliance_id],params[:id]))
+      respond_with(sites.show(params[:appliance_id], params[:id]))
     end
   end
 end

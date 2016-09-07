@@ -20,5 +20,5 @@
 # Learn more: http://github.com/javan/whenever
 
 every :hour do # Many shortcuts available: :hour, :day, :month, :year, :reboot
-  runner "appliance.refresh_database"
+  runner 'appliance.refresh_database'
 end
