@@ -20,13 +20,13 @@ class Base
 
   def service_ids(appliance_id, appdb_data)
     appdb_data.collect do |service|
-      service['id'] if service['appliance'].any? { |appliance| appliance['id'] == appliance_id }
+      service['id'] if service['appliances'].any? { |appliance| appliance['id'] == appliance_id }
     end.compact
   end
 
   def service_ids_old(appliance_id, appdb_data)
     appdb_data.select! do |site|
-      !site['appliance'].select! { |appliance| appliance['id'] == appliance_id }.blank?
+      !site['appliances'].select! { |appliance| appliance['id'] == appliance_id }.blank?
     end
     appdb_data.collect { |service| service['id'] }
   end

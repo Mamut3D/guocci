@@ -1,10 +1,13 @@
 require 'simplecov'
-require 'rspec/rails'
-require 'rspec/autorun'
-
-SimpleCov.start do
+SimpleCov.start 'rails' do
   add_filter '/vendor'
 end
+
+ENV['RAILS_ENV'] ||= 'test'
+require File.expand_path('../../config/environment', __FILE__)
+
+require 'rails/all'
+require 'rspec/rails'
 
 RSpec.configure do |config|
   config.color = true

@@ -31,6 +31,7 @@ gem 'httparty'
 gem 'responders', '~> 2.0'
 gem 'mongo', '~> 2.3'
 gem 'whenever', '~> 0.9.7'
+gem 'rubocop-rspec', '~> 1.7'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -51,7 +52,7 @@ group :development do
   gem 'simplecov', '~> 0.12'
 
   # Use RSpec for unit tests
-  gem "rspec-rails", "3.5.2"
+  gem 'rspec-rails', '3.5.2'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

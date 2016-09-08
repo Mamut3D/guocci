@@ -1,0 +1,169 @@
+[
+  {
+    "id": "247G0:4450G0",
+    "name": "IFCA-LCG2",
+    "country": "ES",
+    "endpoint": "https://cloud.ifca.es:8787/occi1.1",
+    "site_id": "247G0",
+    "service_id": "4450G0",
+    "flavours": [
+      {
+        "id": "cmVzb3VyY2VfdHBsIzE=",
+        "name": "resource_tpl#1",
+        "memory": "512",
+        "vcpu": "1",
+        "cpu": "1"
+      },
+      {
+        "id": "cmVzb3VyY2VfdHBsIzM=",
+        "name": "resource_tpl#3",
+        "memory": "4000",
+        "vcpu": "2",
+        "cpu": "2"
+      },
+      {
+        "id": "cmVzb3VyY2VfdHBsIzQ=",
+        "name": "resource_tpl#4",
+        "memory": "7000",
+        "vcpu": "4",
+        "cpu": "4"
+      },
+      {
+        "id": "cmVzb3VyY2VfdHBsIzU=",
+        "name": "resource_tpl#5",
+        "memory": "14000",
+        "vcpu": "8",
+        "cpu": "8"
+      },
+      {
+        "id": "cmVzb3VyY2VfdHBsIzI=",
+        "name": "resource_tpl#2",
+        "memory": "2000",
+        "vcpu": "1",
+        "cpu": "1"
+      }
+    ],
+    "appliances": [
+      {
+        "id": "511a2916-d480-4b56-b788-c76cb8c57509",
+        "name": "CernVM",
+        "mpuri": "//appdb.egi.eu/store/vm/image/7f1c5d25-614e-4409-bfa6-625d3ae7b9d4:619/",
+        "vo": "fedcloud.egi.eu"
+      },
+      {
+        "id": "ee5903e9-a51d-41f1-b9ac-3dbb41034bb4",
+        "name": "CernVM",
+        "mpuri": "//appdb.egi.eu/store/vm/image/7f1c5d25-614e-4409-bfa6-625d3ae7b9d4:619/",
+        "vo": "cms"
+      },
+      {
+        "id": "dc647aa6-9cf0-4baa-8073-fcd7d3bd792d",
+        "name": "Scientific Linux 6.5 Minimal",
+        "mpuri": "//appdb.egi.eu/store/vm/image/2c24de6c-e385-49f1-b64f-f9ff35e70f43:3639/",
+        "vo": "demo.fedcloud.egi.eu"
+      },
+      {
+        "id": "fd092fa5-cd43-401d-959f-6ab380191d71",
+        "name": "Scientific Linux 6.5 Minimal",
+        "mpuri": "//appdb.egi.eu/store/vm/image/2c24de6c-e385-49f1-b64f-f9ff35e70f43:3639/",
+        "vo": "fedcloud.egi.eu"
+      },
+      {
+        "id": "be4137c5-ed04-4651-b542-cedf5ceaf7ea",
+        "name": "UMD SL6",
+        "mpuri": "//appdb.egi.eu/store/vm/image/121d0bd0-e7c1-400c-84f9-aef92dc880dc:5087/",
+        "vo": "training.egi.eu"
+      },
+      {
+        "id": "328789c0-7632-4223-becd-0988755de17f",
+        "name": "transPLANT Base",
+        "mpuri": "//appdb.egi.eu/store/vm/image/8db44763-c362-49f5-ada3-b623229c1fca:5186/",
+        "vo": "training.egi.eu"
+      },
+      {
+        "id": "aae769d4-91b0-4709-8304-f57ad7500102",
+        "name": "transPLANT Base",
+        "mpuri": "//appdb.egi.eu/store/vm/image/8db44763-c362-49f5-ada3-b623229c1fca:5186/",
+        "vo": "fedcloud.egi.eu"
+      }
+    ]
+  },
+  {
+    "id": "84639G0:5369G0",
+    "name": "IISAS-FedCloud",
+    "country": "SK",
+    "endpoint": "https://nova2.ui.savba.sk:8787",
+    "site_id": "84639G0",
+    "service_id": "5369G0",
+    "flavours": [
+      {
+        "id": "cmVzb3VyY2VfdHBsI20xLnhsYXJnZQ==",
+        "name": "resource_tpl#m1.xlarge",
+        "memory": "16384",
+        "vcpu": "8",
+        "cpu": "8"
+      },
+      {
+        "id": "cmVzb3VyY2VfdHBsI20xLnRpbnk=",
+        "name": "resource_tpl#m1.tiny",
+        "memory": "512",
+        "vcpu": "1",
+        "cpu": "1"
+      },
+      {
+        "id": "cmVzb3VyY2VfdHBsI20xLmxhcmdl",
+        "name": "resource_tpl#m1.large",
+        "memory": "8192",
+        "vcpu": "4",
+        "cpu": "4"
+      },
+      {
+        "id": "cmVzb3VyY2VfdHBsI20xLnNtYWxsLjUwaGQ=",
+        "name": "resource_tpl#m1.small.50hd",
+        "memory": "2048",
+        "vcpu": "1",
+        "cpu": "1"
+      },
+      {
+        "id": "cmVzb3VyY2VfdHBsI20xLnNtYWxs",
+        "name": "resource_tpl#m1.small",
+        "memory": "2048",
+        "vcpu": "1",
+        "cpu": "1"
+      },
+      {
+        "id": "cmVzb3VyY2VfdHBsI20xLm1lZGl1bQ==",
+        "name": "resource_tpl#m1.medium",
+        "memory": "4096",
+        "vcpu": "2",
+        "cpu": "2"
+      }
+    ],
+    "appliances": [
+      {
+        "id": "0f572618-b6c1-439b-9605-fdbb3aa64b45",
+        "name": "CernVM",
+        "mpuri": "//appdb.egi.eu/store/vm/image/7f1c5d25-614e-4409-bfa6-625d3ae7b9d4:619/",
+        "vo": "fedcloud.egi.eu"
+      },
+      {
+        "id": "cc757a20-bb64-4657-b830-fe72585d67d4",
+        "name": "CernVM",
+        "mpuri": "//appdb.egi.eu/store/vm/image/7f1c5d25-614e-4409-bfa6-625d3ae7b9d4:619/",
+        "vo": "atlas"
+      },
+      {
+        "id": "8320fad2-16bc-4927-a42b-1b69863570a1",
+        "name": "Chipster",
+        "mpuri": "//appdb.egi.eu/store/vm/image/8f7ac2aa-969f-4a51-9f85-8850938184b7:3330/",
+        "vo": "fedcloud.egi.eu"
+      },
+      {
+        "id": "d9834af2-be00-4ad9-8d88-7ab0b9e48b5b",
+        "name": "CentOS 6.x minimal",
+        "mpuri": "//appdb.egi.eu/store/vm/image/cbb610f6-023f-44c0-b98a-1e27070790e9:3638/",
+        "vo": "fedcloud.egi.eu"
+      }
+    ]
+  }
+]

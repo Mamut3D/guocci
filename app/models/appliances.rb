@@ -1,7 +1,7 @@
 class Appliances < Base
   def list
     read_appdb_data.collect do |service|
-      service['appliance']
+      service['appliances']
     end.flatten
   end
 
