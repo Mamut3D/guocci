@@ -29,7 +29,7 @@ module Utils
                 site_id: site['id'],
                 service_id: service['id'],
                 flavours: filter_flavour([service['template']].flatten),
-                appliance: get_appliances(service['image'])
+                appliances: get_appliances(service['image'])
               } if service['type'] == 'occi'
             end
           end.flatten.compact
