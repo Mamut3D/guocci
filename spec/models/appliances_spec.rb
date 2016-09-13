@@ -26,7 +26,7 @@ describe Appliances do
     before { allow(cache_double).to receive(:cache_read).with(db_collection).and_return(cache_data) }
     context 'db contains data' do
       it('returns appliance') { expect(appliances_instance.show(appliance_id).count).to eq 4 }
-      it('raises NotFoundError') do
+      it('raises NotFoundError when appliance id is missing') do
         expect { appliances_instance.show('missing').count }.to \
           raise_error(Errors::NotFoundError)
       end
