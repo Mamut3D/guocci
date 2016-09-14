@@ -50,6 +50,8 @@ group :development do
   gem 'pry'
   gem 'rubocop'
   gem 'simplecov', '~> 0.12'
+  gem 'vcr', '~> 3.0.3'
+  gem 'webmock', '~> 2.1.0'
 
   # Use RSpec for unit tests
   gem 'rspec-rails', '3.5.2'

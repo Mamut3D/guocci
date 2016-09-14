@@ -4,6 +4,7 @@ module V1
 
     def index
       respond_with(Utils::AppdbReader.all)
+      # respond_with(Utils::AppdbReader.appdb_raw_request)
     end
   end
 end

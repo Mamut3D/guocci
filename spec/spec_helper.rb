@@ -1,4 +1,6 @@
 require 'simplecov'
+require 'vcr'
+
 SimpleCov.start 'rails' do
   add_filter '/vendor'
 end
@@ -13,4 +15,10 @@ RSpec.configure do |config|
   config.color = true
   config.tty = true
   config.order = 'random'
+end
+
+VCR.configure do |c|
+  c.cassette_library_dir = 'spec/vcr'
+  c.hook_into :webmock
+  # c.debug_logger = File.open( '/tmp/vcrlog', 'w')
 end
