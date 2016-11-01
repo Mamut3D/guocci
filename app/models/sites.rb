@@ -5,8 +5,10 @@ class Sites < Base
       services(appdb_data)
     else
       app_services = appliance_services(appliance_id, appdb_data)
-      raise Errors::NotFoundError, "Appliance with ID '#{appliance_id}' " \
-            'could not be found!' if app_services.blank?
+      if app_services.blank?
+        raise Errors::NotFoundError, "Appliance with ID '#{appliance_id}' " \
+              'could not be found!'
+      end
       app_services
     end
   end

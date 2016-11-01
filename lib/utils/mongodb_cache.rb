@@ -2,10 +2,7 @@ require 'json'
 require 'mongo'
 
 module Utils
-  # Please burn in hell dear rubocop
-  # Best Regards
-  # Your Mama
-  # (fat)
+  # Class providing communication with mongodb
   class MongodbCache
     attr_reader :logger
 

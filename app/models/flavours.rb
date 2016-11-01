@@ -10,8 +10,10 @@ class Flavours < Base
   def show(appliance_id, service_id, flavour_id)
     flavours = list(appliance_id, service_id)
     flavours.select! { |flavour| flavour['id'] == flavour_id }
-    raise Errors::NotFoundError, "Flavour '#{flavour_id}' at site '#{service_id}' " \
-          "for appl. '#{appliance_id}' could not be found!" if flavours.blank?
+    if flavours.blank?
+      raise Errors::NotFoundError, "Flavour '#{flavour_id}' at site '#{service_id}' " \
+            "for appl. '#{appliance_id}' could not be found!"
+    end
     flavours.first
   end
 end

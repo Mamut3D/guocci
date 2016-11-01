@@ -1,6 +1,21 @@
-require: rubocop-rspec
+AllCops:
+  TargetRubyVersion: 2.0
 
 Metrics/LineLength:
-  Max: 120
+    Max: 135
+
+Style/Documentation:
+  Enabled: false
+
 Metrics/MethodLength:
   Max: 15
+
+RSpec/NestedGroups:
+   MaxNesting: 3
+
+Metrics/BlockLength:
+  Exclude:
+    - 'Rakefile'
+    - '**/*.rake'
+    - 'spec/**/*.rb'
+    - '*.gemspec'

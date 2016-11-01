@@ -21,15 +21,19 @@ class ApplicationController < ActionController::Base
 
   def check_limit
     limit = params[:limit] || DEFAULT_LIMIT
-    raise Errors::ParameterError, "Limit '#{params[:limit]}' is incorrect. " \
-                                  'Integer is required' unless limit =~ /\A\d+\z/
+    unless limit =~ /\A\d+\z/
+      raise Errors::ParameterError, "Limit '#{params[:limit]}' is incorrect. " \
+                                    'Integer is required'
+    end
     @limit = limit.to_i
   end
 
   def check_offset
     offset = params[:offset] || DEFAULT_OFFSET
-    raise Errors::ParameterError, "Offset '#{params[:offset]}' is incorrect. " \
-                                  'Integer is required' unless offset =~ /\A\d+\z/
+    unless offset =~ /\A\d+\z/
+      raise Errors::ParameterError, "Offset '#{params[:offset]}' is incorrect. " \
+                                    'Integer is required'
+    end
     @offset = offset.to_i
   end
 

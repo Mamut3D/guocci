@@ -26,10 +26,9 @@ class Base
 
   def app_and_serv_check(appliance_id, service_id, appdb_data)
     service_ids = service_ids(appliance_id, appdb_data)
-    raise Errors::NotFoundError, "Appliance with ID '#{appliance_id}' " \
-          'could not be found!' if service_ids.blank?
+    raise Errors::NotFoundError, "Appliance with ID '#{appliance_id}' could not be found!" if service_ids.blank?
     service_ids.select! { |id| id == service_id }
-    raise Errors::NotFoundError, "Appliance '#{appliance_id}' is not " \
-          "provided at site with ID '#{service_id}'!" if service_ids.blank?
+
+    raise Errors::NotFoundError, "Appliance ''#{appliance_id}'' is not provided at site with ID '#{service_id}'!" if service_ids.blank?
   end
 end
