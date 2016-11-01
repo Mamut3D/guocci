@@ -1,8 +1,9 @@
 class Appliances < Base
   def list
     read_appdb_data.collect do |service|
-      service['appliance']
-    end.flatten
+      next unless service
+      service['appliances']
+    end.flatten.compact
   end
 
   def show(id)

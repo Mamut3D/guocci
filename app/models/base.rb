@@ -20,23 +20,15 @@ class Base
 
   def service_ids(appliance_id, appdb_data)
     appdb_data.collect do |service|
-      service['id'] if service['appliance'].any? { |appliance| appliance['id'] == appliance_id }
+      service['id'] if service['appliances'].any? { |appliance| appliance['id'] == appliance_id }
     end.compact
-  end
-
-  def service_ids_old(appliance_id, appdb_data)
-    appdb_data.select! do |site|
-      !site['appliance'].select! { |appliance| appliance['id'] == appliance_id }.blank?
-    end
-    appdb_data.collect { |service| service['id'] }
   end
 
   def app_and_serv_check(appliance_id, service_id, appdb_data)
     service_ids = service_ids(appliance_id, appdb_data)
-    raise Errors::NotFoundError, "Appliance with ID '#{appliance_id}' " \
-          'could not be found!' if service_ids.blank?
+    raise Errors::NotFoundError, "Appliance with ID '#{appliance_id}' could not be found!" if service_ids.blank?
     service_ids.select! { |id| id == service_id }
-    raise Errors::NotFoundError, "Appliance '#{appliance_id}' is not " \
-          "provided at site with ID '#{service_id}'!" if service_ids.blank?
+
+    raise Errors::NotFoundError, "Appliance ''#{appliance_id}'' is not provided at site with ID '#{service_id}'!" if service_ids.blank?
   end
 end
