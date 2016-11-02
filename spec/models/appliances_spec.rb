@@ -1,3 +1,5 @@
+require 'spec_helper'
+
 describe Appliances do
   subject(:appliances_instance) { described_class.new(cache: cache_double, db_collection: db_collection) }
   let(:db_collection) { 'appdb-test' }
