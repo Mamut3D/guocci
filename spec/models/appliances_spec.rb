@@ -1,4 +1,4 @@
-describe Appliances do
+RSpec.describe Appliances do
   subject(:appliances_instance) { described_class.new(cache: cache_double, db_collection: db_collection) }
   let(:db_collection) { 'appdb-test' }
   let(:cache_double) { instance_double('Utils::MongodbCache') }
