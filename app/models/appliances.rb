@@ -1,7 +1,6 @@
 class Appliances < Base
   def list
-    read_appdb_data.collect do |service|
-      next unless service
+    read_appdb_data.compact.collect do |service|
       service['appliances']
     end.flatten.compact
   end
