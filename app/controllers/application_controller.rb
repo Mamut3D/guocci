@@ -10,31 +10,9 @@ class ApplicationController < ActionController::Base
   DEFAULT_LIMIT = '10'.freeze
   DEFAULT_OFFSET = '0'.freeze
 
-  CA_PATH = '/etc/grid-security/certificates'
-
-
   def authenticate
     #TODO implement lookup of x509 for authentication
-    @user_cert ||= "/tmp/x509up_u1000"
-
-
-  end
-
-  def occi_client(endpoint)
-    @client = Occi::Api::Client::ClientHttp.new({
-      :endpoint => endpoint,
-      :auth => {
-        :voms               => true,
-        :type               => "x509",
-        :user_cert          => @user_cert,
-        :user_cert_password => "",
-        :ca_path            => CA_PATH
-      },
-      :log => {
-        :out   => STDERR,
-        :level => Occi::Api::Log::DEBUG
-      }
-    })
+    @cert ||= "/tmp/x509up_u1000"
   end
 
   def cache_manager

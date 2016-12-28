@@ -4,11 +4,7 @@ module V1
 
     def index
       instances = Instances.new(cache: cache_manager)
-      endpoint = instances.list(params[:site_id])
-      occi_client(endpoint)
-      #respond_with(@user_cert)
-      #occi_client(endpoint)
-      respond_with(@client.describe "compute")#@client.)
+      respond_with(instances.list(params[:site_id], @cert))
     end
 
     def create
@@ -18,5 +14,7 @@ module V1
     def show
       respond_with("show")
     end
+
+    private
   end
 end
