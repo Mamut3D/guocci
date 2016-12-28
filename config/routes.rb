@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   namespace :v1 do
     # TODO: remove from final project
     resources :test_appdb, only: [:index]
+    resources :test_occi, only: [:index]
 
     resources :appliances, only: [:index, :show] do
       resources :sites, only: [:index, :show] do
