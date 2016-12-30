@@ -1,12 +1,12 @@
 class Instances < Base
-  def list(site_id, cert)
-   occi_client(endpoint(site_id), cert)
+  def list(service_id, cert)
+   occi_client(endpoint(service_id), cert)
    computes = @client.describe (Occi::Infrastructure::Compute.new.kind.type_identifier)
-   computes.collect! do |cmpt|
+   computes.collect do |cmpt|
      {
         id: cmpt.id,
         name: (cmpt.title || cmpt.hostname),
-        user_data: parse_credentials(cmpt),
+        credentials: parse_credentials(cmpt),
         applianceId: appliance_id(cmpt),
         flavourId: flavour_mixin(cmpt).to_s,
         userData: parse_user_data(cmpt),
@@ -16,8 +16,18 @@ class Instances < Base
     end
   end
 
-  def all_test_method(site_id, cert)
-   occi_client(endpoint(site_id), cert)
+  def show(service_id, cert, instance_id)
+   instances = list(service_id, cert)
+   instances.select! { |instance| instance[:id] == instance_id }
+   if instances.blank?
+     raise Errors::NotFoundError, "Instance '#{instance_id}' at site '#{service_id}' could not be found!"
+   end
+   instances.first
+  end
+
+  # TODO remove when released
+  def all_test_method(service_id, cert)
+   occi_client(endpoint(service_id), cert)
    computes = @client.describe (Occi::Infrastructure::Compute.new.kind.type_identifier)
   end
 
