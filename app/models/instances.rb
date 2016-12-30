@@ -3,15 +3,14 @@ class Instances < Base
    occi_client(endpoint(site_id), cert)
    computes = @client.describe (Occi::Infrastructure::Compute.new.kind.type_identifier)
    computes.collect! do |cmpt|
-      {
-        id: cmpt.location,
+     {
+        id: cmpt.id,
         name: (cmpt.title || cmpt.hostname),
-        #ip: first_address(cmpt)
         user_data: parse_credentials(cmpt),
-        applianceId: 3,
-        flavourId: 5,
-        userData: "I love unicorns.",
-        architecture: "x64",
+        applianceId: appliance_id(cmpt),
+        flavourId: flavour_mixin(cmpt).to_s,
+        userData: parse_user_data(cmpt),
+        architecture: cmpt.architecture,
         state: cmpt.state
       }
     end
@@ -24,28 +23,47 @@ class Instances < Base
 
   private
 
-  def parse_credentials(cmpt)
-  # TODO update for multiple ssh keys version
-    sshKey = parse_ssh_key(cmpt)
-    if sshKey
-      [
-        {
-          type: "sshKey",
-          value: sshKey
-        }
-      ]
-    else
-      nil
+  def appliance_id(compute)
+    appliance = appliance_mixin(compute)
+    appliance.term if appliance.present?
+  end
+
+  def appliance_mixin(compute)
+    model = @client.model
+    compute.mixins.find do |mixin|
+      # Awfull workaround due to bug in occi core, should be fixed in new occi client with
+      # mixin.related_to? (Occi::Infrastructure::OsTpl.mixin.type_identifier)
+      model.get_by_id(mixin.type_identifier).present? and \
+      model.get_by_id(mixin.type_identifier).related_to?(Occi::Infrastructure::OsTpl.mixin.type_identifier)
     end
   end
 
-  def parse_ssh_key(cmpt)
+  def flavour_mixin(compute)
+    model = @client.model
+    compute.mixins.find do |mixin|
+      # Awfull workaround due to bug in occi core, should be fixed in new occi client with
+      # mixin.related_to? (Occi::Infrastructure::OsTpl.mixin.type_identifier)
+      model.get_by_id(mixin.type_identifier).present? and \
+      model.get_by_id(mixin.type_identifier).related_to?(Occi::Infrastructure::ResourceTpl.mixin.type_identifier)
+    end
+  end
+
+  def parse_credentials(compute)
+  # TODO update for multiple ssh keys version
+    sshKey = parse_ssh_key(compute)
+    [{ type: "sshKey", value: sshKey }] if sshKey
+  end
+
+  def parse_ssh_key(compute)
     #TODO add cheks for attributes
-    user_data = Base64.decode64(cmpt.attributes.org.openstack.compute.user_data)
-    user_data.lines.each do |line|
+    parse_user_data(compute).lines.each do |line|
       result = line.chomp.match(/(ssh-(rsa|dsa|ecdsa) .*$)/)
       return result[0] if result
     end
     nil
+  end
+
+  def parse_user_data(compute)
+    user_data = Base64.decode64(compute.attributes.org.openstack.compute.user_data)
   end
 end
