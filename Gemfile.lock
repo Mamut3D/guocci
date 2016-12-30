@@ -1,5 +1,5 @@
 PATH
-  remote: /home/mtd/Documents/CesnetWork/rails/occi_core_gem.d/occi-api-4.3.6
+  remote: occi_core_gem.d/occi-api-4.3.6
   specs:
     occi-api (4.3.6)
       httparty (~> 0.13, >= 0.13.1)
@@ -7,7 +7,7 @@ PATH
       occi-core (~> 4.3, >= 4.3.2)
 
 PATH
-  remote: /home/mtd/Documents/CesnetWork/rails/occi_core_gem.d/occi-core-4.3.2
+  remote: occi_core_gem.d/occi-core-4.3.2
   specs:
     occi-core (4.3.2)
       activesupport (>= 4.0.0)
