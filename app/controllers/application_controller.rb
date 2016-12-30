@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
-  before_filter :check_limit_and_offset_param
+  before_filter :check_limit_and_offset_param, :authenticate
 
   rescue_from ::Errors::NotFoundError, with: :handle_not_found_err
   rescue_from ::Errors::ParameterError, with: :parameter_err
@@ -9,6 +9,11 @@ class ApplicationController < ActionController::Base
 
   DEFAULT_LIMIT = '10'.freeze
   DEFAULT_OFFSET = '0'.freeze
+
+  def authenticate
+    #TODO implement lookup of x509 for authentication
+    @cert ||= "/tmp/x509up_u1000"
+  end
 
   def cache_manager
     @cache_instance ||= Utils::MongodbCache.new(logger: Rails.logger)
@@ -44,4 +49,5 @@ class ApplicationController < ActionController::Base
   def parameter_err(ex)
     respond_with({ message: ex.message }, status: 400)
   end
+
 end
