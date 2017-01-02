@@ -11,17 +11,17 @@ Rails.application.routes.draw do
     end
 
     resources :user, only: [:show] do
-      resources :credentials, only: [:index, :show, :create, :delete]
+      resources :credentials, only: [:index, :show, :create, :destroy]
     end
 
     resources :sites, only: [:index] do
-      resources :instances, only: [:index, :show, :create, :delete] do
-        resources :disks, only: [:index, :show, :create, :delete]
-        resources :interfaces, only: [:index, :show, :create, :delete]
+      resources :instances, only: [:index, :show, :create, :destroy] do
+        resources :disks, only: [:index, :show, :create, :destroy]
+        resources :interfaces, only: [:index, :show, :create, :destroy]
       end
 
-      resources :networks, only: [:index, :show, :create, :delete]
-      resources :storages, only: [:index, :show, :create, :delete]
+      resources :networks, only: [:index, :show, :create, :destroy]
+      resources :storages, only: [:index, :show, :create, :destroy]
     end
   end
 end
