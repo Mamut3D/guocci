@@ -14,13 +14,13 @@ module V1
     end
 
     def destroy
-      instances = Instances.new(cache: cache_manager)
-      respond_with({ status: 'success' },instances.destroy(params[:site_id], @cert, params[:id]))
+      # instances = Instances.new(cache: cache_manager)
+      respond_with({ message: 'aaaa' }, status: 404)
+      # respond_with(instances.destroy(params[:site_id], @cert, params[:id]))
     end
 
     def create
-      respond_with("create")
+      respond_with('create')
     end
-
   end
 end

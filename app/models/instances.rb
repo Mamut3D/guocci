@@ -7,23 +7,15 @@ class Instances < Base
   def show(service_id, cert, instance_id)
     occi_client(endpoint(service_id), cert)
     instance_url = validate(service_id, cert, instance_id)
-    if instance_url.blank?
-      raise Errors::NotFoundError, "Instance '#{instance_id}' at site '#{service_id}' could not be found!"
-    else
-      parse_instances(@client.describe instance_url)
-    end
+    parse_instances(@client.describe instance_url)
   end
-
 
   protected
 
   def validate(service_id, cert, instance_id)
     instance_url = endpoint(service_id) + Base64.decode64(instance_id)
-    if (@client.list Occi::Infrastructure::Compute.new.kind.type_identifier).include? instance_url
-      instance_url
-    else
-      nil
-    end
+    return instance_url if (@client.list Occi::Infrastructure::Compute.new.kind.type_identifier).include? instance_url
+    raise Errors::NotFoundError, "Instance '#{instance_id}' at site '#{service_id}' could not be found!"
   end
 
   def parse_instances(computes)
