@@ -1,18 +1,30 @@
 class Instances < Base
   def list(service_id, cert)
-   occi_client(endpoint(service_id), cert)
-   parse_instances(@client.describe(Occi::Infrastructure::Compute.new.kind.type_identifier))
+    occi_client(endpoint(service_id), cert)
+    parse_instances(@client.describe(Occi::Infrastructure::Compute.new.kind.type_identifier))
   end
 
   def show(service_id, cert, instance_id)
     occi_client(endpoint(service_id), cert)
     instance_url = validate(service_id, cert, instance_id)
-    parse_instances(@client.describe instance_url)
+    parse_instances(@client.describe(instance_url))
+  end
+
+  def destroy(service_id, cert, instance_id)
+    occi_client(endpoint(service_id), cert)
+    instance_url = validate(service_id, cert, instance_id)
+    @client.delete instance_url
+  end
+
+  def create(service_id, cert, instance_id)
+    # occi_client(endpoint(service_id), cert)
+    # instance_url = validate(service_id, cert, instance_id)
+    # @client.delete instance_url
   end
 
   protected
 
-  def validate(service_id, cert, instance_id)
+  def validate(service_id, _cert, instance_id)
     instance_url = endpoint(service_id) + Base64.decode64(instance_id)
     return instance_url if (@client.list Occi::Infrastructure::Compute.new.kind.type_identifier).include? instance_url
     raise Errors::NotFoundError, "Instance '#{instance_id}' at site '#{service_id}' could not be found!"
@@ -21,23 +33,22 @@ class Instances < Base
   def parse_instances(computes)
     computes.collect do |cmpt|
       {
-         id: Base64.strict_encode64(cmpt.location),
-         name: (cmpt.title || cmpt.hostname),
-         credentials: parse_credentials(cmpt),
-         applianceId: appliance_id(cmpt),
-         flavourId: flavour_mixin(cmpt).to_s,
-         userData: parse_user_data(cmpt),
-         architecture: cmpt.architecture,
-         state: cmpt.state
-       }
+        id: Base64.strict_encode64(cmpt.location),
+        name: (cmpt.title || cmpt.hostname),
+        credentials: parse_credentials(cmpt),
+        applianceId: appliance_id(cmpt),
+        flavourId: flavour_mixin(cmpt).to_s,
+        userData: parse_user_data(cmpt),
+        architecture: cmpt.architecture,
+        state: cmpt.state
+      }
     end
   end
 
-
-  # TODO remove when released
+  # TODO: remove when released
   def all_test_method(service_id, cert)
-   occi_client(endpoint(service_id), cert)
-   @client.describe (Occi::Infrastructure::Compute.new.kind.type_identifier)
+    occi_client(endpoint(service_id), cert)
+    @client.describe Occi::Infrastructure::Compute.new.kind.type_identifier
   end
 
   def appliance_id(compute)
@@ -50,8 +61,8 @@ class Instances < Base
     compute.mixins.find do |mixin|
       # Awfull workaround due to bug in occi core, should be fixed in new occi client with
       # mixin.related_to? (Occi::Infrastructure::OsTpl.mixin.type_identifier)
-      model.get_by_id(mixin.type_identifier).present? and \
-      model.get_by_id(mixin.type_identifier).related_to?(Occi::Infrastructure::OsTpl.mixin.type_identifier)
+      model.get_by_id(mixin.type_identifier).present? && \
+        model.get_by_id(mixin.type_identifier).related_to?(Occi::Infrastructure::OsTpl.mixin.type_identifier)
     end
   end
 
@@ -60,19 +71,19 @@ class Instances < Base
     compute.mixins.find do |mixin|
       # Awfull workaround due to bug in occi core, should be fixed in new occi client with
       # mixin.related_to? (Occi::Infrastructure::OsTpl.mixin.type_identifier)
-      model.get_by_id(mixin.type_identifier).present? and \
-      model.get_by_id(mixin.type_identifier).related_to?(Occi::Infrastructure::ResourceTpl.mixin.type_identifier)
+      model.get_by_id(mixin.type_identifier).present? && \
+        model.get_by_id(mixin.type_identifier).related_to?(Occi::Infrastructure::ResourceTpl.mixin.type_identifier)
     end
   end
 
   def parse_credentials(compute)
-  # TODO update for multiple ssh keys version
+    # TODO: update for multiple ssh keys version
     ssh_key = parse_ssh_key(compute)
-    [{ type: "sshKey", value: ssh_key }] if ssh_key
+    [{ type: 'sshKey', value: ssh_key }] if ssh_key
   end
 
   def parse_ssh_key(compute)
-    #TODO add cheks for attributes
+    # TODO: add cheks for attributes
     parse_user_data(compute).lines.each do |line|
       result = line.chomp.match(/(ssh-(rsa|dsa|ecdsa) .*$)/)
       return result[0] if result

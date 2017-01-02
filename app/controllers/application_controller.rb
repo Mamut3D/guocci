@@ -1,4 +1,6 @@
 class ApplicationController < ActionController::Base
+  respond_to :json
+
   # protect_from_forgery with: :exception
   before_filter :check_limit_and_offset_param, :authenticate
 

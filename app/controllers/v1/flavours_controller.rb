@@ -1,7 +1,5 @@
 module V1
   class FlavoursController < ApplicationController
-    respond_to :json
-
     def index
       flavours = Flavours.new(cache: cache_manager)
       flavour_list = flavours.list(params[:appliance_id], params[:site_id])

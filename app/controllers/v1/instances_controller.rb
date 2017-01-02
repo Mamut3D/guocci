@@ -1,7 +1,5 @@
 module V1
   class InstancesController < ApplicationController
-    respond_to :json
-
     def index
       instances = Instances.new(cache: cache_manager)
       instances_list = instances.list(params[:site_id], @cert)
@@ -14,13 +12,9 @@ module V1
     end
 
     def destroy
-      # instances = Instances.new(cache: cache_manager)
-      respond_with({ message: 'aaaa' }, status: 404)
-      # respond_with(instances.destroy(params[:site_id], @cert, params[:id]))
-    end
-
-    def create
-      respond_with('create')
+      instances = Instances.new(cache: cache_manager)
+      # TODO: check respond with return codes
+      respond_with(instances.destroy(params[:site_id], @cert, params[:id]))
     end
   end
 end
