@@ -11,8 +11,8 @@ class ApplicationController < ActionController::Base
   DEFAULT_OFFSET = '0'.freeze
 
   def authenticate
-    #TODO implement lookup of x509 for authentication
-    @cert ||= "/tmp/x509up_u1000"
+    # TODO: implement lookup of x509 for authentication
+    @cert ||= '/tmp/x509up_u1000'
   end
 
   def cache_manager
@@ -49,5 +49,4 @@ class ApplicationController < ActionController::Base
   def parameter_err(ex)
     respond_with({ message: ex.message }, status: 400)
   end
-
 end

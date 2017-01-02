@@ -14,11 +14,7 @@ module V1
     end
 
     def create
-      respond_with("create")
+      respond_with('create')
     end
-
-
-
-    private
   end
 end

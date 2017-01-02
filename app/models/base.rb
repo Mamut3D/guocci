@@ -9,7 +9,7 @@ class Base
   protected
 
   DB_COLLECTION = 'appdb'.freeze
-  CA_PATH = '/etc/grid-security/certificates'
+  CA_PATH = '/etc/grid-security/certificates'.freeze
 
   def read_appdb_data
     @cache.cache_read(@db_collection).flatten
@@ -34,22 +34,20 @@ class Base
   end
 
   def occi_client(endpoint, cert)
-    #TODO rework client to enable caching
-    @client ||= Occi::Api::Client::ClientHttp.new({
-      :endpoint => endpoint,
-      :auth => {
-        :voms               => true,
-        :type               => "x509",
-        :user_cert          => cert,
-        :user_cert_password => "",
-        :ca_path            => CA_PATH
-      },
-      :log => {
-        :level  => Rails.env.production? ? Occi::Api::Log::ERROR : Occi::Api::Log::DEBUG,
-        :logger => Rails.logger,
-        :out => Rails.logger,
-      }
-    })
+    # TODO: rework client to enable caching
+    @client ||= Occi::Api::Client::ClientHttp.new(endpoint: endpoint,
+                                                  auth: {
+                                                    voms: true,
+                                                    type: 'x509',
+                                                    user_cert: cert,
+                                                    user_cert_password: '',
+                                                    ca_path: CA_PATH
+                                                  },
+                                                  log: {
+                                                    level: Rails.env.production? ? Occi::Api::Log::ERROR : Occi::Api::Log::DEBUG,
+                                                    logger: Rails.logger,
+                                                    out: Rails.logger
+                                                  })
   end
 
   def endpoint(site_id)
@@ -57,5 +55,4 @@ class Base
     ep = appdb_data.select { |service| service['id'] == site_id }
     ep.first['endpoint'] unless ep.blank?
   end
-
 end
