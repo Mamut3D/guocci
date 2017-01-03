@@ -53,6 +53,7 @@ class Base
   def endpoint(site_id)
     appdb_data = read_appdb_data
     ep = appdb_data.select { |service| service['id'] == site_id }
-    ep.first['endpoint'] unless ep.blank?
+    return ep.first['endpoint'] unless ep.blank?
+    raise Errors::NotFoundError, "Site with ID '#{site_id}' could not be found!"
   end
 end

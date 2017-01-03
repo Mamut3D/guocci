@@ -22,6 +22,12 @@ class Instances < Base
     # @client.delete instance_url
   end
 
+  # TODO: remove when released
+  def all_test_method(service_id, cert)
+    occi_client(endpoint(service_id), cert)
+    @client.describe Occi::Infrastructure::Compute.new.kind.type_identifier
+  end
+
   protected
 
   def validate(service_id, _cert, instance_id)
@@ -45,12 +51,6 @@ class Instances < Base
     end
   end
 
-  # TODO: remove when released
-  def all_test_method(service_id, cert)
-    occi_client(endpoint(service_id), cert)
-    @client.describe Occi::Infrastructure::Compute.new.kind.type_identifier
-  end
-
   def appliance_id(compute)
     appliance = appliance_mixin(compute)
     appliance.term if appliance.present?
@@ -67,13 +67,11 @@ class Instances < Base
   end
 
   def flavour_mixin(compute)
-    model = @client.model
-    compute.mixins.find do |mixin|
-      # Awfull workaround due to bug in occi core, should be fixed in new occi client with
-      # mixin.related_to? (Occi::Infrastructure::OsTpl.mixin.type_identifier)
-      model.get_by_id(mixin.type_identifier).present? && \
-        model.get_by_id(mixin.type_identifier).related_to?(Occi::Infrastructure::ResourceTpl.mixin.type_identifier)
-    end
+    compute.mixins.find{ |mixin| mixin.scheme == 'http://fedcloud.egi.eu/occi/compute/flavour/1.0#' }
+  end
+
+  def user_data_mixin(compute)
+    compute.mixins.find{ |mixin| mixin.type_identifier == 'http://schemas.openstack.org/compute/instance#user_data' }
   end
 
   def parse_credentials(compute)
@@ -87,11 +85,10 @@ class Instances < Base
     parse_user_data(compute).lines.each do |line|
       result = line.chomp.match(/(ssh-(rsa|dsa|ecdsa) .*$)/)
       return result[0] if result
-    end
-    nil
+    end if parse_user_data(compute)
   end
 
   def parse_user_data(compute)
-    Base64.decode64(compute.attributes.org.openstack.compute.user_data)
+    Base64.decode64(compute.attributes.org.openstack.compute.user_data) if user_data_mixin(compute)
   end
 end
