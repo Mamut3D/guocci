@@ -61,7 +61,13 @@ class Instances < Base
   end
 
   def flavour_mixin(compute)
-    compute.mixins.find { |mixin| mixin.scheme == 'http://fedcloud.egi.eu/occi/compute/flavour/1.0#' }
+    model = @client.model
+    compute.mixins.find do |mixin|
+      # Awfull workaround due to bug in occi core, should be fixed in new occi client with
+      # mixin.related_to? (Occi::Infrastructure::OsTpl.mixin.type_identifier)
+      model.get_by_id(mixin.type_identifier).present? && \
+        model.get_by_id(mixin.type_identifier).related_to?(Occi::Infrastructure::ResourceTpl.mixin.type_identifier)
+    end
   end
 
   def user_data_mixin(compute)
