@@ -41,7 +41,7 @@ class Instances < Base
       {
         id: Base64.strict_encode64(cmpt.location),
         name: (cmpt.title || cmpt.hostname),
-        credentials: parse_credentials(cmpt),
+        # credentials: parse_credentials(cmpt),
         applianceId: appliance_id(cmpt),
         flavourId: flavour_mixin(cmpt).to_s,
         userData: parse_user_data(cmpt),
@@ -67,11 +67,11 @@ class Instances < Base
   end
 
   def flavour_mixin(compute)
-    compute.mixins.find{ |mixin| mixin.scheme == 'http://fedcloud.egi.eu/occi/compute/flavour/1.0#' }
+    compute.mixins.find { |mixin| mixin.scheme == 'http://fedcloud.egi.eu/occi/compute/flavour/1.0#' }
   end
 
   def user_data_mixin(compute)
-    compute.mixins.find{ |mixin| mixin.type_identifier == 'http://schemas.openstack.org/compute/instance#user_data' }
+    compute.mixins.find { |mixin| mixin.type_identifier == 'http://schemas.openstack.org/compute/instance#user_data' }
   end
 
   def parse_credentials(compute)
@@ -82,10 +82,12 @@ class Instances < Base
 
   def parse_ssh_key(compute)
     # TODO: add cheks for attributes
-    parse_user_data(compute).lines.each do |line|
+    parsed_user_data = parse_user_data(compute)
+    return if parsed_user_data.blank?
+    parsed_user_data.lines.each do |line|
       result = line.chomp.match(/(ssh-(rsa|dsa|ecdsa) .*$)/)
       return result[0] if result
-    end if parse_user_data(compute)
+    end
   end
 
   def parse_user_data(compute)
