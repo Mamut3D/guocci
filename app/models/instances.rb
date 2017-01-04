@@ -22,12 +22,6 @@ class Instances < Base
     # @client.delete instance_url
   end
 
-  # TODO: remove when released
-  def all_test_method(service_id, cert)
-    occi_client(endpoint(service_id), cert)
-    @client.describe Occi::Infrastructure::Compute.new.kind.type_identifier
-  end
-
   protected
 
   def validate(service_id, _cert, instance_id)
@@ -41,7 +35,7 @@ class Instances < Base
       {
         id: Base64.strict_encode64(cmpt.location),
         name: (cmpt.title || cmpt.hostname),
-        # credentials: parse_credentials(cmpt),
+        credentials: parse_credentials(cmpt),
         applianceId: appliance_id(cmpt),
         flavourId: flavour_mixin(cmpt).to_s,
         userData: parse_user_data(cmpt),
