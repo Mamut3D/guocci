@@ -4,6 +4,14 @@ class Base
     @cache = options[:cache] || Utils::MongodbCache.new
     # TODO: change refresh_database mechanic
     refresh_database
+
+    # TODO: Possibly rework client
+    if options[:service_id] && options[:cert]
+      @service_id = options[:service_id]
+      @endpoint = endpoint(@service_id)
+      @cert = options[:cert]
+      @client = occi_client(@endpoint, @cert)
+    end
   end
 
   protected
@@ -35,7 +43,7 @@ class Base
 
   def occi_client(endpoint, cert)
     # TODO: rework client to enable caching
-    @client ||= Occi::Api::Client::ClientHttp.new(endpoint: endpoint,
+    client = Occi::Api::Client::ClientHttp.new(endpoint: endpoint,
                                                   auth: {
                                                     voms: true,
                                                     type: 'x509',

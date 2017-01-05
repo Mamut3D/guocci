@@ -1,30 +1,26 @@
 class Instances < Base
-  def list(service_id, cert)
-    occi_client(endpoint(service_id), cert)
+  def list
     parse_instances(@client.describe(Occi::Infrastructure::Compute.new.kind.type_identifier))
   end
 
-  def show(service_id, cert, instance_id)
-    occi_client(endpoint(service_id), cert)
-    instance_url = validate(service_id, instance_id)
+  def show(instance_id)
+    instance_url = validate(@service_id, instance_id)
     parse_instances(@client.describe(instance_url))
   end
 
-  def destroy(service_id, cert, instance_id)
-    occi_client(endpoint(service_id), cert)
-    instance_url = validate(service_id, instance_id)
+  def destroy(instance_id)
+    instance_url = validate(@service_id, instance_id)
     @client.delete instance_url
   end
 
-  def create(service_id, cert, instance)
-    occi_client(endpoint(service_id), cert)
-    return nil unless valide_instance(instance)
+  def create(instance)
+    return nil unless valide_input(instance)
     create_compute(instance)
   end
 
   protected
 
-  def valide_instance(instance)
+  def valide_input(instance)
     # TODO: find some json validator and validate input
     instance
   end
