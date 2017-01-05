@@ -16,5 +16,11 @@ module V1
       # TODO: check respond with return codes
       respond_with(instances.destroy(params[:site_id], @cert, params[:id]))
     end
+
+    def create
+      instances = Instances.new(cache: cache_manager)
+      instance_url = instances.create(params[:site_id], @cert, params['instance'])
+      respond_with({ locations: [instance_url] }, status: 201, location: instance_url)
+    end
   end
 end
