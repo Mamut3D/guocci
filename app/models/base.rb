@@ -6,12 +6,11 @@ class Base
     refresh_database
 
     # TODO: Possibly rework client
-    if options[:service_id] && options[:cert]
-      @service_id = options[:service_id]
-      @endpoint = endpoint(@service_id)
-      @cert = options[:cert]
-      @client = occi_client(@endpoint, @cert)
-    end
+    return unless options[:service_id] && options[:cert]
+    @service_id = options[:service_id]
+    @endpoint = endpoint(@service_id)
+    @cert = options[:cert]
+    @client = occi_client(@endpoint, @cert)
   end
 
   protected
@@ -43,19 +42,19 @@ class Base
 
   def occi_client(endpoint, cert)
     # TODO: rework client to enable caching
-    client = Occi::Api::Client::ClientHttp.new(endpoint: endpoint,
-                                                  auth: {
-                                                    voms: true,
-                                                    type: 'x509',
-                                                    user_cert: cert,
-                                                    user_cert_password: '',
-                                                    ca_path: CA_PATH
-                                                  },
-                                                  log: {
-                                                    level: Rails.env.production? ? Occi::Api::Log::ERROR : Occi::Api::Log::DEBUG,
-                                                    logger: Rails.logger,
-                                                    out: Rails.logger
-                                                  })
+    Occi::Api::Client::ClientHttp.new(endpoint: endpoint,
+                                      auth: {
+                                        voms: true,
+                                        type: 'x509',
+                                        user_cert: cert,
+                                        user_cert_password: '',
+                                        ca_path: CA_PATH
+                                      },
+                                      log: {
+                                        level: Rails.env.production? ? Occi::Api::Log::ERROR : Occi::Api::Log::DEBUG,
+                                        logger: Rails.logger,
+                                        out: Rails.logger
+                                      })
   end
 
   def endpoint(site_id)
