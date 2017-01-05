@@ -1,10 +1,7 @@
 require 'httparty'
 
 module Utils
-  # Please burn in hell dear rubocop
-  # Best Regards
-  # Your Mama
-  # (fat)
+  # Utility class for connection to appdb and extracting iformation about sites/appliances/flavours
   class AppdbReader
     APPDB_PROXY_URL = 'https://appdb.egi.eu/api/proxy'.freeze
     APPDB_REQUEST_ALL = 'https://appdb-pi.egi.eu/rest/1.0/sites?listmode=details&flt=%2B%3Dsite.supports%3A1%20'\

@@ -1,0 +1,856 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://cloud.ifca.es:8787/occi1.1/-/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - text/plain,text/occi;q=0.2
+      User-Agent:
+      - rOCCI-core/4.3.2 rOCCI-api/4.3.6 OCCI/1.1 ruby-x86_64-linux/2.2.5p319
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Server:
+      - nginx/1.10.0 (Ubuntu)
+      Date:
+      - Tue, 03 Jan 2017 13:42:34 GMT
+      Content-Type:
+      - text/html; charset=UTF-8
+      Content-Length:
+      - '23'
+      Connection:
+      - keep-alive
+      Www-Authenticate:
+      - Keystone uri='https://keystone.ifca.es:5000/'
+      X-Compute-Request-Id:
+      - req-7ecda54f-96a3-4d83-827b-f54685ecba35
+    body:
+      encoding: UTF-8
+      string: Authentication required
+    http_version: 
+  recorded_at: Tue, 03 Jan 2017 13:41:52 GMT
+- request:
+    method: get
+    uri: https://cloud.ifca.es:8787/occi1.1/-/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - text/plain,text/occi;q=0.2
+      User-Agent:
+      - rOCCI-core/4.3.2 rOCCI-api/4.3.6 OCCI/1.1 ruby-x86_64-linux/2.2.5p319
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Server:
+      - nginx/1.10.0 (Ubuntu)
+      Date:
+      - Tue, 03 Jan 2017 13:42:35 GMT
+      Content-Type:
+      - text/html; charset=UTF-8
+      Content-Length:
+      - '23'
+      Connection:
+      - keep-alive
+      Www-Authenticate:
+      - Keystone uri='https://keystone.ifca.es:5000/'
+      X-Compute-Request-Id:
+      - req-3277f58a-510e-42b0-beac-14ae790fbdc4
+    body:
+      encoding: UTF-8
+      string: Authentication required
+    http_version: 
+  recorded_at: Tue, 03 Jan 2017 13:41:52 GMT
+- request:
+    method: get
+    uri: https://keystone.ifca.es:5000/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - text/plain,text/occi;q=0.2
+      User-Agent:
+      - rOCCI-core/4.3.2 rOCCI-api/4.3.6 OCCI/1.1 ruby-x86_64-linux/2.2.5p319
+  response:
+    status:
+      code: 300
+      message: Multiple Choices
+    headers:
+      Date:
+      - Tue, 03 Jan 2017 13:41:52 GMT
+      Server:
+      - Apache/2.4.18 (Ubuntu)
+      Vary:
+      - X-Auth-Token
+      X-Distribution:
+      - Ubuntu
+      Content-Length:
+      - '603'
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"versions": {"values": [{"status": "stable", "updated": "2016-04-04T00:00:00Z",
+        "media-types": [{"base": "application/json", "type": "application/vnd.openstack.identity-v3+json"}],
+        "id": "v3.6", "links": [{"href": "https://keystone.ifca.es:5000/v3/", "rel":
+        "self"}]}, {"status": "stable", "updated": "2014-04-17T00:00:00Z", "media-types":
+        [{"base": "application/json", "type": "application/vnd.openstack.identity-v2.0+json"}],
+        "id": "v2.0", "links": [{"href": "https://keystone.ifca.es:5000/v2.0/", "rel":
+        "self"}, {"href": "http://docs.openstack.org/", "type": "text/html", "rel":
+        "describedby"}]}]}}'
+    http_version: 
+  recorded_at: Tue, 03 Jan 2017 13:41:52 GMT
+- request:
+    method: post
+    uri: https://keystone.ifca.es:5000/v2.0/tokens
+    body:
+      encoding: UTF-8
+      string: '{"auth":{"voms":true}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rOCCI-core/4.3.2 rOCCI-api/4.3.6 OCCI/1.1 ruby-x86_64-linux/2.2.5p319
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Jan 2017 13:41:53 GMT
+      Server:
+      - Apache/2.4.18 (Ubuntu)
+      Vary:
+      - X-Auth-Token
+      X-Distribution:
+      - Ubuntu
+      X-Openstack-Request-Id:
+      - req-d261747b-092c-4bb3-b2a4-2b0d30789c76
+      Content-Length:
+      - '635'
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"access": {"token": {"issued_at": "2017-01-03T13:41:53.000000Z", "expires":
+        "2017-01-03T14:41:53Z", "id": "gAAAAABYa6oh0savMKTOUQHRFlWbo8s89kSOKDnCqMxmOmpZ4qhvvVO6XKur-aJ4Yu8Lbbog9r7bty2tsR-Gpg_v865tJmVzKMtCNJlnoTXLYVec4ZfBAtDZk1bSnpME0D9ZQ5LGD3TgwxdMTPVAEEd2YPM8mv5uMA",
+        "audit_ids": ["7RlUAeCqSr6UwETsM2xYXw"]}, "serviceCatalog": [], "user": {"username":
+        "/DC=org/DC=terena/DC=tcs/C=CZ/O=Masaryk University/CN=Radim Janca 255879",
+        "roles_links": [], "id": "37c194e3320d42b893e7931614779ae5", "roles": [],
+        "name": "/DC=org/DC=terena/DC=tcs/C=CZ/O=Masaryk University/CN=Radim Janca
+        255879"}, "metadata": {"is_admin": 0, "roles": []}}}'
+    http_version: 
+  recorded_at: Tue, 03 Jan 2017 13:41:53 GMT
+- request:
+    method: get
+    uri: https://keystone.ifca.es:5000/v2.0/tenants
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rOCCI-core/4.3.2 rOCCI-api/4.3.6 OCCI/1.1 ruby-x86_64-linux/2.2.5p319
+      X-Auth-Token:
+      - gAAAAABYa6oh0savMKTOUQHRFlWbo8s89kSOKDnCqMxmOmpZ4qhvvVO6XKur-aJ4Yu8Lbbog9r7bty2tsR-Gpg_v865tJmVzKMtCNJlnoTXLYVec4ZfBAtDZk1bSnpME0D9ZQ5LGD3TgwxdMTPVAEEd2YPM8mv5uMA
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Jan 2017 13:41:53 GMT
+      Server:
+      - Apache/2.4.18 (Ubuntu)
+      Vary:
+      - X-Auth-Token
+      X-Distribution:
+      - Ubuntu
+      X-Openstack-Request-Id:
+      - req-dcfd927c-36f1-436d-b370-010bc00577a4
+      Content-Length:
+      - '162'
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"tenants_links": [], "tenants": [{"description": "VO fedcloud.egi.eu",
+        "enabled": true, "id": "999f045cb1ff4684a15ebb338af69460", "name": "VO:fedcloud.egi.eu"}]}'
+    http_version: 
+  recorded_at: Tue, 03 Jan 2017 13:41:53 GMT
+- request:
+    method: post
+    uri: https://keystone.ifca.es:5000/v2.0/tokens
+    body:
+      encoding: UTF-8
+      string: '{"auth":{"voms":true,"tenantName":"VO:fedcloud.egi.eu"}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rOCCI-core/4.3.2 rOCCI-api/4.3.6 OCCI/1.1 ruby-x86_64-linux/2.2.5p319
+      X-Auth-Token:
+      - gAAAAABYa6oh0savMKTOUQHRFlWbo8s89kSOKDnCqMxmOmpZ4qhvvVO6XKur-aJ4Yu8Lbbog9r7bty2tsR-Gpg_v865tJmVzKMtCNJlnoTXLYVec4ZfBAtDZk1bSnpME0D9ZQ5LGD3TgwxdMTPVAEEd2YPM8mv5uMA
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Jan 2017 13:41:53 GMT
+      Server:
+      - Apache/2.4.18 (Ubuntu)
+      Vary:
+      - X-Auth-Token
+      X-Distribution:
+      - Ubuntu
+      X-Openstack-Request-Id:
+      - req-3566227a-47c0-4290-85e0-7d22befecc20
+      Content-Length:
+      - '4469'
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"access": {"token": {"issued_at": "2017-01-03T13:41:53.000000Z", "expires":
+        "2017-01-03T14:41:53Z", "id": "gAAAAABYa6oh1pwxu7Btp9mxuslXMEQySZbI8NLEwOEGOEnNKx6x8O0iczH3fMQlwpA2QDTQk_Mp6Ok1IIjG7IVks34TVq_Nfsj4sggva3eTXqfzltKgg_qzeGC9IW3Mr-NjjtGegbj7l5lXzTdn8gSV1aS9OEZ9Z1jzE8GHhP83729yJrXrndQ",
+        "tenant": {"description": "VO fedcloud.egi.eu", "enabled": true, "id": "999f045cb1ff4684a15ebb338af69460",
+        "name": "VO:fedcloud.egi.eu"}, "audit_ids": ["6-EdZcooTkWQ40fDSR5I3Q"]}, "serviceCatalog":
+        [{"endpoints": [{"adminURL": "https://cloud.ifca.es:8774/v2.1/999f045cb1ff4684a15ebb338af69460",
+        "region": "RegionOne", "internalURL": "https://cloud.ifca.es:8774/v2.1/999f045cb1ff4684a15ebb338af69460",
+        "id": "1b7f14c87d8c42ad962f4d3a5fd13a77", "publicURL": "https://cloud.ifca.es:8774/v2.1/999f045cb1ff4684a15ebb338af69460"}],
+        "endpoints_links": [], "type": "compute", "name": "nova"}, {"endpoints": [{"adminURL":
+        "https://heat.ifca.es:8004/v1/999f045cb1ff4684a15ebb338af69460", "region":
+        "RegionOne", "internalURL": "https://heat.ifca.es:8004/v1/999f045cb1ff4684a15ebb338af69460",
+        "id": "2adeae78b26d403895e5bf5ae4c1a604", "publicURL": "https://heat.ifca.es:8004/v1/999f045cb1ff4684a15ebb338af69460"}],
+        "endpoints_links": [], "type": "orchestration", "name": "heat"}, {"endpoints":
+        [{"adminURL": "http://cinder01.ifca.es:8776/v2/999f045cb1ff4684a15ebb338af69460",
+        "region": "RegionOne", "internalURL": "http://cinder01.ifca.es:8776/v2/999f045cb1ff4684a15ebb338af69460",
+        "id": "3135a57fc0164140b8af77cf4db93b85", "publicURL": "https://cinder01.ifca.es:8776/v2/999f045cb1ff4684a15ebb338af69460"}],
+        "endpoints_links": [], "type": "volumev2", "name": "cinderv2"}, {"endpoints":
+        [{"adminURL": "https://glance.ifca.es:9292/", "region": "RegionOne", "internalURL":
+        "https://glance.ifca.es:9292/", "id": "0ceb45ad3ee84f9ca5c1809b07715d40",
+        "publicURL": "https://glance.ifca.es:9292/"}], "endpoints_links": [], "type":
+        "image", "name": "glance"}, {"endpoints": [{"adminURL": "https://cloud.ifca.es:8777/",
+        "region": "RegionOne", "internalURL": "https://cloud.ifca.es:8777/", "id":
+        "5acd54c66f3641fd948fa363fa5c9d0a", "publicURL": "https://cloud.ifca.es:8777/"}],
+        "endpoints_links": [], "type": "metering", "name": "ceilometer"}, {"endpoints":
+        [{"adminURL": "https://heat.ifca.es:8000/v1", "region": "RegionOne", "internalURL":
+        "https://heat.ifca.es:8000/v1", "id": "1aab403272df49d8956009845cfddba2",
+        "publicURL": "https://heat.ifca.es:8000/v1"}], "endpoints_links": [], "type":
+        "cloudformation", "name": "heat-cfn"}, {"endpoints": [{"adminURL": "https://cinder01.ifca.es:8776/v1/999f045cb1ff4684a15ebb338af69460",
+        "region": "RegionOne", "internalURL": "https://cinder01.ifca.es:8776/v1/999f045cb1ff4684a15ebb338af69460",
+        "id": "5afb318eedd44a71ab8362cc917f929b", "publicURL": "https://cinder01.ifca.es:8776/v1/999f045cb1ff4684a15ebb338af69460"}],
+        "endpoints_links": [], "type": "volume", "name": "nova-volume"}, {"endpoints":
+        [{"adminURL": "https://cloud.ifca.es:8773/services/Admin", "region": "RegionOne",
+        "internalURL": "https://cloud.ifca.es:8773/services/Cloud", "id": "93ccd85773d24f238c6f2fab802cfd06",
+        "publicURL": "https://cloud.ifca.es:8773/services/Cloud"}], "endpoints_links":
+        [], "type": "ec2", "name": "ec2"}, {"endpoints": [{"adminURL": "https://cloud.ifca.es:8787/occi1.1",
+        "region": "RegionOne", "internalURL": "https://cloud.ifca.es:8787/occi1.1",
+        "id": "03e087c8fb3b495c9a360bcba3abf914", "publicURL": "https://cloud.ifca.es:8787/occi1.1"}],
+        "endpoints_links": [], "type": "occi", "name": "occi"}, {"endpoints": [{"adminURL":
+        "https://cephrgw.ifca.es:8080/swift/v1", "region": "RegionOne", "internalURL":
+        "https://cephrgw.ifca.es:8080/swift/v1", "id": "7a7656a85714485f8e8be63c4ec21d3d",
+        "publicURL": "https://cephrgw.ifca.es:8080/swift/v1"}], "endpoints_links":
+        [], "type": "object-store", "name": "swift"}, {"endpoints": [{"adminURL":
+        "https://keystone.ifca.es:35357/v2.0", "region": "RegionOne", "internalURL":
+        "https://keystone.ifca.es:5000/v2.0", "id": "510c45b865ba4f40997b91a85552f3e2",
+        "publicURL": "https://keystone.ifca.es:5000/v2.0"}], "endpoints_links": [],
+        "type": "identity", "name": "keystone"}], "user": {"username": "/DC=org/DC=terena/DC=tcs/C=CZ/O=Masaryk
+        University/CN=Radim Janca 255879", "roles_links": [], "id": "37c194e3320d42b893e7931614779ae5",
+        "roles": [{"name": "_member_"}], "name": "/DC=org/DC=terena/DC=tcs/C=CZ/O=Masaryk
+        University/CN=Radim Janca 255879"}, "metadata": {"is_admin": 0, "roles": ["9fe2ff9ee4384b1894a90878d3e92bab"]}}}'
+    http_version: 
+  recorded_at: Tue, 03 Jan 2017 13:41:53 GMT
+- request:
+    method: get
+    uri: https://cloud.ifca.es:8787/occi1.1/-/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - text/plain,text/occi;q=0.2
+      User-Agent:
+      - rOCCI-core/4.3.2 rOCCI-api/4.3.6 OCCI/1.1 ruby-x86_64-linux/2.2.5p319
+      X-Auth-Token:
+      - gAAAAABYa6oh1pwxu7Btp9mxuslXMEQySZbI8NLEwOEGOEnNKx6x8O0iczH3fMQlwpA2QDTQk_Mp6Ok1IIjG7IVks34TVq_Nfsj4sggva3eTXqfzltKgg_qzeGC9IW3Mr-NjjtGegbj7l5lXzTdn8gSV1aS9OEZ9Z1jzE8GHhP83729yJrXrndQ
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Jan 2017 13:42:37 GMT
+      Content-Type:
+      - text/plain; charset=utf8
+      Content-Length:
+      - '20940'
+      Connection:
+      - keep-alive
+      Server:
+      - ooi/0.1.1 OCCI/1.1
+      X-Compute-Request-Id:
+      - req-e7b646a2-7821-4aba-9aed-519830655354
+    body:
+      encoding: UTF-8
+      string: |-
+        Category: entity; scheme="http://schemas.ogf.org/occi/core#"; class="kind"; title="entity"; location="https://cloud.ifca.es:8787/occi1.1/entity/"
+        Category: resource; scheme="http://schemas.ogf.org/occi/core#"; class="kind"; title="resource"; rel="http://schemas.ogf.org/occi/core#entity"; location="https://cloud.ifca.es:8787/occi1.1/resource/"
+        Category: link; scheme="http://schemas.ogf.org/occi/core#"; class="kind"; title="link"; location="https://cloud.ifca.es:8787/occi1.1/link/"
+        Category: compute; scheme="http://schemas.ogf.org/occi/infrastructure#"; class="kind"; title="compute resource"; rel="http://schemas.ogf.org/occi/core#resource"; location="https://cloud.ifca.es:8787/occi1.1/compute/"
+        Category: start; scheme="http://schemas.ogf.org/occi/infrastructure/compute/action#"; class="action"; title="start compute instance"
+        Category: stop; scheme="http://schemas.ogf.org/occi/infrastructure/compute/action#"; class="action"; title="stop compute instance"
+        Category: restart; scheme="http://schemas.ogf.org/occi/infrastructure/compute/action#"; class="action"; title="restart compute instance"
+        Category: suspend; scheme="http://schemas.ogf.org/occi/infrastructure/compute/action#"; class="action"; title="suspend compute instance"
+        Category: storage; scheme="http://schemas.ogf.org/occi/infrastructure#"; class="kind"; title="storage resource"; rel="http://schemas.ogf.org/occi/core#resource"; location="https://cloud.ifca.es:8787/occi1.1/storage/"
+        Category: storagelink; scheme="http://schemas.ogf.org/occi/infrastructure#"; class="kind"; title="storage link resource"; rel="http://schemas.ogf.org/occi/core#link"; location="https://cloud.ifca.es:8787/occi1.1/storagelink/"
+        Category: online; scheme="http://schemas.ogf.org/occi/infrastructure/storage/action#"; class="action"; title="online storage instance"
+        Category: offline; scheme="http://schemas.ogf.org/occi/infrastructure/storage/action#"; class="action"; title="offline storage instance"
+        Category: backup; scheme="http://schemas.ogf.org/occi/infrastructure/storage/action#"; class="action"; title="backup storage instance"
+        Category: snapshot; scheme="http://schemas.ogf.org/occi/infrastructure/storage/action#"; class="action"; title="snapshot storage instance"
+        Category: resize; scheme="http://schemas.ogf.org/occi/infrastructure/storage/action#"; class="action"; title="resize storage instance"
+        Category: network; scheme="http://schemas.ogf.org/occi/infrastructure#"; class="kind"; title="network resource"; rel="http://schemas.ogf.org/occi/core#resource"; location="https://cloud.ifca.es:8787/occi1.1/network/"
+        Category: up; scheme="http://schemas.ogf.org/occi/infrastructure/network/action#"; class="action"; title="up network instance"
+        Category: down; scheme="http://schemas.ogf.org/occi/infrastructure/network/action#"; class="action"; title="down network instance"
+        Category: ipnetwork; scheme="http://schemas.ogf.org/occi/infrastructure/network#"; class="mixin"; title="IP Networking Mixin"
+        Category: networkinterface; scheme="http://schemas.ogf.org/occi/infrastructure#"; class="kind"; title="network link resource"; rel="http://schemas.ogf.org/occi/core#link"; location="https://cloud.ifca.es:8787/occi1.1/networklink/"
+        Category: ipnetworkinterface; scheme="http://schemas.ogf.org/occi/infrastructure/networkinterface#"; class="mixin"; title="IP Network interface Mixin"
+        Category: os_tpl; scheme="http://schemas.ogf.org/occi/infrastructure#"; class="mixin"; title="OCCI OS Template"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/"
+        Category: resource_tpl; scheme="http://schemas.ogf.org/occi/infrastructure#"; class="mixin"; title="OCCI Resource Template"; location="https://cloud.ifca.es:8787/occi1.1/resource_tpl/"
+        Category: 1; scheme="http://schemas.openstack.org/template/resource#"; class="mixin"; title="Flavor: m1.tiny"; rel="http://schemas.ogf.org/occi/infrastructure#resource_tpl"; location="https://cloud.ifca.es:8787/occi1.1/resource_tpl/1"
+        Category: 2; scheme="http://schemas.openstack.org/template/resource#"; class="mixin"; title="Flavor: m1.small"; rel="http://schemas.ogf.org/occi/infrastructure#resource_tpl"; location="https://cloud.ifca.es:8787/occi1.1/resource_tpl/2"
+        Category: 3; scheme="http://schemas.openstack.org/template/resource#"; class="mixin"; title="Flavor: m1.medium"; rel="http://schemas.ogf.org/occi/infrastructure#resource_tpl"; location="https://cloud.ifca.es:8787/occi1.1/resource_tpl/3"
+        Category: 4; scheme="http://schemas.openstack.org/template/resource#"; class="mixin"; title="Flavor: m1.large"; rel="http://schemas.ogf.org/occi/infrastructure#resource_tpl"; location="https://cloud.ifca.es:8787/occi1.1/resource_tpl/4"
+        Category: 5; scheme="http://schemas.openstack.org/template/resource#"; class="mixin"; title="Flavor: m1.xlarge"; rel="http://schemas.ogf.org/occi/infrastructure#resource_tpl"; location="https://cloud.ifca.es:8787/occi1.1/resource_tpl/5"
+        Category: 55c49e5c-637d-4e92-8388-a1baa941fb81; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="EGI FEDCLOUD Image for DataMiner [Ubuntu/14.04/VirtualBox]"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/55c49e5c-637d-4e92-8388-a1baa941fb81"
+        Category: de2dcef0-cfeb-47d7-8cc5-765a03a163b8; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="EGI FEDCLOUD Image for gCube Smart Executor [Ubuntu/14.04/VirtualBox]"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/de2dcef0-cfeb-47d7-8cc5-765a03a163b8"
+        Category: eae64a2e-50fe-4eb0-a901-4826a781b9cb; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="EGI FEDCLOUD Image for Extras-WP4 [Ubuntu/14.04.3/VirtualBox]"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/eae64a2e-50fe-4eb0-a901-4826a781b9cb"
+        Category: 80f45ce4-2c9a-4711-9383-7f39f5cdbc11; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="EGI FEDCLOUD Image for COMPSs Framework [Ubuntu/15.04/Kv]"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/80f45ce4-2c9a-4711-9383-7f39f5cdbc11"
+        Category: d6277ac2-2ae5-4df6-b7fd-88131e10bf61; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="EGI FEDCLOUD Image for EGI Ubuntu 16.04 LTS [Ubuntu/16.04/VirtualBox]"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/d6277ac2-2ae5-4df6-b7fd-88131e10bf61"
+        Category: b20ec76a-623e-4203-96ca-51ee73cc2101; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="EGI FEDCLOUD Image for Docker Ubuntu 14.04 [Ubuntu/14.04/VirtualBox]"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/b20ec76a-623e-4203-96ca-51ee73cc2101"
+        Category: b5fe9952-5d10-4c54-85d8-d9c573fb08c9; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="EGI FEDCLOUD Image for EGI FedCloud Clients [Ubuntu/14.04/KVM]"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/b5fe9952-5d10-4c54-85d8-d9c573fb08c9"
+        Category: a44c01de-cde0-41d6-92bb-81a9baf2fe18; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="EGI FEDCLOUD Image for EGI Ubuntu 12.04 [Ubuntu/12.04/VirtualBox]"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/a44c01de-cde0-41d6-92bb-81a9baf2fe18"
+        Category: 60c898a3-2ebf-4428-a1dc-f9c406a835f5; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="EGI FEDCLOUD Image for EGI Centos 6 [CentOS/6/KVM]"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/60c898a3-2ebf-4428-a1dc-f9c406a835f5"
+        Category: 45a44510-4cee-4f1b-a9aa-c5089d07c80f; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="EGI FEDCLOUD Image for EGI CentOS 7 [CentOS/7/VirtualBox]"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/45a44510-4cee-4f1b-a9aa-c5089d07c80f"
+        Category: 9c5c16c3-f9fb-4a3a-b4b9-7e15592f152e; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="EGI FEDCLOUD Image for EGI Ubuntu 14.04 [Ubuntu/14.04/VirtualBox]"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/9c5c16c3-f9fb-4a3a-b4b9-7e15592f152e"
+        Category: 49f2748f-e242-47fc-a8d4-e568498a18e1; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="EGI FEDCLOUD Image for COMPSs_LOFAR [Debian/7/KVM]"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/49f2748f-e242-47fc-a8d4-e568498a18e1"
+        Category: f0452480-4152-467f-944f-d6eb20573754; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="IFCA Ubuntu Server 16.04 JeOS"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/f0452480-4152-467f-944f-d6eb20573754"
+        Category: 21f4b241-969b-4612-8516-ce57239c80af; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="EGI FEDCLOUD Image for APACHE HIVE [Ubuntu/14.04/VMWare]"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/21f4b241-969b-4612-8516-ce57239c80af"
+        Category: 444d3e75-f642-477f-86dd-40a23c68c085; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="EGI FEDCLOUD Image for FutureGateway [Ubuntu/14.04/KVM]"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/444d3e75-f642-477f-86dd-40a23c68c085"
+        Category: 6dba0cab-3824-425d-94b2-4a53d29ea4a1; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="EGI FEDCLOUD Image for DCI-Bridge [Debian/7.0/KVM]"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/6dba0cab-3824-425d-94b2-4a53d29ea4a1"
+        Category: 828e9263-3824-45f6-a7fb-d2b140176de0; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="EGI FEDCLOUD Image for Hadoop 2.7.1 [Ubuntu/14.04/VirtualBox]"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/828e9263-3824-45f6-a7fb-d2b140176de0"
+        Category: 299cfae2-1749-43b1-8c4c-9bd62bbad44b; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="EGI FEDCLOUD OS Disk Image"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/299cfae2-1749-43b1-8c4c-9bd62bbad44b"
+        Category: 1c0c8f4f-2815-4eb1-a9ee-f0eef168befb; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="EGI FEDCLOUD Image for CernVM [Scientific Linux/6.0/KVM]"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/1c0c8f4f-2815-4eb1-a9ee-f0eef168befb"
+        Category: 0ecd5774-cd41-4412-b368-0fff6202ecfb; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="IFCA Debian Jessie 64-bit JeOS"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/0ecd5774-cd41-4412-b368-0fff6202ecfb"
+        Category: 21ef07a4-224d-427e-ade6-377cc4184331; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="OLD IFCA Ubuntu Server 16.04 JeOS"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/21ef07a4-224d-427e-ade6-377cc4184331"
+        Category: 21711a1d-ab51-40b0-b990-6e196b60390b; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="IFCA CernVM 3.5.1"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/21711a1d-ab51-40b0-b990-6e196b60390b"
+        Category: 947a0ce5-f6a0-4661-8db2-016664e9a950; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="IFCA CentOS 7"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/947a0ce5-f6a0-4661-8db2-016664e9a950"
+        Category: 8f54e773-e7c7-48e5-b422-e72422d80436; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="IFCA Ubuntu Server 14.04 JeOS"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/8f54e773-e7c7-48e5-b422-e72422d80436"
+        Category: 226071fa-12f7-40f2-947b-aaafd0203f88; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="ubuntu-heat-cfntools"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/226071fa-12f7-40f2-947b-aaafd0203f88"
+        Category: 1414f242-d6d1-4a8c-8b26-8c0ada32f343; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="IFCA Fedora Cloud 23"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/1414f242-d6d1-4a8c-8b26-8c0ada32f343"
+        Category: 7f361fba-21d6-40ca-892d-17aa60b63a66; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="OLD IFCA CentOS 7"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/7f361fba-21d6-40ca-892d-17aa60b63a66"
+        Category: f3544cc8-421f-4d93-ac35-eba7fdc75329; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="IFCA CentOS 6"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/f3544cc8-421f-4d93-ac35-eba7fdc75329"
+        Category: 3c7c8ad7-8e71-456a-ae14-334eecfc8e0f; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="IFCA Debian Squeeze JEOS"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/3c7c8ad7-8e71-456a-ae14-334eecfc8e0f"
+        Category: 5c9aa402-b8e2-449b-b087-c93f99ad3ff8; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="IFCA CernVM 3 (prod-1.18-1)"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/5c9aa402-b8e2-449b-b087-c93f99ad3ff8"
+        Category: 53ff0d74-074b-4ee5-a9a2-4e47552821d8; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="OLD IFCA Ubuntu14.04"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/53ff0d74-074b-4ee5-a9a2-4e47552821d8"
+        Category: 3acb57cd-a6a4-4abb-b5ed-ffd619fd7d9c; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="IFCA CernVM 3 (1.17-5 SL5)"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/3acb57cd-a6a4-4abb-b5ed-ffd619fd7d9c"
+        Category: f417ada4-3468-4e40-9ed2-3ce950f8ac14; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="IFCA OpenSUSE 12.3 kernel 3.7.10-1.11-xen"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/f417ada4-3468-4e40-9ed2-3ce950f8ac14"
+        Category: 5035d82b-9ac3-45b1-8ee3-8d5c335597e7; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="IFCA OpenSUSE 12.3 initrd 3.7.10-1.11-xen"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/5035d82b-9ac3-45b1-8ee3-8d5c335597e7"
+        Category: 9b8aaa86-5a40-4deb-89f9-793fb153f74a; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="IFCA MoinMoin 1.9.3 Appliance"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/9b8aaa86-5a40-4deb-89f9-793fb153f74a"
+        Category: 369455d3-7f84-4630-b60c-e0ebf29a410c; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="IFCA Ubuntu Server 12.04 JeOS"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/369455d3-7f84-4630-b60c-e0ebf29a410c"
+        Category: 75896bad-05d3-45f6-9958-5940f82d0048; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="IFCA Scientific Linux 6.2 JeOS"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/75896bad-05d3-45f6-9958-5940f82d0048"
+        Category: daaed27e-6226-4295-8018-ad3b6b5210f6; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="IFCA openSUSE 11.4 + Compilers + Mathematica"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/daaed27e-6226-4295-8018-ad3b6b5210f6"
+        Category: 3ef6bb0c-6a17-47c9-a949-70256eb6651e; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="IFCA openSUSE 11.4 + Compilers"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/3ef6bb0c-6a17-47c9-a949-70256eb6651e"
+        Category: 29233856-ed8e-4b61-ac81-898eb5e7c263; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="IFCA openSUSE 11.4 JeOS"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/29233856-ed8e-4b61-ac81-898eb5e7c263"
+        Category: 694f2673-7ea3-4690-a25e-c9dd4297519a; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="IFCA Ubuntu Server 10.04 JeOS"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/694f2673-7ea3-4690-a25e-c9dd4297519a"
+        Category: cdbb6f8f-d10e-4e2b-879d-250d29fb9dbb; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="IFCA Scientific Linux 5.5 + PROOF v5.30.00"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/cdbb6f8f-d10e-4e2b-879d-250d29fb9dbb"
+        Category: 6857ee01-2ba9-4846-b788-9e826dd9aaba; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="IFCA Scientific Linux 5.5 + ROOT v5.30.00"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/6857ee01-2ba9-4846-b788-9e826dd9aaba"
+        Category: 18d99a06-c3e5-4157-a0e3-37ec34bdfc24; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="IFCA Scientific Linux 5.5 JeOS"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/18d99a06-c3e5-4157-a0e3-37ec34bdfc24"
+        Category: user_data; scheme="http://schemas.openstack.org/compute/instance#"; class="mixin"; title="Contextualization extension - user_data"
+        Category: public_key; scheme="http://schemas.openstack.org/instance/credentials#"; class="mixin"; title="Contextualization extension - public_key"
+        Category: cloudprv-01; scheme="http://schemas.openstack.org/network/floatingippool#"; class="mixin"; title="cloudprv-01"
+        Category: cloudprv-02; scheme="http://schemas.openstack.org/network/floatingippool#"; class="mixin"; title="cloudprv-02"
+        Category: cloudprv-03; scheme="http://schemas.openstack.org/network/floatingippool#"; class="mixin"; title="cloudprv-03"
+        Category: cloudprv-04; scheme="http://schemas.openstack.org/network/floatingippool#"; class="mixin"; title="cloudprv-04"
+        Category: cloudprv-05; scheme="http://schemas.openstack.org/network/floatingippool#"; class="mixin"; title="cloudprv-05"
+        Category: cloudprv-06; scheme="http://schemas.openstack.org/network/floatingippool#"; class="mixin"; title="cloudprv-06"
+        Category: cloudprv-07; scheme="http://schemas.openstack.org/network/floatingippool#"; class="mixin"; title="cloudprv-07"
+        Category: cloudprv-08; scheme="http://schemas.openstack.org/network/floatingippool#"; class="mixin"; title="cloudprv-08"
+        Category: cloudprv-09; scheme="http://schemas.openstack.org/network/floatingippool#"; class="mixin"; title="cloudprv-09"
+        Category: cloudprv-10; scheme="http://schemas.openstack.org/network/floatingippool#"; class="mixin"; title="cloudprv-10"
+        Category: cloudprv-11; scheme="http://schemas.openstack.org/network/floatingippool#"; class="mixin"; title="cloudprv-11"
+        Category: cloudprv-12; scheme="http://schemas.openstack.org/network/floatingippool#"; class="mixin"; title="cloudprv-12"
+        Category: cloudprv-13; scheme="http://schemas.openstack.org/network/floatingippool#"; class="mixin"; title="cloudprv-13"
+        Category: cloudprv-14; scheme="http://schemas.openstack.org/network/floatingippool#"; class="mixin"; title="cloudprv-14"
+        Category: cloudprv-15; scheme="http://schemas.openstack.org/network/floatingippool#"; class="mixin"; title="cloudprv-15"
+        Category: cloudprv-16; scheme="http://schemas.openstack.org/network/floatingippool#"; class="mixin"; title="cloudprv-16"
+        Category: nova; scheme="http://schemas.openstack.org/network/floatingippool#"; class="mixin"; title="nova"
+    http_version: 
+  recorded_at: Tue, 03 Jan 2017 13:41:55 GMT
+- request:
+    method: get
+    uri: https://cloud.ifca.es:8787/occi1.1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - text/plain,text/occi;q=0.2
+      User-Agent:
+      - rOCCI-core/4.3.2 rOCCI-api/4.3.6 OCCI/1.1 ruby-x86_64-linux/2.2.5p319
+      X-Auth-Token:
+      - gAAAAABYa6oh1pwxu7Btp9mxuslXMEQySZbI8NLEwOEGOEnNKx6x8O0iczH3fMQlwpA2QDTQk_Mp6Ok1IIjG7IVks34TVq_Nfsj4sggva3eTXqfzltKgg_qzeGC9IW3Mr-NjjtGegbj7l5lXzTdn8gSV1aS9OEZ9Z1jzE8GHhP83729yJrXrndQ
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Tue, 03 Jan 2017 13:42:38 GMT
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '32'
+      Connection:
+      - keep-alive
+      Server:
+      - ooi/0.1.1 OCCI/1.1
+      X-Compute-Request-Id:
+      - req-7bd8a222-4296-401e-be07-31d74e618848
+    body:
+      encoding: UTF-8
+      string: The resource could not be found.
+    http_version: 
+  recorded_at: Tue, 03 Jan 2017 13:41:55 GMT
+- request:
+    method: get
+    uri: https://cloud.ifca.es:8787/occi1.1/-/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - text/plain,text/occi;q=0.2
+      User-Agent:
+      - rOCCI-core/4.3.2 rOCCI-api/4.3.6 OCCI/1.1 ruby-x86_64-linux/2.2.5p319
+      X-Auth-Token:
+      - gAAAAABYa6oh1pwxu7Btp9mxuslXMEQySZbI8NLEwOEGOEnNKx6x8O0iczH3fMQlwpA2QDTQk_Mp6Ok1IIjG7IVks34TVq_Nfsj4sggva3eTXqfzltKgg_qzeGC9IW3Mr-NjjtGegbj7l5lXzTdn8gSV1aS9OEZ9Z1jzE8GHhP83729yJrXrndQ
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Jan 2017 13:42:39 GMT
+      Content-Type:
+      - text/plain; charset=utf8
+      Content-Length:
+      - '20940'
+      Connection:
+      - keep-alive
+      Server:
+      - ooi/0.1.1 OCCI/1.1
+      X-Compute-Request-Id:
+      - req-ef4c0b53-5d0c-4009-9133-b0a407bbe3e8
+    body:
+      encoding: UTF-8
+      string: |-
+        Category: entity; scheme="http://schemas.ogf.org/occi/core#"; class="kind"; title="entity"; location="https://cloud.ifca.es:8787/occi1.1/entity/"
+        Category: resource; scheme="http://schemas.ogf.org/occi/core#"; class="kind"; title="resource"; rel="http://schemas.ogf.org/occi/core#entity"; location="https://cloud.ifca.es:8787/occi1.1/resource/"
+        Category: link; scheme="http://schemas.ogf.org/occi/core#"; class="kind"; title="link"; location="https://cloud.ifca.es:8787/occi1.1/link/"
+        Category: compute; scheme="http://schemas.ogf.org/occi/infrastructure#"; class="kind"; title="compute resource"; rel="http://schemas.ogf.org/occi/core#resource"; location="https://cloud.ifca.es:8787/occi1.1/compute/"
+        Category: start; scheme="http://schemas.ogf.org/occi/infrastructure/compute/action#"; class="action"; title="start compute instance"
+        Category: stop; scheme="http://schemas.ogf.org/occi/infrastructure/compute/action#"; class="action"; title="stop compute instance"
+        Category: restart; scheme="http://schemas.ogf.org/occi/infrastructure/compute/action#"; class="action"; title="restart compute instance"
+        Category: suspend; scheme="http://schemas.ogf.org/occi/infrastructure/compute/action#"; class="action"; title="suspend compute instance"
+        Category: storage; scheme="http://schemas.ogf.org/occi/infrastructure#"; class="kind"; title="storage resource"; rel="http://schemas.ogf.org/occi/core#resource"; location="https://cloud.ifca.es:8787/occi1.1/storage/"
+        Category: storagelink; scheme="http://schemas.ogf.org/occi/infrastructure#"; class="kind"; title="storage link resource"; rel="http://schemas.ogf.org/occi/core#link"; location="https://cloud.ifca.es:8787/occi1.1/storagelink/"
+        Category: online; scheme="http://schemas.ogf.org/occi/infrastructure/storage/action#"; class="action"; title="online storage instance"
+        Category: offline; scheme="http://schemas.ogf.org/occi/infrastructure/storage/action#"; class="action"; title="offline storage instance"
+        Category: backup; scheme="http://schemas.ogf.org/occi/infrastructure/storage/action#"; class="action"; title="backup storage instance"
+        Category: snapshot; scheme="http://schemas.ogf.org/occi/infrastructure/storage/action#"; class="action"; title="snapshot storage instance"
+        Category: resize; scheme="http://schemas.ogf.org/occi/infrastructure/storage/action#"; class="action"; title="resize storage instance"
+        Category: network; scheme="http://schemas.ogf.org/occi/infrastructure#"; class="kind"; title="network resource"; rel="http://schemas.ogf.org/occi/core#resource"; location="https://cloud.ifca.es:8787/occi1.1/network/"
+        Category: up; scheme="http://schemas.ogf.org/occi/infrastructure/network/action#"; class="action"; title="up network instance"
+        Category: down; scheme="http://schemas.ogf.org/occi/infrastructure/network/action#"; class="action"; title="down network instance"
+        Category: ipnetwork; scheme="http://schemas.ogf.org/occi/infrastructure/network#"; class="mixin"; title="IP Networking Mixin"
+        Category: networkinterface; scheme="http://schemas.ogf.org/occi/infrastructure#"; class="kind"; title="network link resource"; rel="http://schemas.ogf.org/occi/core#link"; location="https://cloud.ifca.es:8787/occi1.1/networklink/"
+        Category: ipnetworkinterface; scheme="http://schemas.ogf.org/occi/infrastructure/networkinterface#"; class="mixin"; title="IP Network interface Mixin"
+        Category: os_tpl; scheme="http://schemas.ogf.org/occi/infrastructure#"; class="mixin"; title="OCCI OS Template"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/"
+        Category: resource_tpl; scheme="http://schemas.ogf.org/occi/infrastructure#"; class="mixin"; title="OCCI Resource Template"; location="https://cloud.ifca.es:8787/occi1.1/resource_tpl/"
+        Category: 1; scheme="http://schemas.openstack.org/template/resource#"; class="mixin"; title="Flavor: m1.tiny"; rel="http://schemas.ogf.org/occi/infrastructure#resource_tpl"; location="https://cloud.ifca.es:8787/occi1.1/resource_tpl/1"
+        Category: 2; scheme="http://schemas.openstack.org/template/resource#"; class="mixin"; title="Flavor: m1.small"; rel="http://schemas.ogf.org/occi/infrastructure#resource_tpl"; location="https://cloud.ifca.es:8787/occi1.1/resource_tpl/2"
+        Category: 3; scheme="http://schemas.openstack.org/template/resource#"; class="mixin"; title="Flavor: m1.medium"; rel="http://schemas.ogf.org/occi/infrastructure#resource_tpl"; location="https://cloud.ifca.es:8787/occi1.1/resource_tpl/3"
+        Category: 4; scheme="http://schemas.openstack.org/template/resource#"; class="mixin"; title="Flavor: m1.large"; rel="http://schemas.ogf.org/occi/infrastructure#resource_tpl"; location="https://cloud.ifca.es:8787/occi1.1/resource_tpl/4"
+        Category: 5; scheme="http://schemas.openstack.org/template/resource#"; class="mixin"; title="Flavor: m1.xlarge"; rel="http://schemas.ogf.org/occi/infrastructure#resource_tpl"; location="https://cloud.ifca.es:8787/occi1.1/resource_tpl/5"
+        Category: 55c49e5c-637d-4e92-8388-a1baa941fb81; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="EGI FEDCLOUD Image for DataMiner [Ubuntu/14.04/VirtualBox]"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/55c49e5c-637d-4e92-8388-a1baa941fb81"
+        Category: de2dcef0-cfeb-47d7-8cc5-765a03a163b8; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="EGI FEDCLOUD Image for gCube Smart Executor [Ubuntu/14.04/VirtualBox]"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/de2dcef0-cfeb-47d7-8cc5-765a03a163b8"
+        Category: eae64a2e-50fe-4eb0-a901-4826a781b9cb; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="EGI FEDCLOUD Image for Extras-WP4 [Ubuntu/14.04.3/VirtualBox]"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/eae64a2e-50fe-4eb0-a901-4826a781b9cb"
+        Category: 80f45ce4-2c9a-4711-9383-7f39f5cdbc11; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="EGI FEDCLOUD Image for COMPSs Framework [Ubuntu/15.04/Kv]"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/80f45ce4-2c9a-4711-9383-7f39f5cdbc11"
+        Category: d6277ac2-2ae5-4df6-b7fd-88131e10bf61; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="EGI FEDCLOUD Image for EGI Ubuntu 16.04 LTS [Ubuntu/16.04/VirtualBox]"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/d6277ac2-2ae5-4df6-b7fd-88131e10bf61"
+        Category: b20ec76a-623e-4203-96ca-51ee73cc2101; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="EGI FEDCLOUD Image for Docker Ubuntu 14.04 [Ubuntu/14.04/VirtualBox]"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/b20ec76a-623e-4203-96ca-51ee73cc2101"
+        Category: b5fe9952-5d10-4c54-85d8-d9c573fb08c9; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="EGI FEDCLOUD Image for EGI FedCloud Clients [Ubuntu/14.04/KVM]"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/b5fe9952-5d10-4c54-85d8-d9c573fb08c9"
+        Category: a44c01de-cde0-41d6-92bb-81a9baf2fe18; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="EGI FEDCLOUD Image for EGI Ubuntu 12.04 [Ubuntu/12.04/VirtualBox]"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/a44c01de-cde0-41d6-92bb-81a9baf2fe18"
+        Category: 60c898a3-2ebf-4428-a1dc-f9c406a835f5; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="EGI FEDCLOUD Image for EGI Centos 6 [CentOS/6/KVM]"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/60c898a3-2ebf-4428-a1dc-f9c406a835f5"
+        Category: 45a44510-4cee-4f1b-a9aa-c5089d07c80f; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="EGI FEDCLOUD Image for EGI CentOS 7 [CentOS/7/VirtualBox]"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/45a44510-4cee-4f1b-a9aa-c5089d07c80f"
+        Category: 9c5c16c3-f9fb-4a3a-b4b9-7e15592f152e; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="EGI FEDCLOUD Image for EGI Ubuntu 14.04 [Ubuntu/14.04/VirtualBox]"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/9c5c16c3-f9fb-4a3a-b4b9-7e15592f152e"
+        Category: 49f2748f-e242-47fc-a8d4-e568498a18e1; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="EGI FEDCLOUD Image for COMPSs_LOFAR [Debian/7/KVM]"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/49f2748f-e242-47fc-a8d4-e568498a18e1"
+        Category: f0452480-4152-467f-944f-d6eb20573754; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="IFCA Ubuntu Server 16.04 JeOS"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/f0452480-4152-467f-944f-d6eb20573754"
+        Category: 21f4b241-969b-4612-8516-ce57239c80af; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="EGI FEDCLOUD Image for APACHE HIVE [Ubuntu/14.04/VMWare]"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/21f4b241-969b-4612-8516-ce57239c80af"
+        Category: 444d3e75-f642-477f-86dd-40a23c68c085; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="EGI FEDCLOUD Image for FutureGateway [Ubuntu/14.04/KVM]"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/444d3e75-f642-477f-86dd-40a23c68c085"
+        Category: 6dba0cab-3824-425d-94b2-4a53d29ea4a1; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="EGI FEDCLOUD Image for DCI-Bridge [Debian/7.0/KVM]"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/6dba0cab-3824-425d-94b2-4a53d29ea4a1"
+        Category: 828e9263-3824-45f6-a7fb-d2b140176de0; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="EGI FEDCLOUD Image for Hadoop 2.7.1 [Ubuntu/14.04/VirtualBox]"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/828e9263-3824-45f6-a7fb-d2b140176de0"
+        Category: 299cfae2-1749-43b1-8c4c-9bd62bbad44b; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="EGI FEDCLOUD OS Disk Image"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/299cfae2-1749-43b1-8c4c-9bd62bbad44b"
+        Category: 1c0c8f4f-2815-4eb1-a9ee-f0eef168befb; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="EGI FEDCLOUD Image for CernVM [Scientific Linux/6.0/KVM]"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/1c0c8f4f-2815-4eb1-a9ee-f0eef168befb"
+        Category: 0ecd5774-cd41-4412-b368-0fff6202ecfb; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="IFCA Debian Jessie 64-bit JeOS"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/0ecd5774-cd41-4412-b368-0fff6202ecfb"
+        Category: 21ef07a4-224d-427e-ade6-377cc4184331; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="OLD IFCA Ubuntu Server 16.04 JeOS"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/21ef07a4-224d-427e-ade6-377cc4184331"
+        Category: 21711a1d-ab51-40b0-b990-6e196b60390b; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="IFCA CernVM 3.5.1"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/21711a1d-ab51-40b0-b990-6e196b60390b"
+        Category: 947a0ce5-f6a0-4661-8db2-016664e9a950; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="IFCA CentOS 7"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/947a0ce5-f6a0-4661-8db2-016664e9a950"
+        Category: 8f54e773-e7c7-48e5-b422-e72422d80436; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="IFCA Ubuntu Server 14.04 JeOS"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/8f54e773-e7c7-48e5-b422-e72422d80436"
+        Category: 226071fa-12f7-40f2-947b-aaafd0203f88; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="ubuntu-heat-cfntools"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/226071fa-12f7-40f2-947b-aaafd0203f88"
+        Category: 1414f242-d6d1-4a8c-8b26-8c0ada32f343; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="IFCA Fedora Cloud 23"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/1414f242-d6d1-4a8c-8b26-8c0ada32f343"
+        Category: 7f361fba-21d6-40ca-892d-17aa60b63a66; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="OLD IFCA CentOS 7"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/7f361fba-21d6-40ca-892d-17aa60b63a66"
+        Category: f3544cc8-421f-4d93-ac35-eba7fdc75329; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="IFCA CentOS 6"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/f3544cc8-421f-4d93-ac35-eba7fdc75329"
+        Category: 3c7c8ad7-8e71-456a-ae14-334eecfc8e0f; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="IFCA Debian Squeeze JEOS"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/3c7c8ad7-8e71-456a-ae14-334eecfc8e0f"
+        Category: 5c9aa402-b8e2-449b-b087-c93f99ad3ff8; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="IFCA CernVM 3 (prod-1.18-1)"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/5c9aa402-b8e2-449b-b087-c93f99ad3ff8"
+        Category: 53ff0d74-074b-4ee5-a9a2-4e47552821d8; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="OLD IFCA Ubuntu14.04"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/53ff0d74-074b-4ee5-a9a2-4e47552821d8"
+        Category: 3acb57cd-a6a4-4abb-b5ed-ffd619fd7d9c; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="IFCA CernVM 3 (1.17-5 SL5)"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/3acb57cd-a6a4-4abb-b5ed-ffd619fd7d9c"
+        Category: f417ada4-3468-4e40-9ed2-3ce950f8ac14; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="IFCA OpenSUSE 12.3 kernel 3.7.10-1.11-xen"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/f417ada4-3468-4e40-9ed2-3ce950f8ac14"
+        Category: 5035d82b-9ac3-45b1-8ee3-8d5c335597e7; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="IFCA OpenSUSE 12.3 initrd 3.7.10-1.11-xen"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/5035d82b-9ac3-45b1-8ee3-8d5c335597e7"
+        Category: 9b8aaa86-5a40-4deb-89f9-793fb153f74a; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="IFCA MoinMoin 1.9.3 Appliance"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/9b8aaa86-5a40-4deb-89f9-793fb153f74a"
+        Category: 369455d3-7f84-4630-b60c-e0ebf29a410c; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="IFCA Ubuntu Server 12.04 JeOS"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/369455d3-7f84-4630-b60c-e0ebf29a410c"
+        Category: 75896bad-05d3-45f6-9958-5940f82d0048; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="IFCA Scientific Linux 6.2 JeOS"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/75896bad-05d3-45f6-9958-5940f82d0048"
+        Category: daaed27e-6226-4295-8018-ad3b6b5210f6; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="IFCA openSUSE 11.4 + Compilers + Mathematica"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/daaed27e-6226-4295-8018-ad3b6b5210f6"
+        Category: 3ef6bb0c-6a17-47c9-a949-70256eb6651e; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="IFCA openSUSE 11.4 + Compilers"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/3ef6bb0c-6a17-47c9-a949-70256eb6651e"
+        Category: 29233856-ed8e-4b61-ac81-898eb5e7c263; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="IFCA openSUSE 11.4 JeOS"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/29233856-ed8e-4b61-ac81-898eb5e7c263"
+        Category: 694f2673-7ea3-4690-a25e-c9dd4297519a; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="IFCA Ubuntu Server 10.04 JeOS"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/694f2673-7ea3-4690-a25e-c9dd4297519a"
+        Category: cdbb6f8f-d10e-4e2b-879d-250d29fb9dbb; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="IFCA Scientific Linux 5.5 + PROOF v5.30.00"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/cdbb6f8f-d10e-4e2b-879d-250d29fb9dbb"
+        Category: 6857ee01-2ba9-4846-b788-9e826dd9aaba; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="IFCA Scientific Linux 5.5 + ROOT v5.30.00"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/6857ee01-2ba9-4846-b788-9e826dd9aaba"
+        Category: 18d99a06-c3e5-4157-a0e3-37ec34bdfc24; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="IFCA Scientific Linux 5.5 JeOS"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/18d99a06-c3e5-4157-a0e3-37ec34bdfc24"
+        Category: user_data; scheme="http://schemas.openstack.org/compute/instance#"; class="mixin"; title="Contextualization extension - user_data"
+        Category: public_key; scheme="http://schemas.openstack.org/instance/credentials#"; class="mixin"; title="Contextualization extension - public_key"
+        Category: cloudprv-01; scheme="http://schemas.openstack.org/network/floatingippool#"; class="mixin"; title="cloudprv-01"
+        Category: cloudprv-02; scheme="http://schemas.openstack.org/network/floatingippool#"; class="mixin"; title="cloudprv-02"
+        Category: cloudprv-03; scheme="http://schemas.openstack.org/network/floatingippool#"; class="mixin"; title="cloudprv-03"
+        Category: cloudprv-04; scheme="http://schemas.openstack.org/network/floatingippool#"; class="mixin"; title="cloudprv-04"
+        Category: cloudprv-05; scheme="http://schemas.openstack.org/network/floatingippool#"; class="mixin"; title="cloudprv-05"
+        Category: cloudprv-06; scheme="http://schemas.openstack.org/network/floatingippool#"; class="mixin"; title="cloudprv-06"
+        Category: cloudprv-07; scheme="http://schemas.openstack.org/network/floatingippool#"; class="mixin"; title="cloudprv-07"
+        Category: cloudprv-08; scheme="http://schemas.openstack.org/network/floatingippool#"; class="mixin"; title="cloudprv-08"
+        Category: cloudprv-09; scheme="http://schemas.openstack.org/network/floatingippool#"; class="mixin"; title="cloudprv-09"
+        Category: cloudprv-10; scheme="http://schemas.openstack.org/network/floatingippool#"; class="mixin"; title="cloudprv-10"
+        Category: cloudprv-11; scheme="http://schemas.openstack.org/network/floatingippool#"; class="mixin"; title="cloudprv-11"
+        Category: cloudprv-12; scheme="http://schemas.openstack.org/network/floatingippool#"; class="mixin"; title="cloudprv-12"
+        Category: cloudprv-13; scheme="http://schemas.openstack.org/network/floatingippool#"; class="mixin"; title="cloudprv-13"
+        Category: cloudprv-14; scheme="http://schemas.openstack.org/network/floatingippool#"; class="mixin"; title="cloudprv-14"
+        Category: cloudprv-15; scheme="http://schemas.openstack.org/network/floatingippool#"; class="mixin"; title="cloudprv-15"
+        Category: cloudprv-16; scheme="http://schemas.openstack.org/network/floatingippool#"; class="mixin"; title="cloudprv-16"
+        Category: nova; scheme="http://schemas.openstack.org/network/floatingippool#"; class="mixin"; title="nova"
+    http_version: 
+  recorded_at: Tue, 03 Jan 2017 13:41:56 GMT
+- request:
+    method: get
+    uri: https://cloud.ifca.es:8787/occi1.1/compute/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - text/uri-list
+      User-Agent:
+      - rOCCI-core/4.3.2 rOCCI-api/4.3.6 OCCI/1.1 ruby-x86_64-linux/2.2.5p319
+      X-Auth-Token:
+      - gAAAAABYa6oh1pwxu7Btp9mxuslXMEQySZbI8NLEwOEGOEnNKx6x8O0iczH3fMQlwpA2QDTQk_Mp6Ok1IIjG7IVks34TVq_Nfsj4sggva3eTXqfzltKgg_qzeGC9IW3Mr-NjjtGegbj7l5lXzTdn8gSV1aS9OEZ9Z1jzE8GHhP83729yJrXrndQ
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Jan 2017 13:42:39 GMT
+      Content-Type:
+      - text/uri-list; charset=utf8
+      Content-Length:
+      - '399'
+      Connection:
+      - keep-alive
+      Server:
+      - ooi/0.1.1 OCCI/1.1
+      X-Compute-Request-Id:
+      - req-2cda3f30-eb93-49c3-9f68-9ba606e14680
+    body:
+      encoding: UTF-8
+      string: |-
+        https://cloud.ifca.es:8787/occi1.1/compute/105a723d-4e18-40c1-923b-1210f282e100
+        https://cloud.ifca.es:8787/occi1.1/compute/0423e210-8471-4b60-8b90-d11aa4d9be5f
+        https://cloud.ifca.es:8787/occi1.1/compute/c85e0880-ce30-421a-a8c8-b64a607b2c26
+        https://cloud.ifca.es:8787/occi1.1/compute/df8faea6-1003-4d52-9482-165e74824561
+        https://cloud.ifca.es:8787/occi1.1/compute/26874df4-e7ed-4a0d-9ed4-79133eacf45a
+    http_version: 
+  recorded_at: Tue, 03 Jan 2017 13:41:57 GMT
+- request:
+    method: get
+    uri: https://cloud.ifca.es:8787/occi1.1/compute/105a723d-4e18-40c1-923b-1210f282e100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - text/plain,text/occi;q=0.2
+      User-Agent:
+      - rOCCI-core/4.3.2 rOCCI-api/4.3.6 OCCI/1.1 ruby-x86_64-linux/2.2.5p319
+      X-Auth-Token:
+      - gAAAAABYa6oh1pwxu7Btp9mxuslXMEQySZbI8NLEwOEGOEnNKx6x8O0iczH3fMQlwpA2QDTQk_Mp6Ok1IIjG7IVks34TVq_Nfsj4sggva3eTXqfzltKgg_qzeGC9IW3Mr-NjjtGegbj7l5lXzTdn8gSV1aS9OEZ9Z1jzE8GHhP83729yJrXrndQ
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Jan 2017 13:42:40 GMT
+      Content-Type:
+      - text/plain; charset=utf8
+      Content-Length:
+      - '2491'
+      Connection:
+      - keep-alive
+      Server:
+      - ooi/0.1.1 OCCI/1.1
+      X-Compute-Request-Id:
+      - req-0acfa50d-e140-4223-ae0c-9cb7c5ebdfb6
+    body:
+      encoding: UTF-8
+      string: |-
+        Category: compute; scheme="http://schemas.ogf.org/occi/infrastructure#"; class="kind"; title="compute resource"; rel="http://schemas.ogf.org/occi/core#resource"; location="https://cloud.ifca.es:8787/occi1.1/compute/"
+        Category: d6277ac2-2ae5-4df6-b7fd-88131e10bf61; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="EGI FEDCLOUD Image for EGI Ubuntu 16.04 LTS [Ubuntu/16.04/VirtualBox]"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/d6277ac2-2ae5-4df6-b7fd-88131e10bf61"
+        Category: 2; scheme="http://schemas.openstack.org/template/resource#"; class="mixin"; title="Flavor: m1.small"; rel="http://schemas.ogf.org/occi/infrastructure#resource_tpl"; location="https://cloud.ifca.es:8787/occi1.1/resource_tpl/2"
+        X-OCCI-Attribute: occi.core.title="ub16"
+        X-OCCI-Attribute: occi.compute.state="active"
+        X-OCCI-Attribute: occi.compute.memory=2000
+        X-OCCI-Attribute: occi.compute.cores=1
+        X-OCCI-Attribute: occi.compute.hostname="ub16"
+        X-OCCI-Attribute: occi.core.id="105a723d-4e18-40c1-923b-1210f282e100"
+        Link: <https://cloud.ifca.es:8787/occi1.1/compute/105a723d-4e18-40c1-923b-1210f282e100?action=start>; rel="http://schemas.ogf.org/occi/infrastructure/compute/action#start"
+        Link: <https://cloud.ifca.es:8787/occi1.1/compute/105a723d-4e18-40c1-923b-1210f282e100?action=stop>; rel="http://schemas.ogf.org/occi/infrastructure/compute/action#stop"
+        Link: <https://cloud.ifca.es:8787/occi1.1/compute/105a723d-4e18-40c1-923b-1210f282e100?action=restart>; rel="http://schemas.ogf.org/occi/infrastructure/compute/action#restart"
+        Link: <https://cloud.ifca.es:8787/occi1.1/compute/105a723d-4e18-40c1-923b-1210f282e100?action=suspend>; rel="http://schemas.ogf.org/occi/infrastructure/compute/action#suspend"
+        Link: <https://cloud.ifca.es:8787/occi1.1/networklink/105a723d-4e18-40c1-923b-1210f282e100_172.16.8.245>; rel="http://schemas.ogf.org/occi/infrastructure#network"; self="https://cloud.ifca.es:8787/occi1.1/networklink/105a723d-4e18-40c1-923b-1210f282e100_172.16.8.245"; occi.networkinterface.mac="fa:16:3e:a4:42:39"; occi.networkinterface.interface="eth0"; occi.networkinterface.state="active"; occi.networkinterface.allocation="dynamic"; occi.networkinterface.address="172.16.8.245"; occi.core.source="https://cloud.ifca.es:8787/occi1.1/compute/105a723d-4e18-40c1-923b-1210f282e100"; occi.core.target="https://cloud.ifca.es:8787/occi1.1/network/fixed"; occi.core.id="105a723d-4e18-40c1-923b-1210f282e100_172.16.8.245"
+    http_version: 
+  recorded_at: Tue, 03 Jan 2017 13:41:57 GMT
+- request:
+    method: get
+    uri: https://cloud.ifca.es:8787/occi1.1/compute/0423e210-8471-4b60-8b90-d11aa4d9be5f
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - text/plain,text/occi;q=0.2
+      User-Agent:
+      - rOCCI-core/4.3.2 rOCCI-api/4.3.6 OCCI/1.1 ruby-x86_64-linux/2.2.5p319
+      X-Auth-Token:
+      - gAAAAABYa6oh1pwxu7Btp9mxuslXMEQySZbI8NLEwOEGOEnNKx6x8O0iczH3fMQlwpA2QDTQk_Mp6Ok1IIjG7IVks34TVq_Nfsj4sggva3eTXqfzltKgg_qzeGC9IW3Mr-NjjtGegbj7l5lXzTdn8gSV1aS9OEZ9Z1jzE8GHhP83729yJrXrndQ
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Jan 2017 13:42:41 GMT
+      Content-Type:
+      - text/plain; charset=utf8
+      Content-Length:
+      - '3213'
+      Connection:
+      - keep-alive
+      Server:
+      - ooi/0.1.1 OCCI/1.1
+      X-Compute-Request-Id:
+      - req-b9d17812-ac34-48fc-9023-756eea4785db
+    body:
+      encoding: UTF-8
+      string: |-
+        Category: compute; scheme="http://schemas.ogf.org/occi/infrastructure#"; class="kind"; title="compute resource"; rel="http://schemas.ogf.org/occi/core#resource"; location="https://cloud.ifca.es:8787/occi1.1/compute/"
+        Category: b5fe9952-5d10-4c54-85d8-d9c573fb08c9; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="EGI FEDCLOUD Image for EGI FedCloud Clients [Ubuntu/14.04/KVM]"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/b5fe9952-5d10-4c54-85d8-d9c573fb08c9"
+        Category: 5; scheme="http://schemas.openstack.org/template/resource#"; class="mixin"; title="Flavor: m1.xlarge"; rel="http://schemas.ogf.org/occi/infrastructure#resource_tpl"; location="https://cloud.ifca.es:8787/occi1.1/resource_tpl/5"
+        X-OCCI-Attribute: occi.core.title="VM1"
+        X-OCCI-Attribute: occi.compute.state="active"
+        X-OCCI-Attribute: occi.compute.memory=14000
+        X-OCCI-Attribute: occi.compute.cores=8
+        X-OCCI-Attribute: occi.compute.hostname="VM1"
+        X-OCCI-Attribute: occi.core.id="0423e210-8471-4b60-8b90-d11aa4d9be5f"
+        Link: <https://cloud.ifca.es:8787/occi1.1/compute/0423e210-8471-4b60-8b90-d11aa4d9be5f?action=start>; rel="http://schemas.ogf.org/occi/infrastructure/compute/action#start"
+        Link: <https://cloud.ifca.es:8787/occi1.1/compute/0423e210-8471-4b60-8b90-d11aa4d9be5f?action=stop>; rel="http://schemas.ogf.org/occi/infrastructure/compute/action#stop"
+        Link: <https://cloud.ifca.es:8787/occi1.1/compute/0423e210-8471-4b60-8b90-d11aa4d9be5f?action=restart>; rel="http://schemas.ogf.org/occi/infrastructure/compute/action#restart"
+        Link: <https://cloud.ifca.es:8787/occi1.1/compute/0423e210-8471-4b60-8b90-d11aa4d9be5f?action=suspend>; rel="http://schemas.ogf.org/occi/infrastructure/compute/action#suspend"
+        Link: <https://cloud.ifca.es:8787/occi1.1/networklink/0423e210-8471-4b60-8b90-d11aa4d9be5f_172.16.8.241>; rel="http://schemas.ogf.org/occi/infrastructure#network"; self="https://cloud.ifca.es:8787/occi1.1/networklink/0423e210-8471-4b60-8b90-d11aa4d9be5f_172.16.8.241"; occi.networkinterface.mac="fa:16:3e:05:90:51"; occi.networkinterface.interface="eth0"; occi.networkinterface.state="active"; occi.networkinterface.allocation="dynamic"; occi.networkinterface.address="172.16.8.241"; occi.core.source="https://cloud.ifca.es:8787/occi1.1/compute/0423e210-8471-4b60-8b90-d11aa4d9be5f"; occi.core.target="https://cloud.ifca.es:8787/occi1.1/network/fixed"; occi.core.id="0423e210-8471-4b60-8b90-d11aa4d9be5f_172.16.8.241"
+        Link: <https://cloud.ifca.es:8787/occi1.1/networklink/0423e210-8471-4b60-8b90-d11aa4d9be5f_193.146.75.167>; rel="http://schemas.ogf.org/occi/infrastructure#network"; self="https://cloud.ifca.es:8787/occi1.1/networklink/0423e210-8471-4b60-8b90-d11aa4d9be5f_193.146.75.167"; occi.networkinterface.mac="fa:16:3e:05:90:51"; occi.networkinterface.interface="eth0"; occi.networkinterface.state="active"; occi.networkinterface.allocation="dynamic"; occi.networkinterface.address="193.146.75.167"; occi.core.source="https://cloud.ifca.es:8787/occi1.1/compute/0423e210-8471-4b60-8b90-d11aa4d9be5f"; occi.core.target="https://cloud.ifca.es:8787/occi1.1/network/floating"; occi.core.id="0423e210-8471-4b60-8b90-d11aa4d9be5f_193.146.75.167"
+    http_version: 
+  recorded_at: Tue, 03 Jan 2017 13:41:58 GMT
+- request:
+    method: get
+    uri: https://cloud.ifca.es:8787/occi1.1/compute/c85e0880-ce30-421a-a8c8-b64a607b2c26
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - text/plain,text/occi;q=0.2
+      User-Agent:
+      - rOCCI-core/4.3.2 rOCCI-api/4.3.6 OCCI/1.1 ruby-x86_64-linux/2.2.5p319
+      X-Auth-Token:
+      - gAAAAABYa6oh1pwxu7Btp9mxuslXMEQySZbI8NLEwOEGOEnNKx6x8O0iczH3fMQlwpA2QDTQk_Mp6Ok1IIjG7IVks34TVq_Nfsj4sggva3eTXqfzltKgg_qzeGC9IW3Mr-NjjtGegbj7l5lXzTdn8gSV1aS9OEZ9Z1jzE8GHhP83729yJrXrndQ
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Jan 2017 13:42:41 GMT
+      Content-Type:
+      - text/plain; charset=utf8
+      Content-Length:
+      - '3213'
+      Connection:
+      - keep-alive
+      Server:
+      - ooi/0.1.1 OCCI/1.1
+      X-Compute-Request-Id:
+      - req-77f4c9ee-c8ec-421f-ac82-54afaba05499
+    body:
+      encoding: UTF-8
+      string: |-
+        Category: compute; scheme="http://schemas.ogf.org/occi/infrastructure#"; class="kind"; title="compute resource"; rel="http://schemas.ogf.org/occi/core#resource"; location="https://cloud.ifca.es:8787/occi1.1/compute/"
+        Category: b5fe9952-5d10-4c54-85d8-d9c573fb08c9; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="EGI FEDCLOUD Image for EGI FedCloud Clients [Ubuntu/14.04/KVM]"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/b5fe9952-5d10-4c54-85d8-d9c573fb08c9"
+        Category: 5; scheme="http://schemas.openstack.org/template/resource#"; class="mixin"; title="Flavor: m1.xlarge"; rel="http://schemas.ogf.org/occi/infrastructure#resource_tpl"; location="https://cloud.ifca.es:8787/occi1.1/resource_tpl/5"
+        X-OCCI-Attribute: occi.core.title="VM0"
+        X-OCCI-Attribute: occi.compute.state="active"
+        X-OCCI-Attribute: occi.compute.memory=14000
+        X-OCCI-Attribute: occi.compute.cores=8
+        X-OCCI-Attribute: occi.compute.hostname="VM0"
+        X-OCCI-Attribute: occi.core.id="c85e0880-ce30-421a-a8c8-b64a607b2c26"
+        Link: <https://cloud.ifca.es:8787/occi1.1/compute/c85e0880-ce30-421a-a8c8-b64a607b2c26?action=start>; rel="http://schemas.ogf.org/occi/infrastructure/compute/action#start"
+        Link: <https://cloud.ifca.es:8787/occi1.1/compute/c85e0880-ce30-421a-a8c8-b64a607b2c26?action=stop>; rel="http://schemas.ogf.org/occi/infrastructure/compute/action#stop"
+        Link: <https://cloud.ifca.es:8787/occi1.1/compute/c85e0880-ce30-421a-a8c8-b64a607b2c26?action=restart>; rel="http://schemas.ogf.org/occi/infrastructure/compute/action#restart"
+        Link: <https://cloud.ifca.es:8787/occi1.1/compute/c85e0880-ce30-421a-a8c8-b64a607b2c26?action=suspend>; rel="http://schemas.ogf.org/occi/infrastructure/compute/action#suspend"
+        Link: <https://cloud.ifca.es:8787/occi1.1/networklink/c85e0880-ce30-421a-a8c8-b64a607b2c26_172.16.8.240>; rel="http://schemas.ogf.org/occi/infrastructure#network"; self="https://cloud.ifca.es:8787/occi1.1/networklink/c85e0880-ce30-421a-a8c8-b64a607b2c26_172.16.8.240"; occi.networkinterface.mac="fa:16:3e:ce:4c:a4"; occi.networkinterface.interface="eth0"; occi.networkinterface.state="active"; occi.networkinterface.allocation="dynamic"; occi.networkinterface.address="172.16.8.240"; occi.core.source="https://cloud.ifca.es:8787/occi1.1/compute/c85e0880-ce30-421a-a8c8-b64a607b2c26"; occi.core.target="https://cloud.ifca.es:8787/occi1.1/network/fixed"; occi.core.id="c85e0880-ce30-421a-a8c8-b64a607b2c26_172.16.8.240"
+        Link: <https://cloud.ifca.es:8787/occi1.1/networklink/c85e0880-ce30-421a-a8c8-b64a607b2c26_193.146.75.244>; rel="http://schemas.ogf.org/occi/infrastructure#network"; self="https://cloud.ifca.es:8787/occi1.1/networklink/c85e0880-ce30-421a-a8c8-b64a607b2c26_193.146.75.244"; occi.networkinterface.mac="fa:16:3e:ce:4c:a4"; occi.networkinterface.interface="eth0"; occi.networkinterface.state="active"; occi.networkinterface.allocation="dynamic"; occi.networkinterface.address="193.146.75.244"; occi.core.source="https://cloud.ifca.es:8787/occi1.1/compute/c85e0880-ce30-421a-a8c8-b64a607b2c26"; occi.core.target="https://cloud.ifca.es:8787/occi1.1/network/floating"; occi.core.id="c85e0880-ce30-421a-a8c8-b64a607b2c26_193.146.75.244"
+    http_version: 
+  recorded_at: Tue, 03 Jan 2017 13:41:59 GMT
+- request:
+    method: get
+    uri: https://cloud.ifca.es:8787/occi1.1/compute/df8faea6-1003-4d52-9482-165e74824561
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - text/plain,text/occi;q=0.2
+      User-Agent:
+      - rOCCI-core/4.3.2 rOCCI-api/4.3.6 OCCI/1.1 ruby-x86_64-linux/2.2.5p319
+      X-Auth-Token:
+      - gAAAAABYa6oh1pwxu7Btp9mxuslXMEQySZbI8NLEwOEGOEnNKx6x8O0iczH3fMQlwpA2QDTQk_Mp6Ok1IIjG7IVks34TVq_Nfsj4sggva3eTXqfzltKgg_qzeGC9IW3Mr-NjjtGegbj7l5lXzTdn8gSV1aS9OEZ9Z1jzE8GHhP83729yJrXrndQ
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Jan 2017 13:42:42 GMT
+      Content-Type:
+      - text/plain; charset=utf8
+      Content-Length:
+      - '2591'
+      Connection:
+      - keep-alive
+      Server:
+      - ooi/0.1.1 OCCI/1.1
+      X-Compute-Request-Id:
+      - req-48d8e587-b506-4b23-9d9b-9fc571e23069
+    body:
+      encoding: UTF-8
+      string: |-
+        Category: compute; scheme="http://schemas.ogf.org/occi/infrastructure#"; class="kind"; title="compute resource"; rel="http://schemas.ogf.org/occi/core#resource"; location="https://cloud.ifca.es:8787/occi1.1/compute/"
+        Category: f66bd8be-cbce-4406-8505-0b1721b77390; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="None (Image with ID 'f66bd8be-cbce-4406-8505-0b1721b77390' not found)"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/f66bd8be-cbce-4406-8505-0b1721b77390"
+        Category: 2; scheme="http://schemas.openstack.org/template/resource#"; class="mixin"; title="Flavor: m1.small"; rel="http://schemas.ogf.org/occi/infrastructure#resource_tpl"; location="https://cloud.ifca.es:8787/occi1.1/resource_tpl/2"
+        X-OCCI-Attribute: occi.core.title="ubuntu-14.04_DRM4G_VM_69f92e8a8adb425a8373e3c09f8a8e51"
+        X-OCCI-Attribute: occi.compute.state="active"
+        X-OCCI-Attribute: occi.compute.memory=2000
+        X-OCCI-Attribute: occi.compute.cores=1
+        X-OCCI-Attribute: occi.compute.hostname="ubuntu-14.04_DRM4G_VM_69f92e8a8adb425a8373e3c09f8a8e51"
+        X-OCCI-Attribute: occi.core.id="df8faea6-1003-4d52-9482-165e74824561"
+        Link: <https://cloud.ifca.es:8787/occi1.1/compute/df8faea6-1003-4d52-9482-165e74824561?action=start>; rel="http://schemas.ogf.org/occi/infrastructure/compute/action#start"
+        Link: <https://cloud.ifca.es:8787/occi1.1/compute/df8faea6-1003-4d52-9482-165e74824561?action=stop>; rel="http://schemas.ogf.org/occi/infrastructure/compute/action#stop"
+        Link: <https://cloud.ifca.es:8787/occi1.1/compute/df8faea6-1003-4d52-9482-165e74824561?action=restart>; rel="http://schemas.ogf.org/occi/infrastructure/compute/action#restart"
+        Link: <https://cloud.ifca.es:8787/occi1.1/compute/df8faea6-1003-4d52-9482-165e74824561?action=suspend>; rel="http://schemas.ogf.org/occi/infrastructure/compute/action#suspend"
+        Link: <https://cloud.ifca.es:8787/occi1.1/networklink/df8faea6-1003-4d52-9482-165e74824561_172.16.8.229>; rel="http://schemas.ogf.org/occi/infrastructure#network"; self="https://cloud.ifca.es:8787/occi1.1/networklink/df8faea6-1003-4d52-9482-165e74824561_172.16.8.229"; occi.networkinterface.mac="fa:16:3e:c3:2c:d3"; occi.networkinterface.interface="eth0"; occi.networkinterface.state="active"; occi.networkinterface.allocation="dynamic"; occi.networkinterface.address="172.16.8.229"; occi.core.source="https://cloud.ifca.es:8787/occi1.1/compute/df8faea6-1003-4d52-9482-165e74824561"; occi.core.target="https://cloud.ifca.es:8787/occi1.1/network/fixed"; occi.core.id="df8faea6-1003-4d52-9482-165e74824561_172.16.8.229"
+    http_version: 
+  recorded_at: Tue, 03 Jan 2017 13:42:00 GMT
+- request:
+    method: get
+    uri: https://cloud.ifca.es:8787/occi1.1/compute/26874df4-e7ed-4a0d-9ed4-79133eacf45a
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - text/plain,text/occi;q=0.2
+      User-Agent:
+      - rOCCI-core/4.3.2 rOCCI-api/4.3.6 OCCI/1.1 ruby-x86_64-linux/2.2.5p319
+      X-Auth-Token:
+      - gAAAAABYa6oh1pwxu7Btp9mxuslXMEQySZbI8NLEwOEGOEnNKx6x8O0iczH3fMQlwpA2QDTQk_Mp6Ok1IIjG7IVks34TVq_Nfsj4sggva3eTXqfzltKgg_qzeGC9IW3Mr-NjjtGegbj7l5lXzTdn8gSV1aS9OEZ9Z1jzE8GHhP83729yJrXrndQ
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 03 Jan 2017 13:42:43 GMT
+      Content-Type:
+      - text/plain; charset=utf8
+      Content-Length:
+      - '2591'
+      Connection:
+      - keep-alive
+      Server:
+      - ooi/0.1.1 OCCI/1.1
+      X-Compute-Request-Id:
+      - req-edd88969-3718-4f19-8f72-2110615808dc
+    body:
+      encoding: UTF-8
+      string: |-
+        Category: compute; scheme="http://schemas.ogf.org/occi/infrastructure#"; class="kind"; title="compute resource"; rel="http://schemas.ogf.org/occi/core#resource"; location="https://cloud.ifca.es:8787/occi1.1/compute/"
+        Category: f66bd8be-cbce-4406-8505-0b1721b77390; scheme="http://schemas.openstack.org/template/os#"; class="mixin"; title="None (Image with ID 'f66bd8be-cbce-4406-8505-0b1721b77390' not found)"; rel="http://schemas.ogf.org/occi/infrastructure#os_tpl"; location="https://cloud.ifca.es:8787/occi1.1/os_tpl/f66bd8be-cbce-4406-8505-0b1721b77390"
+        Category: 2; scheme="http://schemas.openstack.org/template/resource#"; class="mixin"; title="Flavor: m1.small"; rel="http://schemas.ogf.org/occi/infrastructure#resource_tpl"; location="https://cloud.ifca.es:8787/occi1.1/resource_tpl/2"
+        X-OCCI-Attribute: occi.core.title="ubuntu-14.04_DRM4G_VM_72f80353dfa54edc9ca8f3b7e7482c63"
+        X-OCCI-Attribute: occi.compute.state="active"
+        X-OCCI-Attribute: occi.compute.memory=2000
+        X-OCCI-Attribute: occi.compute.cores=1
+        X-OCCI-Attribute: occi.compute.hostname="ubuntu-14.04_DRM4G_VM_72f80353dfa54edc9ca8f3b7e7482c63"
+        X-OCCI-Attribute: occi.core.id="26874df4-e7ed-4a0d-9ed4-79133eacf45a"
+        Link: <https://cloud.ifca.es:8787/occi1.1/compute/26874df4-e7ed-4a0d-9ed4-79133eacf45a?action=start>; rel="http://schemas.ogf.org/occi/infrastructure/compute/action#start"
+        Link: <https://cloud.ifca.es:8787/occi1.1/compute/26874df4-e7ed-4a0d-9ed4-79133eacf45a?action=stop>; rel="http://schemas.ogf.org/occi/infrastructure/compute/action#stop"
+        Link: <https://cloud.ifca.es:8787/occi1.1/compute/26874df4-e7ed-4a0d-9ed4-79133eacf45a?action=restart>; rel="http://schemas.ogf.org/occi/infrastructure/compute/action#restart"
+        Link: <https://cloud.ifca.es:8787/occi1.1/compute/26874df4-e7ed-4a0d-9ed4-79133eacf45a?action=suspend>; rel="http://schemas.ogf.org/occi/infrastructure/compute/action#suspend"
+        Link: <https://cloud.ifca.es:8787/occi1.1/networklink/26874df4-e7ed-4a0d-9ed4-79133eacf45a_172.16.8.217>; rel="http://schemas.ogf.org/occi/infrastructure#network"; self="https://cloud.ifca.es:8787/occi1.1/networklink/26874df4-e7ed-4a0d-9ed4-79133eacf45a_172.16.8.217"; occi.networkinterface.mac="fa:16:3e:9b:e5:1e"; occi.networkinterface.interface="eth0"; occi.networkinterface.state="active"; occi.networkinterface.allocation="dynamic"; occi.networkinterface.address="172.16.8.217"; occi.core.source="https://cloud.ifca.es:8787/occi1.1/compute/26874df4-e7ed-4a0d-9ed4-79133eacf45a"; occi.core.target="https://cloud.ifca.es:8787/occi1.1/network/fixed"; occi.core.id="26874df4-e7ed-4a0d-9ed4-79133eacf45a_172.16.8.217"
+    http_version: 
+  recorded_at: Tue, 03 Jan 2017 13:42:00 GMT
+recorded_with: VCR 3.0.3

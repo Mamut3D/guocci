@@ -13,6 +13,7 @@ fast_finish: true
 branches:
   only:
     - master
+    - devel_branch
 
 before_install: 'gem install bundler -v 1.13.0'
 

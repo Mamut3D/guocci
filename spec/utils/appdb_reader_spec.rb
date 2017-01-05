@@ -1,3 +1,5 @@
+require 'spec_helper'
+
 describe Utils::AppdbReader do
   # subject(:appd_all_response) { VCR.use_cassette('model/appdb_response') Utils::AppdbReader
   let(:service_id) { '247G0:4450G0' }

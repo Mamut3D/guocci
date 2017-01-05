@@ -1,7 +1,5 @@
 module V1
   class AppliancesController < ApplicationController
-    respond_to :json
-
     def index
       appliances = Appliances.new(cache: cache_manager)
       appliances_list = appliances.list

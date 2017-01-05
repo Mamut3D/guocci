@@ -1,7 +1,5 @@
 module V1
   class SitesController < ApplicationController
-    respond_to :json
-
     def index
       sites = Sites.new(cache: cache_manager)
       sites_list = sites.list(params[:appliance_id])
