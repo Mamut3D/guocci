@@ -32,7 +32,7 @@ gem 'responders', '~> 2.0'
 gem 'mongo', '~> 2.3'
 gem 'whenever', '~> 0.9.7'
 gem 'rubocop-rspec', '~> 1.7'
-gem 'occi-api', '>= 4.3.9', '< 5' #git: 'git://github.com/Mamut3D/rOCCI-api.git'
+gem 'occi-api', '>= 4.3.9', '< 5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
